@@ -1,0 +1,42 @@
+[ {
+  "id" : "faaf098f-e4d3-663e-27f8-dec2d9be7b67",
+  "name" : "image_field",
+  "display_width" : null,
+  "label" : "Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://f.hubspotusercontent20.net/hubfs/5565021/customer-data.png",
+    "alt" : "customer-data",
+    "width" : 664,
+    "height" : 429,
+    "max_width" : 664,
+    "max_height" : 429
+  }
+}, {
+  "id" : "b6b6b96b-af8f-7363-19b7-ac0868cce867",
+  "name" : "heading",
+  "display_width" : null,
+  "label" : "Heading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Easily connect all your <strong>customer data</strong>"
+}, {
+  "id" : "6bb20ee0-0d99-de04-1cf8-39475b03ba12",
+  "name" : "content",
+  "display_width" : null,
+  "label" : "Content",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<p>We believe automation should be easy, because everyone deserves to work smarter - not harder. Start today by connecting all your apps and collect the full view of the customer.</p>\n<p class=\"cd-buttons\"><a href=\"#\">Apps &amp; Integrations</a> <a href=\"#\">API documentation</a></p>"
+} ]

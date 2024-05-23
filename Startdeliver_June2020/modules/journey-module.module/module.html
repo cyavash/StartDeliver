@@ -1,0 +1,22 @@
+<div class="journey-section reveal">
+  <div class="container">
+    <h2>
+      {{ module.heading }}
+    </h2>
+    {% for item in module.journey_item %}
+      <div class="row-fluid">
+        <div class="span5">
+          <h3>
+             {{ item.heading }}
+          </h3>
+        </div>
+        <div class="span7">
+          <h4>
+            {{ item.title }}
+          </h4>
+          {% inline_rich_text field="content" value="{{ item.content }}" %}
+        </div>
+      </div>
+    {% endfor %}
+  </div><!-- end container -->
+</div><!-- end journey-section -->

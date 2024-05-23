@@ -1,0 +1,85 @@
+[ {
+  "id" : "e8aeffac-16ba-9f50-56b5-f375242c66db",
+  "name" : "heading",
+  "display_width" : null,
+  "label" : "Heading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Some of our <strong>Happy</strong> users:"
+}, {
+  "id" : "6bf9f798-605d-0a22-158b-da12e95461fd",
+  "name" : "logo",
+  "display_width" : null,
+  "label" : "Logo",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 6
+  },
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : [ {
+    "size_type" : "auto",
+    "src" : "https://f.hubspotusercontent20.net/hubfs/5565021/Learnifier.png",
+    "alt" : "Learnifier",
+    "loading" : "disabled",
+    "width" : 600,
+    "height" : 158,
+    "max_width" : 600,
+    "max_height" : 158
+  }, {
+    "size_type" : "auto",
+    "src" : "https://f.hubspotusercontent20.net/hubfs/5565021/Learnifier.png",
+    "alt" : "Learnifier",
+    "loading" : "disabled",
+    "width" : 600,
+    "height" : 158,
+    "max_width" : 600,
+    "max_height" : 158
+  }, {
+    "size_type" : "auto",
+    "src" : "https://f.hubspotusercontent20.net/hubfs/5565021/Learnifier.png",
+    "alt" : "Learnifier",
+    "loading" : "disabled",
+    "width" : 600,
+    "height" : 158,
+    "max_width" : 600,
+    "max_height" : 158
+  }, {
+    "size_type" : "auto",
+    "src" : "https://f.hubspotusercontent20.net/hubfs/5565021/Learnifier.png",
+    "alt" : "Learnifier",
+    "loading" : "disabled",
+    "width" : 600,
+    "height" : 158,
+    "max_width" : 600,
+    "max_height" : 158
+  }, {
+    "size_type" : "auto",
+    "src" : "https://f.hubspotusercontent20.net/hubfs/5565021/Learnifier.png",
+    "alt" : "Learnifier",
+    "loading" : "disabled",
+    "width" : 600,
+    "height" : 158,
+    "max_width" : 600,
+    "max_height" : 158
+  }, {
+    "size_type" : "auto",
+    "src" : "https://f.hubspotusercontent20.net/hubfs/5565021/Learnifier.png",
+    "alt" : "Learnifier",
+    "loading" : "disabled",
+    "width" : 600,
+    "height" : 158,
+    "max_width" : 600,
+    "max_height" : 158
+  } ]
+} ]

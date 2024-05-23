@@ -1,0 +1,33 @@
+<div class="{{name}} bfeatr-wrap">
+  <div class="page-center">
+    <div class="bfeatr-hdr-otr">
+      <div class="bfeatr-hdr">
+        <h4>{{ module.sub_title }}</h4> 
+        <h2>{{ module.heading }}</h2> 
+      </div>    
+    </div>
+    
+    <div class="bfeatr-list-otr">
+      {% for item in module.features_item %}
+        <div class="bfeatr-item">
+         <div class="bfeatr-item-inr">  
+           <div class="bfeatr-title">
+             <h3>{{ item.heading }}</h3>
+           </div>
+           <div class="bfeatr-txt">
+             {{ item.content }}
+           </div> 
+          </div> 
+         </div>
+      {% endfor %}  
+    </div> 
+  </div> 
+</div> 
+
+{% require_css %}
+<style> 
+      
+  
+</style>
+{% end_require_css %}
+ 

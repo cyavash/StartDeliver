@@ -1,0 +1,237 @@
+[ {
+  "id" : "f7741fc5-347c-f39f-cfc6-850188acfa93",
+  "name" : "background_color",
+  "display_width" : null,
+  "label" : "Background Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#e7fcf9",
+    "opacity" : 100
+  }
+}, {
+  "id" : "965c1f93-8c7d-cb3d-2b40-a221a94007ba",
+  "name" : "slider_item",
+  "display_width" : null,
+  "label" : "Slider Item",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 3
+  },
+  "children" : [ {
+    "id" : "d9d5a71d-f2ed-005e-d6c4-51ceaf5498f9",
+    "name" : "image",
+    "display_width" : null,
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent20.net/hubfs/5565021/slide-img1-1.jpg",
+      "alt" : "slide-img1-1",
+      "width" : 554,
+      "height" : 825,
+      "max_width" : 554,
+      "max_height" : 825
+    }
+  }, {
+    "id" : "3bf714c0-07d8-cbca-7682-a29f26b008a5",
+    "name" : "quote",
+    "display_width" : null,
+    "label" : "Quote",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<p>Start Deliver makes the difference <strong>between good and bloody brilliant</strong></p>"
+  }, {
+    "id" : "d231a97b-202f-f427-86fe-6a990e1e35ad",
+    "name" : "testimonial_name",
+    "display_width" : null,
+    "label" : "Testimonial Name",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Garett Love"
+  }, {
+    "id" : "595f82a2-d5ad-40d4-9f44-d7958e7d18c3",
+    "name" : "role",
+    "display_width" : null,
+    "label" : "Role",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Head of Customer Success"
+  }, {
+    "id" : "194ec070-7a48-b401-f5ca-a380b5190995",
+    "name" : "logo",
+    "display_width" : null,
+    "label" : "Logo",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto_custom_max",
+      "src" : "https://f.hubspotusercontent20.net/hubfs/5565021/Learnifier.png",
+      "alt" : "Learnifier",
+      "width" : 600,
+      "height" : 158,
+      "max_width" : 220,
+      "max_height" : 58
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : [ {
+    "image" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent20.net/hubfs/5565021/slide-img1-1.jpg",
+      "alt" : "slide-img1-1",
+      "width" : 554,
+      "height" : 825,
+      "max_width" : 554,
+      "max_height" : 825
+    },
+    "quote" : "<p>Start Deliver makes the difference <strong>between good and bloody brilliant</strong></p>",
+    "testimonial_name" : "Garett Love",
+    "role" : "Head of Customer Success",
+    "logo" : {
+      "size_type" : "auto_custom_max",
+      "src" : "https://f.hubspotusercontent20.net/hubfs/5565021/Learnifier.png",
+      "alt" : "Learnifier",
+      "width" : 600,
+      "height" : 158,
+      "max_width" : 220,
+      "max_height" : 58
+    }
+  }, {
+    "image" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent20.net/hubfs/5565021/slide-img1-1.jpg",
+      "alt" : "slide-img1-1",
+      "width" : 554,
+      "height" : 825,
+      "max_width" : 554,
+      "max_height" : 825
+    },
+    "quote" : "<p>Start Deliver makes the difference <strong>between good and bloody brilliant</strong></p>",
+    "testimonial_name" : "Garett Love",
+    "role" : "Head of Customer Success",
+    "logo" : {
+      "size_type" : "auto_custom_max",
+      "src" : "https://f.hubspotusercontent20.net/hubfs/5565021/Learnifier.png",
+      "alt" : "Learnifier",
+      "width" : 600,
+      "height" : 158,
+      "max_width" : 220,
+      "max_height" : 58
+    }
+  }, {
+    "image" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent20.net/hubfs/5565021/slide-img1-1.jpg",
+      "alt" : "slide-img1-1",
+      "width" : 554,
+      "height" : 825,
+      "max_width" : 554,
+      "max_height" : 825
+    },
+    "quote" : "<p>Start Deliver makes the difference <strong>between good and bloody brilliant</strong></p>",
+    "testimonial_name" : "Garett Love",
+    "role" : "Head of Customer Success",
+    "logo" : {
+      "size_type" : "auto_custom_max",
+      "src" : "https://f.hubspotusercontent20.net/hubfs/5565021/Learnifier.png",
+      "alt" : "Learnifier",
+      "width" : 600,
+      "height" : 158,
+      "max_width" : 220,
+      "max_height" : 58
+    }
+  } ]
+}, {
+  "id" : "bcbc8ebd-0809-9d47-648e-e5b912f1e1f7",
+  "name" : "happy_section",
+  "display_width" : null,
+  "label" : "Happy Section",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "dd9c8c8f-5ddd-cb50-d968-69e365a9ceef",
+    "name" : "heading",
+    "display_width" : null,
+    "label" : "Heading",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Want be as <strong>happy</strong> as Garrett?"
+  }, {
+    "id" : "0ff6def1-af58-16c4-6757-22b7f2bb9c3c",
+    "name" : "cta_field",
+    "display_width" : null,
+    "label" : "CTA",
+    "required" : false,
+    "locked" : false,
+    "type" : "cta",
+    "default" : "82652a52-9196-45f9-af97-be303faed781"
+  }, {
+    "id" : "3c1e2d0c-60e8-3643-5d20-33375c4cfcd7",
+    "name" : "button_design",
+    "display_width" : null,
+    "label" : "Button Design",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent20.net/hubfs/5565021/testimonial-design.png",
+      "alt" : "testimonial-design",
+      "width" : 110,
+      "height" : 110,
+      "max_width" : 110,
+      "max_height" : 110
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "heading" : "Want be as <strong>happy</strong> as Garrett?",
+    "cta_field" : "82652a52-9196-45f9-af97-be303faed781",
+    "button_design" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent20.net/hubfs/5565021/testimonial-design.png",
+      "alt" : "testimonial-design",
+      "width" : 110,
+      "height" : 110,
+      "max_width" : 110,
+      "max_height" : 110
+    }
+  }
+} ]

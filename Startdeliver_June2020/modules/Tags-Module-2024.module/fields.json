@@ -1,0 +1,163 @@
+[ {
+  "id" : "8cfdb3a7-c687-b0cc-5e77-188b9283e0cd",
+  "name" : "background_color",
+  "display_width" : null,
+  "label" : "Background Color",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "#18C2E7"
+}, {
+  "id" : "0dafcca9-2925-82cb-a051-2936785696e6",
+  "name" : "heading",
+  "display_width" : null,
+  "label" : "Heading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Use Stardeliver to reduce costs in"
+}, {
+  "id" : "96ea9663-2f01-a177-3cb3-aedd92deda7f",
+  "name" : "tags_1",
+  "display_width" : null,
+  "label" : "Tags 1",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "f0a6252c-206d-70bd-66de-c387cc68d91e",
+    "name" : "tag_item",
+    "display_width" : null,
+    "label" : "Tag Item",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : null,
+      "max" : null,
+      "sorting_label_field" : null,
+      "default" : 3
+    },
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : [ "Hubspot", "Hubspot", "Hubspot" ]
+  }, {
+    "id" : "0d24e81f-8ec9-a22f-cf46-1abf33d188d6",
+    "name" : "background_color",
+    "display_width" : null,
+    "label" : "Background Color",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "#18C2E7"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "tag_item" : [ "Hubspot", "Hubspot", "Hubspot" ],
+    "background_color" : "#18C2E7"
+  }
+}, {
+  "id" : "520520b7-c247-a95c-314f-65c319690c82",
+  "name" : "tags_2",
+  "display_width" : null,
+  "label" : "Tags 2",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "26d500a8-fb65-cc0f-9b04-cfa7af81d284",
+    "name" : "tag_item",
+    "display_width" : null,
+    "label" : "Tag Item",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : null,
+      "max" : null,
+      "sorting_label_field" : null,
+      "default" : 3
+    },
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : [ "Hubspot", "Hubspot", "Hubspot" ]
+  }, {
+    "id" : "ef8242b2-7686-aea2-8454-c25a5d15d16b",
+    "name" : "background_color",
+    "display_width" : null,
+    "label" : "Background Color",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "#9818E7"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "tag_item" : [ "Hubspot", "Hubspot", "Hubspot" ],
+    "background_color" : "#9818E7"
+  }
+}, {
+  "id" : "e1ace268-d7f5-f58a-3fea-14a33e950140",
+  "name" : "tags_3",
+  "display_width" : null,
+  "label" : "Tags 3",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "39fe3578-2c66-bccd-9592-030d33ada03a",
+    "name" : "tag_item",
+    "display_width" : null,
+    "label" : "Tag Item",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : null,
+      "max" : null,
+      "sorting_label_field" : null,
+      "default" : 3
+    },
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : [ "Hubspot", "Hubspot", "Hubspot" ]
+  }, {
+    "id" : "e8e0de21-2dc2-ac22-e3f2-de285e7ba9db",
+    "name" : "background_color",
+    "display_width" : null,
+    "label" : "Background Color",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "#2053FD"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "tag_item" : [ "Hubspot", "Hubspot", "Hubspot" ],
+    "background_color" : "#2053FD"
+  }
+} ]

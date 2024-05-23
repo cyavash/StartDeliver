@@ -1,0 +1,154 @@
+[ {
+  "id" : "efada985-aee0-4a75-d5be-64dd3cec10d7",
+  "name" : "footer_logo",
+  "display_width" : null,
+  "label" : "Footer Logo",
+  "required" : false,
+  "locked" : true,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "exact",
+    "src" : "https://f.hubspotusercontent20.net/hubfs/5565021/startdeliver-logo-white%20mellan.png",
+    "alt" : "startdeliver-logo-white mellan",
+    "width" : 151,
+    "height" : 31,
+    "max_width" : 350,
+    "max_height" : 72
+  }
+}, {
+  "id" : "58931ca0-c613-aed3-20f9-b84fb84fab1b",
+  "name" : "footer_list_1",
+  "display_width" : null,
+  "label" : "Footer List 1",
+  "required" : false,
+  "locked" : true,
+  "type" : "richtext",
+  "default" : "<ul>\n<li><a href=\"#\">Pricing</a></li>\n<li><a href=\"#\">Product</a></li>\n</ul>"
+}, {
+  "id" : "00abca4c-313d-f195-3a4b-24ae5fd985e5",
+  "name" : "footer_list_2",
+  "display_width" : null,
+  "label" : "Footer List 2",
+  "required" : false,
+  "locked" : true,
+  "type" : "richtext",
+  "default" : "<ul>\n<li>Resources</li>\n<li><a href=\"#\">On-Demand Webinars</a></li>\n<li><a href=\"#\">Blog</a></li>\n<li><a href=\"#\">Support</a></li>\n<li><a href=\"#\">Legal Stuff</a></li>\n<li><a href=\"#\">Privacy</a></li>\n<li><a href=\"#\">Terms</a></li>\n</ul>"
+}, {
+  "id" : "0ae96a58-af1b-1891-23d2-ab9e0d793487",
+  "name" : "footer_list_3",
+  "display_width" : null,
+  "label" : "Footer List 3",
+  "required" : false,
+  "locked" : true,
+  "type" : "richtext",
+  "default" : "<ul>\n<li>Questions?</li>\n<li><a href=\"mailto:hello@startdeliver.com\">hello@startdeliver.com</a></li>\n<li><a href=\"#\">Book a Demo</a></li>\n<li><a href=\"#\">Contact Us</a></li>\n</ul>"
+}, {
+  "id" : "d8e7229f-07ba-06f3-b27c-7bd54dea28bc",
+  "name" : "footer_list_4",
+  "display_width" : null,
+  "label" : "Footer List 4",
+  "required" : false,
+  "locked" : true,
+  "type" : "richtext",
+  "default" : "<ul>\n<li>Company</li>\n<li><a href=\"#\">About Us</a></li>\n<li><a href=\"#\">Customers</a></li>\n<li><a href=\"#\">Management Team</a></li>\n<li><a href=\"#\">Board of Directors</a></li>\n<li><a href=\"#\">Careers</a></li>\n<li><a href=\"#\">Partners</a></li>\n</ul>"
+}, {
+  "id" : "26d7ece1-6084-925b-f7b8-8954f09cc08b",
+  "name" : "footer_list_5",
+  "display_width" : null,
+  "label" : "Footer List 5",
+  "required" : false,
+  "locked" : true,
+  "type" : "richtext",
+  "default" : "<ul>\n<li>From the blog</li>\n<li><a href=\"#\">Post 1</a></li>\n<li><a href=\"#\">Post 2</a></li>\n<li><a href=\"#\">Post 3</a></li>\n</ul>"
+}, {
+  "id" : "2fcc4005-2026-5c3e-8ec5-3db254b9ad10",
+  "name" : "footer_list_6",
+  "display_width" : null,
+  "label" : "Footer List 6",
+  "required" : false,
+  "locked" : true,
+  "type" : "richtext",
+  "default" : "<ul>\n<li>Need help?</li>\n<li><a href=\"#\">Support</a></li>\n<li><a href=\"#\">Apps &amp; Integrations</a></li>\n<li><a href=\"#\">API documentation</a></li>\n<li><a href=\"#\">Contact Us</a></li>\n</ul>"
+}, {
+  "id" : "985f15bc-9e32-0030-c64c-4a3729d07aa0",
+  "name" : "footer_contact",
+  "display_width" : null,
+  "label" : "Footer Contact",
+  "required" : false,
+  "locked" : true,
+  "type" : "richtext",
+  "default" : "<p>Startdeliver AB 114 38, Stockholm Sweden. <span>Tel. +46 709 98 98 89</span></p>"
+}, {
+  "id" : "a7ddb350-75e2-faf5-be01-5cf8afc883f5",
+  "name" : "footer_copyright",
+  "display_width" : null,
+  "label" : "Footer Copyright",
+  "required" : false,
+  "locked" : true,
+  "type" : "richtext",
+  "default" : "<p>© Startdeliver 2020 #</p>"
+}, {
+  "id" : "2093a164-9df2-44a5-9d45-556c01797be6",
+  "name" : "social_item",
+  "display_width" : null,
+  "label" : "Social Item",
+  "required" : false,
+  "locked" : true,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 6
+  },
+  "children" : [ {
+    "id" : "d4e0f8b9-6495-2f81-36ef-f851bbded868",
+    "name" : "social_link",
+    "display_width" : null,
+    "label" : "Social Link",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "https://instagram.com/startdeliver"
+  }, {
+    "id" : "4c357dea-91d6-d8c5-3fc4-535335474684",
+    "name" : "social_icon",
+    "display_width" : null,
+    "label" : "Social icon",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "<i class=\"fa fa-facebook\"></i>"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : [ {
+    "social_link" : "https://instagram.com/startdeliver",
+    "social_icon" : "<i class=\"fa fa-facebook\"></i>"
+  }, {
+    "social_link" : "https://instagram.com/startdeliver",
+    "social_icon" : "<i class=\"fa fa-facebook\"></i>"
+  }, {
+    "social_link" : "https://instagram.com/startdeliver",
+    "social_icon" : "<i class=\"fa fa-facebook\"></i>"
+  }, {
+    "social_link" : "https://instagram.com/startdeliver",
+    "social_icon" : "<i class=\"fa fa-facebook\"></i>"
+  }, {
+    "social_link" : "https://instagram.com/startdeliver",
+    "social_icon" : "<i class=\"fa fa-facebook\"></i>"
+  }, {
+    "social_link" : "https://instagram.com/startdeliver",
+    "social_icon" : "<i class=\"fa fa-facebook\"></i>"
+  } ]
+} ]

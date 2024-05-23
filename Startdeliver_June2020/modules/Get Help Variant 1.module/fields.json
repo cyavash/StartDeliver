@@ -1,0 +1,52 @@
+[ {
+  "id" : "6945e5ac-94eb-8b6d-99b4-65c2c17403bf",
+  "name" : "heading",
+  "display_width" : null,
+  "label" : "Heading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Get help from one of <strong>our experts</strong>"
+}, {
+  "id" : "2537b32d-7d3f-237f-a368-8803f06637ed",
+  "name" : "content",
+  "display_width" : null,
+  "label" : "Content",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<p>Tell us about your needs and we will help you find a Solution.</p>"
+}, {
+  "id" : "19f556e6-c66f-c957-9392-0d01767497ab",
+  "name" : "image_field",
+  "display_width" : null,
+  "label" : "Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://f.hubspotusercontent20.net/hubfs/5565021/dots-img1.png",
+    "alt" : "dots-img1",
+    "loading" : "lazy",
+    "width" : 113,
+    "height" : 68,
+    "max_width" : 113,
+    "max_height" : 68
+  }
+}, {
+  "id" : "fb3f1229-66b7-7f4c-a2ff-338887c0a78f",
+  "name" : "cta_field",
+  "display_width" : null,
+  "label" : "CTA",
+  "required" : false,
+  "locked" : false,
+  "type" : "cta",
+  "default" : "940a0c42-1507-4b38-9a2e-61657fa2cc2b"
+} ]

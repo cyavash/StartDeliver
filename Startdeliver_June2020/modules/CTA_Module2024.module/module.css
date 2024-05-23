@@ -1,0 +1,80 @@
+#footer { 
+    margin-top: 0px !important; 
+}
+.line3 {
+  padding-bottom: 37px; 
+}
+.cta-wrap {
+    position: relative;
+    padding: 85px 0px;
+    padding-top: 35px;
+    display: inline-block;
+    width: 100%; 
+    background: #00174f!important;
+    background: linear-gradient(to bottom, #011340, #010E2F, #020F2F)!important;
+    color: #FFF;
+    text-align: center;
+} 
+.cta-wrap > div {
+    position: relative;
+    z-index: 9;
+}
+.cta-otr {
+    text-align: center;
+    max-width: 540px;
+    max-width: 100%;
+    margin: 0px auto;
+}
+.cta-header h3 {
+    font-weight: bold;
+    font-size: 35px;
+    letter-spacing: -0.7px;
+    color: #FFF;
+    font-weight: 400;
+    font-size: 32px;
+    
+}
+.cta-txt p {
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: -0.2px;
+} 
+.cta-btn {
+    padding-top: 10px;
+}
+html body .cta-wrap a.cta_button {
+  color: #FFF!important;
+  border-radius: 0!important;
+  font-size: 18px!important;
+  min-width: 150px!important;
+  padding: 13px 20px!important;
+  font-weight: 700!important;
+  letter-spacing: -0.105px!important;
+  min-width: 180px!important;
+  padding: 15px 30px!important;
+  text-align: center!important;
+  transition: all .7s ease!important;
+  text-decoration: none!important;
+  background: #2053FD!important;
+}
+.cta-wrap a.cta_button:hover {
+   background: #133098!important
+}
+.cta-header {
+    padding-bottom: 15px;
+}
+ 
+/******** Mobile Styling *********/
+@media (max-width: 1080px) {
+  .cta-wrap { 
+      padding: 70px 0px; 
+  }
+}  
+@media (max-width: 767px) { 
+  .cta-header h3 {
+      font-size: 30px; 
+  }
+  .cta-txt p {
+      font-size: 18px; 
+  }
+}

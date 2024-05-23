@@ -1,0 +1,132 @@
+.testimonial-section2 {
+  clear: both;
+  background: #f3f4fe;
+  background: linear-gradient(90deg, #f5f4fe 0%, #f5f5fe 35%, #f4f3fe 60%, #f7f6fe 100%);
+  padding: 61px 0;
+}
+html body .testimonial-section2 .page-center-fluid {
+  padding-left: 0!important;
+  padding-right: 0!important;
+} 
+.testimonial-section2 h2 {
+  width: 442px;
+  max-width: 100%;
+  margin: auto;
+  font-size: 32px;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.16;
+  letter-spacing: -0.71px;
+  color: #464040;
+}
+.testimonial-section2 h2 strong {
+  display: block;
+  font-weight: bold;
+}
+.customer-carousel {
+  margin-top: 45px;
+}
+.testimonial-section2 .customer-carousel .slick-slide {
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 12px;
+}
+.cs-item-inner {
+  border-radius: 12px;
+  box-shadow: 0 26px 65px -25px rgba(8, 80, 254, 0.25);
+  border: solid 0.8px rgba(8, 80, 254, 0.09);
+  background-color: #fdfeff;
+  padding: 40px 60px;
+}
+.cs-item-inner .quote-img img {
+  width: 59px;
+}
+.cs-item-inner .quote p {
+  font-size: 25px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.52;
+  letter-spacing: -0.56px;
+  color: #464040;
+  margin-top: 60px;
+}
+.customer-content-bottom {
+  margin-top: 60px;
+}
+p.cs-quote-name {
+   font-size: 17.5px;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.28;
+  letter-spacing: -0.39px;
+  color: #464040;
+  font-size: 22px;
+  margin: 0;
+}
+p.cs-quote-role {
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: -0.5px;
+  margin: 0;
+  color: #464040;
+}
+.cs-logo img {
+  width: 220px!important;
+  max-width: 100%!important;
+  margin-top: 10px;
+}
+.testimonial-section2 .customer-carousel .slick-dots li {
+  width: 49px;
+  height: 5px;
+  margin-right: 6px;
+}
+.testimonial-section2 .customer-carousel .slick-dots li button {
+  height: 5px;
+  width: 49px;
+  padding: 0;
+  border-radius: 0;
+  background: rgba(0,0,0,0.19);
+}
+.testimonial-section2 .customer-carousel .slick-dots li button:before {
+  display: none!important;
+}
+.testimonial-section2 .customer-carousel .slick-dots li.slick-active button { 
+  background-color: #0950fe; 
+}
+
+@media screen and (max-width: 767px) {
+  .cs-item-inner {
+    padding: 30px 40px; 
+  }
+  .testimonial-section2 .customer-carousel .slick-slide {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .cs-item-inner .quote p {
+    font-size: 20px; 
+  }
+  p.cs-quote-name {
+    font-size: 17px; 
+  }
+  p.cs-quote-role { 
+    font-size: 17px; 
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .cs-item-inner {
+    min-height: 600px!important; 
+  }
+  .cs-item-inner .quote p {
+    font-size: 22px;
+  } 
+  p.cs-quote-name {
+    font-size: 20px; 
+  }
+  p.cs-quote-name {
+    font-size: 18px; 
+  }
+} 

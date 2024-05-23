@@ -1,0 +1,101 @@
+<!--
+templateType: global_partial
+isAvailableForNewContent: false
+-->
+<!-- Begin partial -->
+<div class="cs_header">
+  <div class="page-center">
+    <div class="inner">
+      <div class="logo">
+        {% module "module_164927001400686" path="@hubspot/logo", label="Logo" %}
+      </div>
+      <div class="mobile-trigger">
+        <i></i>
+      </div>
+      <div class="menu-wrapper">
+        <div class="menu">
+          {% module "module_164927002797387" path="@hubspot/menu", label="Nevigation Menu" %}
+        </div>
+        <div class="btn-wrapper-outer">
+          {% module "module_164927009068191" path="/Startdeliver_June2020/modules/Button - Impact Day", label="Button" %}  
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End partial -->
+{% require_js %}
+<script>
+  
+  $(window).scroll(function() {
+		var sticky = $('.cs_header'),
+			scroll = $(window).scrollTop();
+		if (scroll > 50) sticky.addClass('fixed');
+		else sticky.removeClass('fixed');
+	});
+  
+  
+  $('.mobile-trigger').on('click',function(){
+    $('.cs_header .menu-wrapper').slideToggle(300);
+    $('body').toggleClass('mobile-open');
+  })
+</script>
+{% end_require_js %}
+
+
+{% require_css %}
+<style>
+  .cs_header { position: fixed; width: 100%; z-index: 999; top: 0; padding: 34px 0; }
+  .cs_header .inner { display: flex; flex-wrap: wrap; justify-content: space-between; align-items:center; }
+  .cs_header .menu-wrapper { display: flex; align-items: baseline; }
+  .cs_header .menu { padding-right: 20px; }
+  .cs_header .menu a { color: #fff; font-size: 14px; font-weight: 600; line-height: 18px; padding: 9px 15px; margin: 0 10px; }
+  .cs_header .btn-wrapper-outer { position: relative; }
+  .cs_header .btn-wrapper-outer:after { content: ''; position: absolute; height: 160px; width: 470px; background-image: url(https://5565021.fs1.hubspotusercontent-na1.net/hubfs/5565021/impact-day/SHAPE.png); background-size: contain; background-repeat: no-repeat; background-position: center; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: -1; margin-top: 39px; margin-left: 150px; }
+  .cs_header .menu ul { margin: 0; }
+  @media(min-width:992px){
+    .cs_header.fixed { background: #171717; padding: 24px 0 !important; overflow:hidden; }
+    .cs_header { transition: all 0.3s ease; }
+    .cs_header .logo img { width: 200px !important; transition: all 0.3s ease; }
+    .cs_header.fixed .logo img { width: 160px !important; }
+  }
+  @media(max-width:1439px){
+
+  }
+  @media(max-width:1200px){
+    .cs_header { padding: 34px 0; }
+    .cs_header .menu a { margin: 0 5px; padding: 9px 8px; }
+    .cs_header .menu { padding-right: 10px; }
+    .cs_header .logo img { width: 170px !important; }
+  }
+  @media(max-width:991px){
+    .cs_header .menu-wrapper { position: absolute; top: 100%; left: 0; display: none; width: 100%; background: #171717; flex-direction: column; width: 100%; }
+    .cs_header .menu ul { flex-direction: column; width: 100%; margin: 0; }
+    .cs_header .menu ul > div { width: 100%; }
+    .cs_header .menu { padding: 0; }
+    .cs_header .menu a { margin: 0; display: block; padding: 13px 15px; }
+    .cs_header .btn-wrapper a { width: 100%; text-align: center; border-radius: 0; padding: 13px 0; }
+    .cs_header .menu ul li + li { border-top: 1px solid #3a3a3a; }
+    .cs_header .page-center { width: 100%; max-width: 100%; }
+    .cs_header .menu-wrapper > div { width: 100%; }
+    .mobile-trigger { cursor: pointer; position: absolute; display: block; height: 26px; width: 31px; right: 15px; top: 0; bottom: 0; margin: auto; }
+    .mobile-trigger i { position: absolute; height: 3px; display: block; width: 100%; background: #b639a8; left: 0px; top: 50%; transform: translatey(-50%); transition: all 0.2s linear; }
+    .mobile-trigger i:After, .mobile-trigger i:before { content: ""; height: 100%; width: 100%; background: #b639a8; left: 0; position: absolute; }
+    .mobile-trigger i:After { top: 8px; transform: rotate(0deg); transition: transform 0.2s linear, top  0.2s linear 0.2s; }
+    .mobile-trigger i:before { top: -8px; transform: rotate(0deg); transition: transform 0.2s linear, top 0.2s linear 0.2s; }
+    .mobile-open .mobile-trigger i { background: transparent; transition: all 0.2s linear; }
+    .mobile-open .mobile-trigger i:after { transform: rotate(45deg); top: 0; transition: all 0.2s linear, transform 0.2s linear 0.2s; }
+    .mobile-open .mobile-trigger i:before { top: 0; transform: rotate(-45deg); transition: all 0.2s linear, transform 0.2s linear 0.2s; }
+    .cs_header { padding: 15px 0; position: absolute; }
+    body.mobile-open .cs_header { background: #171717; }
+    body.mobile-open { }
+    .cs_header { transition: all 0.3s ease; }
+  }
+  @media(max-width:767px){
+
+  }
+  @media(max-width:550px){
+
+  }
+</style>
+{% end_require_css %}

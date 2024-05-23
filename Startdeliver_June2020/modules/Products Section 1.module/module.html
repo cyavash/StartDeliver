@@ -1,0 +1,131 @@
+<div class="products-section1" style="background: url('{{ module.background_image.src }}') top right no-repeat;">
+  <div class="page-center">
+    <div class="row-fluid item1">
+      <div class="span6">
+        {% if module.item1.image_field.src %}
+          {% set sizeAttrs = 'width="{{ module.item1.image_field.width }}" height="{{ module.item1.image_field.height }}"' %}
+          {% if module.item1.image_field.size_type == 'auto' %}
+            {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+          {% elif module.item1.image_field.size_type == 'auto_custom_max' %}
+            {% set sizeAttrs = 'width="100%" height="auto" style="max-width: {{ module.item1.image_field.max_width }}px; max-height: {{ module.item1.image_field.max_height }}px"' %}
+          {% endif %}
+           {% set loadingAttr = module.item1.image_field.loading != 'disabled' ? 'loading="{{ module.item1.image_field.loading }}"' : '' %}
+          <img src="{{ module.item1.image_field.src }}" alt="{{ module.item1.image_field.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+        {% endif %}
+      </div>
+      <div class="span6">
+        {% if module.item1.image_2.src %}
+          {% set sizeAttrs = 'width="{{ module.item1.image_2.width }}" height="{{ module.item1.image_2.height }}"' %}
+          {% if module.item1.image_2.size_type == 'auto' %}
+            {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+          {% elif module.item1.image_2.size_type == 'auto_custom_max' %}
+            {% set sizeAttrs = 'width="100%" height="auto" style="max-width: {{ module.item1.image_2.max_width }}px; max-height: {{ module.item1.image_2.max_height }}px"' %}
+          {% endif %}
+           {% set loadingAttr = module.item1.image_2.loading != 'disabled' ? 'loading="{{ module.item1.image_2.loading }}"' : '' %}
+          <img src="{{ module.item1.image_2.src }}" alt="{{ module.item1.image_2.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+        {% endif %}
+        
+        {% inline_rich_text field="item1.content" value="{{ module.item1.content }}" %}
+      </div>
+    </div><!-- end row-fluid -->
+    
+    <div class="row-fluid item2">
+      <div class="span6 span6a">
+        {% if module.item2.image_field.src %}
+          {% set sizeAttrs = 'width="{{ module.item2.image_field.width }}" height="{{ module.item2.image_field.height }}"' %}
+          {% if module.item2.image_field.size_type == 'auto' %}
+            {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+          {% elif module.item2.image_field.size_type == 'auto_custom_max' %}
+            {% set sizeAttrs = 'width="100%" height="auto" style="max-width: {{ module.item2.image_field.max_width }}px; max-height: {{ module.item2.image_field.max_height }}px"' %}
+          {% endif %}
+           {% set loadingAttr = module.item2.image_field.loading != 'disabled' ? 'loading="{{ module.item2.image_field.loading }}"' : '' %}
+          <img class="img1" src="{{ module.item2.image_field.src }}" alt="{{ module.item2.image_field.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+        {% endif %}
+        
+        {% inline_rich_text field="item2.content" value="{{ module.item2.content }}" %}
+        
+        {% if module.item2.image_2.src %}
+          {% set sizeAttrs = 'width="{{ module.item2.image_2.width }}" height="{{ module.item2.image_2.height }}"' %}
+          {% if module.item2.image_2.size_type == 'auto' %}
+            {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+          {% elif module.item2.image_2.size_type == 'auto_custom_max' %}
+            {% set sizeAttrs = 'width="100%" height="auto" style="max-width: {{ module.item2.image_2.max_width }}px; max-height: {{ module.item2.image_2.max_height }}px"' %}
+          {% endif %}
+           {% set loadingAttr = module.item2.image_2.loading != 'disabled' ? 'loading="{{ module.item2.image_2.loading }}"' : '' %}
+          <img class="img2" src="{{ module.item2.image_2.src }}" alt="{{ module.item2.image_2.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+        {% endif %}
+      </div>
+      <div class="span6">
+        {% if module.item2.image_field3.src %}
+          {% set sizeAttrs = 'width="{{ module.item2.image_field3.width }}" height="{{ module.item2.image_field3.height }}"' %}
+          {% if module.item2.image_field3.size_type == 'auto' %}
+            {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+          {% elif module.item2.image_field3.size_type == 'auto_custom_max' %}
+            {% set sizeAttrs = 'width="100%" height="auto" style="max-width: {{ module.item2.image_field3.max_width }}px; max-height: {{ module.item2.image_field3.max_height }}px"' %}
+          {% endif %}
+           {% set loadingAttr = module.item2.image_field3.loading != 'disabled' ? 'loading="{{ module.item2.image_field3.loading }}"' : '' %}
+          <img class="img3" src="{{ module.item2.image_field3.src }}" alt="{{ module.item2.image_field3.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+        {% endif %}
+      </div>
+    </div><!-- end row-fluid -->
+    
+    <div class="row-fluid item3">
+      <div class="span6">
+        {% if module.item3.image_field.src %}
+            {% set sizeAttrs = 'width="{{ module.item3.image_field.width }}" height="{{ module.item3.image_field.height }}"' %}
+            {% if module.item3.image_field.size_type == 'auto' %}
+              {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+            {% elif module.item3.image_field.size_type == 'auto_custom_max' %}
+              {% set sizeAttrs = 'width="100%" height="auto" style="max-width: {{ module.item3.image_field.max_width }}px; max-height: {{ module.item3.image_field.max_height }}px"' %}
+            {% endif %}
+             {% set loadingAttr = module.item3.image_field.loading != 'disabled' ? 'loading="{{ module.item3.image_field.loading }}"' : '' %}
+            <img src="{{ module.item3.image_field.src }}" alt="{{ module.item3.image_field.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+          {% endif %}
+      </div>
+      <div class="span6">
+        {% if module.item3.image_2.src %}
+          {% set sizeAttrs = 'width="{{ module.item3.image_2.width }}" height="{{ module.item3.image_2.height }}"' %}
+          {% if module.item3.image_2.size_type == 'auto' %}
+            {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+          {% elif module.item3.image_2.size_type == 'auto_custom_max' %}
+            {% set sizeAttrs = 'width="100%" height="auto" style="max-width: {{ module.item3.image_2.max_width }}px; max-height: {{ module.item3.image_2.max_height }}px"' %}
+          {% endif %}
+           {% set loadingAttr = module.item3.image_2.loading != 'disabled' ? 'loading="{{ module.item3.image_2.loading }}"' : '' %}
+          <img src="{{ module.item3.image_2.src }}" alt="{{ module.item3.image_2.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+        {% endif %}
+        
+        {% inline_rich_text field="item3.content" value="{{ module.item3.content }}" %}
+      </div>
+    </div><!-- end row-fluid -->
+    
+    <div class="row-fluid item4">
+      <div class="span5">
+        {% if module.item4.image_field.src %}
+          {% set sizeAttrs = 'width="{{ module.item4.image_field.width }}" height="{{ module.item4.image_field.height }}"' %}
+          {% if module.item4.image_field.size_type == 'auto' %}
+            {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+          {% elif module.item4.image_field.size_type == 'auto_custom_max' %}
+            {% set sizeAttrs = 'width="100%" height="auto" style="max-width: {{ module.item4.image_field.max_width }}px; max-height: {{ module.item4.image_field.max_height }}px"' %}
+          {% endif %}
+           {% set loadingAttr = module.item4.image_field.loading != 'disabled' ? 'loading="{{ module.item4.image_field.loading }}"' : '' %}
+          <img src="{{ module.item4.image_field.src }}" alt="{{ module.item4.image_field.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+        {% endif %}
+        
+        {% inline_rich_text field="item4.content" value="{{ module.item4.content }}" %}
+      </div>
+      <div class="span7">
+        {% if module.item4.image_2.src %}
+          {% set sizeAttrs = 'width="{{ module.item4.image_2.width }}" height="{{ module.item4.image_2.height }}"' %}
+          {% if module.item4.image_2.size_type == 'auto' %}
+            {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+          {% elif module.item4.image_2.size_type == 'auto_custom_max' %}
+            {% set sizeAttrs = 'width="100%" height="auto" style="max-width: {{ module.item4.image_2.max_width }}px; max-height: {{ module.item4.image_2.max_height }}px"' %}
+          {% endif %}
+           {% set loadingAttr = module.item4.image_2.loading != 'disabled' ? 'loading="{{ module.item4.image_2.loading }}"' : '' %}
+          <img src="{{ module.item4.image_2.src }}" alt="{{ module.item4.image_2.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+        {% endif %}
+        
+      </div>
+    </div><!-- end row-fluid -->
+  </div><!-- end page-center -->
+</div><!-- end products-section1 -->

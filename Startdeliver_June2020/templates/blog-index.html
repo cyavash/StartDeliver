@@ -1,0 +1,214 @@
+<!--
+templateType: blog
+isAvailableForNewContent: true
+label: Blog Listing
+-->
+{% extends "./layouts/base_2024.html" %}
+
+{% block header %}
+<div class="hs-home-layout">
+  {% global_partial path="../templates/partials/header_2021.html" %}
+  {% endblock header %}
+  {% block body %}
+  {% if blog_author %}
+  <div class="blog-header">
+    <div class="blog-header__inner">
+      {% if blog_author.avatar %}
+      <div class="blog-header__author-avatar" style="background-image: url('{{ blog_author.avatar }}');"></div>
+      {% endif %}
+      <h1 class="blog-header__title">{{ blog_author.display_name }}</h1>
+      <h4 class="blog-header__subtitle">{{ blog_author.bio }}</h4>
+      {% if blog_author.has_social_profiles %}
+      <div class="blog-header__author-social-links">
+        {% if blog_author.website %}
+        <a href="{{ blog_author.website }}" target="_blank">
+          {% icon name="link" style="SOLID" width="10" %}
+        </a>
+        {% endif %}
+        {% if blog_author.facebook %}
+        <a href="{{ blog_author.facebook }}" target="_blank">
+          {% icon name="facebook-f" style="SOLID" width="10" %}
+        </a>
+        {% endif %}
+        {% if blog_author.linkedin %}
+        <a href="{{ blog_author.linkedin }}" target="_blank">
+          {% icon name="linkedin-in" style="SOLID" width="10" %}
+        </a>
+        {% endif %}
+        {% if blog_author.twitter %}
+        <a href="{{ blog_author.twitter }}" target="_blank">
+          {% icon name="twitter" style="SOLID" width="10" %}
+        </a>
+        {% endif %}
+      </div>
+      {% endif %}
+    </div>
+  </div>
+  {% endif %}
+  <div class="custom-blog-list">
+    <div class="custom-blog-inner">
+      {% if current_page_num ==1 %}
+      <div class="custom-featured-post">
+        <div class="page-center">
+          <div class="custom-blog-row">
+            {% for content in contents %}
+            {% if loop.index==1 %}
+            <div class="custom-col-8">
+              <div class="featured_wrapper">
+                <div class="custom-col-6">
+                  {% if content.featured_image %}
+                  <div class="featured-post__image" style="background-image: url('{{ content.featured_image }}')";>
+                  </div>
+                  {% endif %}
+                </div>
+                <div class="custom-col-6">
+                  <div class="featured-post__content">
+                    <h4>FEATURED</h4>
+                    <div class="featured-post__category">
+                      {% for tag in content.tag_list %}
+                      <a class="blog-post__tag-link" href="{{ blog_tag_url(group.id, tag.slug) }}">{{ tag.name }}</a>{% if not loop.last %},{% endif %}
+                      {% endfor %}
+                    </div>
+                    <h2 class="featured-post__title">
+                      {{ content.name }}
+                    </h2>
+                    <div class="featured-post__button">
+                      <button class="read-more">
+                        <a href="{{content.absolute_url}}">Read the post </a>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {% endif %}
+            {% endfor %}
+            <div class="custom-col-4">
+              <div class="popular_entry__wrapper">
+                <div class="popular_post__holder">
+                  <h4 class="popular_heading"> Popular Posts</h4>
+                  {% set pop_posts = blog_popular_posts('default', 3) %}
+                  {% for pop_post in pop_posts %}
+                  <div class="popular_post_title">
+                    <a href="{{ pop_post.absolute_url }}">{{ pop_post.name }}</a>
+                  </div>
+                  <div class="read_more__popular"> 
+                    <a class="read_more" href="{{ pop_post.absolute_url }}">  Read More <i class="fas fa-angle-right read_more"></i></a>
+                  </div>
+                  {% endfor %}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endif %}
+      {% else %}
+      <div class="custom-blog-holder">
+        <div class="page-center">
+          <div class="categories_list__title">
+            <span class="view">View: </span>
+            <ul>
+              {% set my_tags = blog_tags('default', 250) %}
+              <li>
+                <a href="{{ group.absolute_url }}" {% if not topic %}class="active"{% endif %}>ALL TOPICS </a>
+              </li>
+              {% for item in my_tags %}
+              <li><a {% if topic %}{% if content|attr('absolute_url') == blog_tag_url(group.id, item.slug) %}class="active"{% endif %}{% endif %} href="{{ blog_tag_url(group.id, item.slug) }}">{{ item }}</a></li>
+              {% endfor %}
+            </ul>
+          </div>
+          <div class="custom-listing-posts">
+            <div class="listing-posts_row ">
+              {% for content in contents %}
+              {% if current_page_num ==1 %}
+              {% if loop.index>1 %}
+              <div class="custom-blog-post">
+                <a href="{{content.absolute_url}}">
+                  <div class="custom-blog-post-inner">
+                    {% if content.featured_image %}
+                    <div class="listing-post__image" style="background-image: url('{{ content.featured_image }}')";>
+                    </div>
+                    {% endif %}
+                    <div class="title_category__holder">     
+                      <h2 class="listing-post__title">{{ content.name }}</h2>
+                      <div class="listing-post__category">
+                        {% for tag in content.tag_list %}
+                        {{ tag.name }}{% if not loop.last %},{% endif %}
+                        {% endfor %}
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              {% if loop.index==5 %}
+              <div class="container_wrapper container_wrapper--wide p-0">
+                <div class="book-demo ">
+                  <div class="book-demo__inner p-0">
+                    <h5 class="book_demo__header">Would you like a demo of Startdeliver?</h5>
+                    <div class="book_demo__blurb"><p>Start making impact with a next generation Customer Success Software.</p>
+                    </div>
+                    <div class="button-holder">
+                      <a href="#book-a-demo" class="btn">Book a demo</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {% endif %}
+              {% endif %}
+              {% else %}
+              <div class="custom-blog-post">
+                <a href="{{content.absolute_url}}">
+                  <div class="custom-blog-post-inner">
+                    {% if content.featured_image %}
+                    <div class="listing-post__image" style="background-image: url('{{ content.featured_image }}')";>
+                    </div>
+                    {% endif %}
+                    <div class="title_category__holder">     
+                      <h2 class="listing-post__title">{{ content.name }}</h2>
+                      <div class="listing-post__category">
+                        {% for tag in content.tag_list %}
+                        {{ tag.name }}{% if not loop.last %},{% endif %}
+                        {% endfor %}
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              {% endif %}
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    {% if contents.total_page_count > 1 %}
+    <div class="blog-pagination">
+      {% set page_list = [-2, -1, 0, 1, 2] %}
+      {% if contents.total_page_count - current_page_num == 1 %}{% set offset = -1 %}
+      {% elif contents.total_page_count - current_page_num == 0 %}{% set offset = -2 %}
+      {% elif current_page_num == 2 %}{% set offset = 1 %}
+      {% elif current_page_num == 1 %}{% set offset = 2 %}
+      {% else %}{% set offset = 0 %}{% endif %}
+
+      <a class="blog-pagination__link blog-pagination__prev-link {{ "blog-pagination__prev-link--disabled" if !last_page_num }}" href="{{ blog_page_link(last_page_num) }}">
+        {% icon name="chevron-left" style="SOLID", width="13", no_wrapper=True %}
+        Prev
+      </a>
+      {% for page in page_list %}
+      {% set this_page = current_page_num + page + offset %}
+      {% if this_page > 0 and this_page <= contents.total_page_count %}
+      <a class="blog-pagination__link blog-pagination__number-link {{ "blog-pagination__link--active" if this_page == current_page_num }}" href="{{ blog_page_link(this_page) }}">{{ this_page }}</a>
+      {% endif %}
+      {% endfor %}
+      <a class="blog-pagination__link blog-pagination__next-link {{ "blog-pagination__next-link--disabled" if !next_page_num }}" href="{{ blog_page_link(current_page_num + 1) }}">
+        Next
+        {% icon name="chevron-right" style="SOLID", width="13", no_wrapper=True %}
+      </a>
+    </div>
+    {% endif %}
+  </div>
+  {% module "bottom_pane" path="../modules/Bottom pane.module" %}
+  {% endblock body %}
+</div>

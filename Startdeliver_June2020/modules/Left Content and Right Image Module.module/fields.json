@@ -1,0 +1,83 @@
+[ {
+  "id" : "73bd59fb-7d34-8410-082c-152eb8083b51",
+  "name" : "heading",
+  "display_width" : null,
+  "label" : "Heading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Get More Time with <br> <b>Your Customers</b>"
+}, {
+  "id" : "32c3bc87-7911-7238-bfd7-b224cb8ca09d",
+  "name" : "content",
+  "display_width" : null,
+  "label" : "Content",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<p>Startdeliver is built to simplify the day-to-day for Customer Success Managers. With Startdeliver you will be on top of everything - freeing up your time to spend it with Customers.</p>"
+}, {
+  "id" : "d2e4e78b-3318-49a0-b7d0-e1fbe7e99802",
+  "name" : "right_image",
+  "display_width" : null,
+  "label" : "Right Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://f.hubspotusercontent20.net/hubfs/5565021/Startdeliver_June2020/Image/TodayTaskImage.png",
+    "alt" : "TodayTaskImage",
+    "loading" : "lazy",
+    "width" : 537,
+    "height" : 292,
+    "max_width" : 537,
+    "max_height" : 292
+  }
+}, {
+  "id" : "ea21a5a0-db69-255e-06b6-70292797e4e3",
+  "name" : "shape_image",
+  "display_width" : null,
+  "label" : "Shape Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "src" : "https://f.hubspotusercontent20.net/hubfs/5565021/Startdeliver_June2020/Image/BannerShapeImage.png",
+    "alt" : "BannerShapeImage",
+    "width" : 926,
+    "height" : 736,
+    "max_width" : 926,
+    "max_height" : 736
+  }
+}, {
+  "id" : "8679ac27-b2aa-15fb-b7b2-16f2f7ab3fe6",
+  "name" : "dot_shape_image",
+  "display_width" : null,
+  "label" : "Dot Shape Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : false,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://f.hubspotusercontent20.net/hubfs/5565021/Startdeliver_June2020/Image/BannerDotImage.png",
+    "alt" : "BannerDotImage",
+    "loading" : "disabled",
+    "width" : 158,
+    "height" : 158,
+    "max_width" : 158,
+    "max_height" : 158
+  }
+} ]

@@ -1,0 +1,41 @@
+<!--
+templateType: blog
+isAvailableForNewContent: true
+label: Blog Post
+-->
+{% extends "./layouts/base_2024.html" %}
+
+{% block header %}
+<div class="hs-home-layout">
+  {% global_partial path="../templates/partials/header_2021.html" %}
+  {% endblock header %}
+  {% block body %}
+  <div class="custom-blog-banner" style="background-image:url('{{ content.featured_image }}');">
+    <div class="page-center">
+      <div class="custom-blog-banner-inner">
+        <div>
+          <time class="updated" >{{ content.publish_date_localized }}</time>
+        </div>
+        <h1>{{ content.name }}</h1>
+        <div class="custom-banner-tag">
+          {% icon name="tag" style="SOLID" %}
+          {% for tag in content.tag_list %}
+          <a href="{{ blog_tag_url(group.id, tag.slug) }}">{{ tag.name }}</a>{% if not loop.last %} {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="custom-post-content">
+    <div class="custom-blog-content">
+      <div class="custom-blog-content__content">
+        {{ content.post_body }}
+      </div>
+    </div>
+  </div>
+  <!--   <div class="content-wrapper">
+<div class="blog-comments">
+{% module "blog_comments" path="@hubspot/blog_comments", label="Blog Comments" %}
+</div>
+</div> -->
+  {% endblock body %}

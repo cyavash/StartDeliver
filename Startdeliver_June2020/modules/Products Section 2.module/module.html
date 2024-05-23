@@ -1,0 +1,28 @@
+<div class="products-section2">
+  <div class="page-center">
+    <h2>
+      {{ module.heading }}
+    </h2>
+    
+    {% for item in module.item %}      
+    <div class="row-fluid row-fluid{{ loop.index }}">
+      <div class="span5">
+        {% if item.image_field.src %}
+            {% set sizeAttrs = 'width="{{ item.image_field.width }}" height="{{ item.image_field.height }}"' %}
+            {% if item.image_field.size_type == 'auto' %}
+              {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+            {% elif item.image_field.size_type == 'auto_custom_max' %}
+              {% set sizeAttrs = 'width="100%" height="auto" style="max-width: {{ item.image_field.max_width }}px; max-height: {{ item.image_field.max_height }}px"' %}
+            {% endif %}
+             {% set loadingAttr = item.image_field.loading != 'disabled' ? 'loading="{{ item.image_field.loading }}"' : '' %}
+            <img src="{{ item.image_field.src }}" alt="{{ item.image_field.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+          {% endif %}
+          <strong>{{ item.title }}</strong>
+      </div>
+      <div class="span7">
+        {% inline_rich_text field="content" value="{{ item.content }}" %}
+      </div>
+    </div><!-- end row-fluid -->
+    {% endfor %}
+  </div><!-- end page-center -->
+</div><!-- end products-section2 -->

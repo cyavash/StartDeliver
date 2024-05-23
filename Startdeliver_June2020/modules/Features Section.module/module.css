@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box; 
+}
+
+.features {
+  clear: both;
+  margin: 100px 0;
+}
+.features h2 {
+   font-size: 32px;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.28;
+  letter-spacing: -0.71px;
+  color: #464040;
+  padding-bottom: 10px;
+}
+.features h2 strong {
+  font-weight: bold;
+  display: block;
+}
+.features p {
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.35;
+  letter-spacing: -0.2px;
+  color: #434343;
+  opacity: 0.8;
+  margin-bottom: 30px;
+}
+.features-item {
+  margin-top: 59px;  
+  margin-top: 29px;
+  border-radius: 12px;
+  box-shadow: 0 26px 65px -25px rgba(8, 80, 254, 0.25);
+  border: solid 0.8px rgba(8, 80, 254, 0.09);
+  background-color: #fdfeff;
+  padding: 29px 20px;
+}
+.features-item img {
+  margin-bottom: 5px;
+}
+.features-item h3 {
+  font-size: 16px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.35;
+  letter-spacing: -0.16px;
+  color: #434343;
+  opacity: 0.8;
+}
+.features-item p {
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.35;
+  letter-spacing: -0.16px;
+  color: #434343;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.lets-talk-box {
+  position: relative;
+  margin-top: 59px;
+  margin-top: 90px;
+  margin-top: 77px;
+}
+.lets-talk-box img {
+  margin-left: 25px; 
+}
+.lets-talk-box a.cta_button {
+  margin-top: 13px; 
+}
+.lets-talk-box a.cta_button span {
+    font-family: 'IBM Plex Sans',sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -0.11px;
+    text-align: center;
+    color: #0950fe;
+    line-height: 60px;  
+}
+.lets-talk-box a.cta_button:hover{
+  background-color: #0950fe!important;
+}
+.lets-talk-box a.cta_button:hover span {
+  color: #FFF; 
+}
+.lets-talk-box:before {
+  
+}
+
+@media screen and (min-width: 768px) {
+  .features .span3:nth-child(5n) {
+    margin-left: 0!important;
+    clear: left;
+  }
+  .features .row-fluid-flex {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .features .span3 {
+    height: 100%; 
+  }
+  .features-item {
+    height: 100%; 
+  }
+  .features-item { 
+    min-height: 260px!important;
+  }
+}

@@ -1,0 +1,53 @@
+<div class='speakers-section' style='background-color:{{ module.background_color.css }};'>
+  <div class='page-center'>
+    <div class='speakers-heading'>
+      <h2>
+        {{ module.section_heading }}
+      </h2>
+    </div>
+    <div class='speakers-listings'>
+      {% for item in module.add_speakers %}
+      <div class='speakers-card'>
+        <div class='speakers-detail'>
+          <div class='speakers-name'>
+            <h3>
+              {{ item.speakers_name }}
+            </h3>
+          </div>
+          <div class='speakers-bio'>
+            {{ item.speakers_bio }}
+          </div>
+        </div>
+        <div class='speakers-image'>
+          <div class='speakers-image-inner'>
+            {% if item.speakers_image.src %}
+            {% set sizeAttrs = 'width="{{ item.speakers_image.width }}" height="{{ item.speakers_image.height }}"' %}
+            {% if item.speakers_image.size_type == 'auto' %}
+            {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+            {% elif item.speakers_image.size_type == 'auto_custom_max' %}
+            {% set sizeAttrs = 'width="{{ item.speakers_image.max_width }}" height="{{ item.speakers_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+            {% endif %}
+            {% set loadingAttr = item.speakers_image.loading != 'disabled' ? 'loading="{{ item.speakers_image.loading }}"' : '' %}
+            <img src="{{ item.speakers_image.src }}" alt="{{ item.speakers_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+<style>  
+  {% if border_color %}
+    .courses-image:after {
+      background-color: {{ module.border_color.color }};
+    }
+    .courses-content ul li:before {
+      content: "\f00c";  
+      font: normal normal normal 22px/1 FontAwesome;
+      background: none!important;
+      color: {{ module.border_color.color }};
+    }
+  {% endif %}
+</style>

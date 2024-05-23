@@ -1,0 +1,111 @@
+[ {
+  "id" : "4180e638-7d39-a298-b244-c49954d80371",
+  "name" : "section_heading",
+  "display_width" : null,
+  "label" : "Section Heading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Speakers"
+}, {
+  "id" : "c1eb4508-0d55-565c-5c0b-0c60e173c23d",
+  "name" : "add_speakers",
+  "display_width" : null,
+  "label" : "Add Speakers",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : "7ae78dd7-8234-d044-d0f0-41462607882f",
+    "default" : 1
+  },
+  "children" : [ {
+    "id" : "7ae78dd7-8234-d044-d0f0-41462607882f",
+    "name" : "speakers_name",
+    "display_width" : null,
+    "label" : "Speakers Name",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Lincoln Murphy"
+  }, {
+    "id" : "5a170dac-b60f-5d21-b2cc-4a3031ced16c",
+    "name" : "speakers_bio",
+    "display_width" : null,
+    "label" : "Speakers Bio",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<p>Lincoln Murphy is a world-renowned Growth Architect, Consultant, Author, and Keynote Speaker. As one of the earliest evangelists for Customer Success, Lincoln was invited to co-author the book on Customer Success.</p>"
+  }, {
+    "id" : "66d8be41-a892-aec6-578b-90998129e455",
+    "name" : "speakers_image",
+    "display_width" : null,
+    "label" : "Speakers Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent20.net/hubfs/5565021/Startdeliver_June2020/Image/Speaker_image.png",
+      "alt" : "Speaker_image",
+      "loading" : "lazy",
+      "width" : 445,
+      "height" : 298,
+      "max_width" : 445,
+      "max_height" : 298
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : [ {
+    "speakers_name" : "Lincoln Murphy",
+    "speakers_bio" : "<p>Lincoln Murphy is a world-renowned Growth Architect, Consultant, Author, and Keynote Speaker. As one of the earliest evangelists for Customer Success, Lincoln was invited to co-author the book on Customer Success.</p>",
+    "speakers_image" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent20.net/hubfs/5565021/Startdeliver_June2020/Image/Speaker_image.png",
+      "alt" : "Speaker_image",
+      "loading" : "lazy",
+      "width" : 445,
+      "height" : 298,
+      "max_width" : 445,
+      "max_height" : 298
+    }
+  } ]
+}, {
+  "id" : "8cbbe929-7bde-414f-9c9f-082fc0341b70",
+  "name" : "background_color",
+  "display_width" : null,
+  "label" : "Background Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#2E2E2E",
+    "opacity" : 100
+  }
+}, {
+  "id" : "7dbd13cc-8658-6283-a4f3-b71d8dfd909f",
+  "name" : "border_color",
+  "display_width" : null,
+  "label" : "Border Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : null,
+    "opacity" : null
+  }
+} ]

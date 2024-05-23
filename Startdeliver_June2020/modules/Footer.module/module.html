@@ -1,0 +1,71 @@
+<div id="footer">
+  <div class="page-center">
+    <div class="footer-logo">
+      <a href="https://www.startdeliver.com/">
+      {% if module.footer_logo.src %}
+        {% set sizeAttrs = 'width="{{ module.footer_logo.width }}" height="{{ module.footer_logo.height }}"' %}
+        {% if module.footer_logo.size_type == 'auto' %}
+          {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+        {% elif module.footer_logo.size_type == 'auto_custom_max' %}
+          {% set sizeAttrs = 'width="100%" height="auto" style="max-width: {{ module.footer_logo.max_width }}px; max-height: {{ module.footer_logo.max_height }}px"' %}
+        {% endif %}
+        <img src="{{ module.footer_logo.src }}" alt="{{ module.footer_logo.alt }}" {{ sizeAttrs }}>
+      {% endif %}
+      </a>  
+    </div>
+    
+    <div class="row-fluid">
+      <div class="span8 footer-span8">
+        <div class="span4 footer-list1">
+           {% inline_rich_text field="footer_list_1" value="{{ module.footer_list_1 }}" %}
+          <div class="footer-list2">
+            {% inline_rich_text field="footer_list_5" value="{{ module.footer_list_5 }}" %}
+          </div>
+        </div>
+        <div class="span4 footer-list3">
+           {% inline_rich_text field="footer_list_2" value="{{ module.footer_list_2 }}" %}
+        </div>
+        <div class="span4 footer-list4">
+           {% inline_rich_text field="footer_list_6" value="{{ module.footer_list_6 }}" %}
+        </div>
+      </div>
+      <div class="span4">
+        <div class="span6 footer-list5">
+           {% inline_rich_text field="footer_list_4" value="{{ module.footer_list_4 }}" %}
+        </div>
+        <div class="span6 footer-list">
+           {% inline_rich_text field="footer_list_3" value="{{ module.footer_list_3 }}" %}
+        </div>
+      </div>
+    </div><!-- end row-fluid -->
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <div class="footer-social">
+      <div class="footer-social-inner">
+        {% for item in module.social_item %}
+        <a href="{{ item.social_link }}" class="social-item">
+          {{ item.social_icon }}
+        </a>
+        {% endfor %}
+      </div>  
+    </div>
+    
+    <div class="row-fluid" style="clear: both;">
+     <!-- <div class="span2"> 
+        &nbsp;
+      </div>-->
+      <div class="span6">
+        <div class="footer-contact">
+          {% inline_rich_text field="footer_contact" value="{{ module.footer_contact }}" %}
+        </div>
+      </div>
+      <div class="span6">
+        <div class="footer-copyright">
+          {% inline_rich_text field="footer_copyright" value="{{ module.footer_copyright }}" %}
+        </div>
+      </div>
+    </div><!-- end row-fluid -->
+    
+  </div><!-- end page-center -->
+</div><!-- end footer -->

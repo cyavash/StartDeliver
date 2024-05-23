@@ -1,0 +1,48 @@
+<div class="{{name}} cta-wrap">
+  <div class="page-center">
+    <div class="cta-otr ">   
+      <div class="cta-inner"> 
+      {% if module.heading %}
+        <div class="cta-header">
+          <h3>{{ module.heading }}</h3>
+        </div> 
+      {% endif %}  
+      {% if module.content %}
+        <div class="cta-txt"> 
+          {{ module.content }}
+        </div>  
+       {% endif %}  
+       {% if module.button.text %} 
+         <div class="cta-btn {{ module.button.class }}"> 
+           {% set href = module.button.link.url.href %}
+            {% if module.button.link.url.type is equalto "EMAIL_ADDRESS" %}
+              {% set href = "mailto:" + href %}
+            {% endif %}
+            <a href="{{ href }}"
+              {% if module.button.link.open_in_new_tab %}target="_blank"{% endif %}
+              {% if module.button.link.rel %}rel="{{ module.button.link.rel }}"{% endif %}
+              >
+              {{ module.button.text }}
+            </a>  
+         </div> 
+        {% endif %}  
+      </div>    
+    </div> 
+	</div>
+</div>
+
+ 
+{% require_css %}
+<style> 
+   
+  .{{name}}.cta-wrap { 
+      background: {{ module.bg_gradient }}; 
+  } 
+   
+  
+</style>
+{% end_require_css %}
+
+
+
+

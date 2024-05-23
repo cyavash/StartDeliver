@@ -1,0 +1,12 @@
+<!--
+templateType: global_partial
+label: Page Header
+-->
+<header class="custom-header no-nav">
+  <div class="header">
+    <div class="custom-header-logo">
+      {% set logo_file =  get_asset_url('../../images/startdeliver-logo.png') %}
+      {% module "header_logo" path="@hubspot/logo", label="Header Logo", link='/',  label="Header Logo", img={src="{{logo_file}}", width= 242, override_inherited_src= true} %}
+    </div>
+  </div>
+</header>

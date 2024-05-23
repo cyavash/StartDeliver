@@ -1,0 +1,68 @@
+<div class="impact-about" id="about">
+    <div class="page-center">
+         <div class="row">
+           <div class="single-box">
+                 <div class="content">
+                     <span class="tag">{{ module.small_title }}</span>
+                     <h2>{{ module.title }}</h2>
+                     <div class="text">
+                         {{ module.content }}
+                     </div>
+                 </div>
+             </div>
+             <div class="single-box">
+                 <div class="thumb-wrapper">
+                     <img class="shape-2" src="https://5565021.fs1.hubspotusercontent-na1.net/hubfs/5565021/impact-day/Stars.png">
+                     <img class="shape-3" src="https://5565021.fs1.hubspotusercontent-na1.net/hubfs/5565021/impact-day/Vector%20green.png">
+                     <div class="thumb">
+                       <img src="{{ module.thumb_1.src }}" alt="{{ module.thumb_1.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                       <img src="{{ module.thumb_2.src }}" alt="{{ module.thumb_2.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                     </div>
+                 </div>
+             </div>
+         </div>
+    </div>
+</div>
+
+
+{% require_css %}
+<style>
+  .impact-about { padding: 100px 0; margin-bottom: 70px; color: #2E2E2E; }
+  .impact-about .row { display: flex; flex-wrap: wrap; }
+  .impact-about .row > div { width: 50%; }
+  .impact-about .thumb-wrapper { position: relative; margin: 0 110px; }
+  .impact-about .thumb-wrapper > img { position: absolute; }
+  .impact-about .thumb-wrapper .thumb { position: relative; z-index: 3; display: flex; align-items: center; justify-content: space-between; width:495px; }
+  .impact-about .thumb-wrapper .thumb img { width: 235px; height: 260px; }
+  .impact-about .thumb-wrapper .thumb img + img { position: relative; top: 110px; }
+  .impact-about .thumb-wrapper > img.shape-1 { top: -10px; left: 280px; z-index: 2; }
+  .impact-about .thumb-wrapper > img.shape-2 { bottom: -105px; z-index: 2; left: 50px; }
+  .impact-about .thumb-wrapper > img.shape-3 { left: 0; z-index: 1; }
+  .impact-about .text { padding: 10px 0 0; }
+  @media(max-width:1339px){
+    .impact-about .thumb-wrapper > img.shape-3 { left: -40px; }
+  }
+  @media(max-width:1200px){
+    .impact-about .thumb-wrapper .thumb img { height: auto; width: 46%; }
+    .impact-about .thumb-wrapper .thumb { max-width: 100%; padding-right: 50px; }
+    .impact-about { padding: 100px 0 70px; margin-bottom: 0; }
+  }
+  @media(max-width:991px){
+    .impact-about .row > div { width: 100%; }
+    .impact-about .thumb-wrapper .thumb { padding: 0; }
+    .impact-about .thumb-wrapper { width: 520px; margin: 0 auto 170px; }
+    .impact-about { padding: 70px 0 50px; }
+  }
+  @media(max-width:767px){
+
+  }
+  @media(max-width:575px){
+    .impact-about .single-box { margin-bottom:30px; }
+    .impact-about .thumb-wrapper { max-width: 100%; }
+    .impact-about { overflow: hidden; padding: 60px 0 30px; }
+    .impact-about .thumb-wrapper .thumb img { width: 47%; }
+    .impact-about .thumb-wrapper > img.shape-1 { right: 20px; left: auto; }
+  }
+</style>
+{% end_require_css %}
+

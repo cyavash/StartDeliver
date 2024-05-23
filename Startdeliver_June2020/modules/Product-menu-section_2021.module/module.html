@@ -1,0 +1,19 @@
+
+<div class='product-mega-menu' style='display:none;'>
+  <div class='product-mega'>
+    {% for item in module.sub_menu %}
+    <div class='menu-card'>
+      <p>
+        {{ item.sub_menu_title }}
+      </p>
+      <ul class='product-submenu level-2'>
+        {% for item2 in item.add_menu %}
+        <li class='no-submenu menu-item'><a class='menu-link' href='{{ item2.page_url.href }}'>{{ item2.menu_text }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
+

@@ -1,0 +1,207 @@
+.page-center {
+    max-width: 1260px !important;
+}
+
+html body .custom-menu-primary .submenu.level-1>li.get-a-demo>a {
+    background: #F51AA4 !important;
+    border: 1px solid #F51AA4 !important; 
+    font-weight: 700 !important;
+    transition: all .7s ease;
+}
+html body .cta-btn a.cta_button {
+  color: #FFF!important;
+  border-radius: 0!important;
+  font-size: 18px!important;
+  min-width: 150px!important;
+  padding: 13px 20px!important;
+  font-weight: 700!important;
+  letter-spacing: -0.105px!important;
+  min-width: 180px!important;
+  padding: 15px 30px!important;
+  text-align: center!important;
+  transition: all .7s ease!important;
+  text-decoration: none!important;
+  background: #2053FD!important;
+}
+.cta-btn a.cta_button:hover {
+   background: #133098!important
+}
+
+html body .custom-menu-primary .submenu.level-1>li.get-a-demo>a:hover ,
+html body .custom-menu-primary .submenu.level-1>li.get-a-demo>a:focus {
+    background: #c9007f !important;
+    border: 1px solid #c9007f !important;
+    transition: all .7s ease;  
+}
+
+body .custom-menu-primary .submenu.level-1>li.log-in a,
+body .custom-menu-primary .submenu.level-1>li.login a 
+{
+    border: 1px solid #0850FE !important; 
+    color: #0850FE !important;
+    font-weight: 700 !important;
+    transition: all .7s ease;
+}
+
+body .custom-menu-primary .submenu.level-1>li.log-in a:hover, 
+body .custom-menu-primary .submenu.level-1>li.login a:hover 
+{ 
+    background-color: #0850fe!important;
+    color: #fff!important;
+    border: 1px solid #0850fe !important;
+    transition: all .7s ease;
+}
+
+/* Hero Styles */
+ 
+.hero-wrap {
+    display: inline-block;
+    padding: 220px 0 80px;
+    position: relative;
+    width: 100%;
+}
+ 
+.hero-otr {
+    text-align: center; 
+    position: relative;
+    z-index: 9;
+}
+
+.hero-inner {
+    margin: 0 auto;
+    max-width: 880px;
+    padding-bottom: 55px;
+}
+  
+.hero-header h1 { 
+    font-weight: 400;
+    letter-spacing: -0.71px;
+    line-height: .9;
+}
+
+.hero-header h1 span {
+    font-weight: bold; 
+}
+
+.hero-txt p {
+    font-weight: 400;
+    font-size: 32px;
+}
+  
+.hero-btn {
+    padding-top: 10px;
+}
+
+.hero-header {
+    padding-bottom: 15px;
+}
+ 
+.hero-img {
+    position: absolute !important;
+    right: 0px;
+    top: 0px;
+}
+
+.hero-img2 {
+    position: absolute !important;
+    left: 0px;
+    top: 90px;
+}
+
+.hero-img1 img {
+    max-width: 570px;
+}
+
+.hero-embed .iframe_wrapper { 
+    padding-bottom: 70%; 
+}
+.hero-embed {
+    max-width: 850px;
+    margin: 0px auto;
+}
+
+/**/
+.btn-pink a {
+  box-shadow: none;
+  background: #2050FE;
+}
+.btn-pink a:hover,
+.btn-pink a:active
+{
+  background: #0E2370
+}
+
+.hero-header h1 {
+  font-size: 50px;
+  line-height: 1.3;
+  color: #000;
+  width: 578px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.hero-txt p {
+  font-size: 20px;
+  line-height: 1.5;
+  color: #000;
+  width: 694px;
+  max-width: 100%;
+  margin: 30px auto 40px auto;
+}
+.hero-header h1 span {
+  display: inline-block;
+  position: relative;
+  font-weight: 400;
+}
+.hero-header h1 span::after {
+    content: "";
+        background: url(https://5565021.fs1.hubspotusercontent-na1.net/hubfs/5565021/line.svg) 50% no-repeat;
+    background-size: cover;
+    bottom: 13px;
+    content: "";
+    display: inline-block;
+    height: 20px;
+    left: 2px;
+    max-width: 100%;
+    position: absolute;
+    width: 420px;
+    z-index: -1;
+}
+
+/******** Mobile Styling *********/
+@media (max-width: 1080px) {
+  .hero-wrap {
+      padding: 170px 0px 90px;
+  }
+  .hero-txt p {
+      font-size: 24px; 
+    font-size: 20px;
+  }
+  .hero-img1 img {
+      max-width: 420px;
+  }
+}
+@media (max-width: 992px) {
+ .hero-header h1 {
+    font-size: 40px;
+  } 
+  .hero-txt p { 
+    font-size: 18px; 
+  }
+}
+@media (max-width: 767px) {    
+  .hero-img1 img {
+      max-width: 250px;
+  }
+  .hero-img2 img {
+      max-width: 100px;
+  }
+  .hero-txt p {
+      font-size: 20px; 
+  } 
+}
+@media (max-width: 479px) {
+  .hero-img1 img {
+      max-width: 170px;
+  }
+}

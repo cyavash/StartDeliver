@@ -1,0 +1,41 @@
+[ {
+  "id" : "96e581a4-9054-a08a-5621-9f1d1d89f705",
+  "name" : "background_image",
+  "display_width" : null,
+  "label" : "Background Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : false,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://cdn2.hubspot.net/hubfs/5565021/Startdeliver_June2020/Image/logo.jpg",
+    "alt" : "logo",
+    "width" : 1421,
+    "height" : 280,
+    "max_width" : 1421,
+    "max_height" : 280
+  }
+}, {
+  "id" : "4e553545-a8fb-fd24-c0af-14b73274288e",
+  "name" : "image",
+  "display_width" : null,
+  "label" : "Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://f.hubspotusercontent20.net/hubfs/5565021/Startdeliver_June2020/Image/background.png",
+    "alt" : "background",
+    "width" : 1397,
+    "height" : 999,
+    "max_width" : 1397,
+    "max_height" : 999
+  }
+} ]

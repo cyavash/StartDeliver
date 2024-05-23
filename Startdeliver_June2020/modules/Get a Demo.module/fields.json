@@ -1,0 +1,42 @@
+[ {
+  "id" : "8ccad982-0677-62eb-7f58-6642c2b453de",
+  "name" : "heading",
+  "display_width" : null,
+  "label" : "Heading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Want to know more or just get a demo?<strong>Get in touch!</strong>"
+}, {
+  "id" : "344efb03-ddd7-ed92-1763-3b2f89315c40",
+  "name" : "content",
+  "display_width" : null,
+  "label" : "Content",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<p>If you have any concers or questions about our services, dont hesitate to contact us! The Startdeliver Team will gladly help you out.</p>\n<p><a href=\"mailto:hello@startdeliver.com\">hello@startdeliver.com</a></p>"
+}, {
+  "id" : "77432b81-7a3b-26c0-4bc9-bb2600154c87",
+  "name" : "design_image",
+  "display_width" : null,
+  "label" : "Design Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://f.hubspotusercontent20.net/hubfs/5565021/robot-design.png",
+    "alt" : "robot-design",
+    "width" : 108,
+    "height" : 121,
+    "max_width" : 108,
+    "max_height" : 121
+  }
+} ]

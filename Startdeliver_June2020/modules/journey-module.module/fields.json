@@ -1,0 +1,77 @@
+[ {
+  "id" : "6b539480-4e18-7980-90b2-47cfae5c5ab9",
+  "name" : "heading",
+  "display_width" : null,
+  "label" : "Heading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Our journey so far"
+}, {
+  "id" : "ff1e3396-89b1-7029-92c0-5120057b7744",
+  "name" : "journey_item",
+  "display_width" : null,
+  "label" : "Journey Item",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 3
+  },
+  "children" : [ {
+    "id" : "443b12aa-c099-9be0-85f4-057b51bf8031",
+    "name" : "heading",
+    "display_width" : null,
+    "label" : "Heading",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Launch"
+  }, {
+    "id" : "c41885b4-2dc1-5cdb-61dd-f0e18f7b7722",
+    "name" : "title",
+    "display_width" : null,
+    "label" : "Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "We started building Skopenow in 2015 to help organizations make sense of internet-based data."
+  }, {
+    "id" : "1bb884a5-dd24-f262-23e6-73cdbce36cd4",
+    "name" : "content",
+    "display_width" : null,
+    "label" : "Content",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<p>Fusing our early product with human investigators to aggregate content from around the web, Skopenow had a vision to deliver a comprehensive investigations platform by combining public data with AI. As a Techstars company, we received investment from a number of VCs and high-profile angels, including Runway VP, Contour Ventures, Sinai VC, MS&amp;AD, Forefront Ventures, Barbara Corcoran, and Colle Capital.</p>"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : [ {
+    "heading" : "Launch",
+    "title" : "We started building Skopenow in 2015 to help organizations make sense of internet-based data.",
+    "content" : "<p>Fusing our early product with human investigators to aggregate content from around the web, Skopenow had a vision to deliver a comprehensive investigations platform by combining public data with AI. As a Techstars company, we received investment from a number of VCs and high-profile angels, including Runway VP, Contour Ventures, Sinai VC, MS&amp;AD, Forefront Ventures, Barbara Corcoran, and Colle Capital.</p>"
+  }, {
+    "heading" : "Launch",
+    "title" : "We started building Skopenow in 2015 to help organizations make sense of internet-based data.",
+    "content" : "<p>Fusing our early product with human investigators to aggregate content from around the web, Skopenow had a vision to deliver a comprehensive investigations platform by combining public data with AI. As a Techstars company, we received investment from a number of VCs and high-profile angels, including Runway VP, Contour Ventures, Sinai VC, MS&amp;AD, Forefront Ventures, Barbara Corcoran, and Colle Capital.</p>"
+  }, {
+    "heading" : "Launch",
+    "title" : "We started building Skopenow in 2015 to help organizations make sense of internet-based data.",
+    "content" : "<p>Fusing our early product with human investigators to aggregate content from around the web, Skopenow had a vision to deliver a comprehensive investigations platform by combining public data with AI. As a Techstars company, we received investment from a number of VCs and high-profile angels, including Runway VP, Contour Ventures, Sinai VC, MS&amp;AD, Forefront Ventures, Barbara Corcoran, and Colle Capital.</p>"
+  } ]
+} ]

@@ -1,0 +1,81 @@
+[ {
+  "id" : "b8d3d9e6-a802-cde6-38fe-187fc7231302",
+  "name" : "site_logo",
+  "display_width" : null,
+  "label" : "Site Logo",
+  "required" : false,
+  "locked" : false,
+  "show_loading" : false,
+  "type" : "logo",
+  "default" : {
+    "override_inherited_src" : true,
+    "src" : "https://f.hubspotusercontent20.net/hubfs/5565021/Startdeliver_June2020/Image/Impact_LOGO.png",
+    "alt" : "Impact_LOGO",
+    "suppress_company_name" : true,
+    "width" : 246,
+    "height" : 85
+  }
+}, {
+  "id" : "3d2e8fa1-cd1c-9dd6-9dcb-fa62bcbb3a2e",
+  "name" : "startdeliver_com_text",
+  "display_width" : null,
+  "label" : "Startdeliver.com Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Startdeliver.com"
+}, {
+  "id" : "174c1975-d48a-ed51-381c-5d047dfbf87d",
+  "name" : "startdeliver_link",
+  "display_width" : null,
+  "label" : "Startdeliver Link",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "BLOG" ],
+  "type" : "url",
+  "default" : {
+    "type" : "EXTERNAL",
+    "href" : "https://Startdeliver.com",
+    "content_id" : null
+  }
+}, {
+  "id" : "37a1a254-9abe-f733-a80e-2be8d116292f",
+  "name" : "background_image",
+  "display_width" : null,
+  "label" : "Background Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "",
+    "alt" : null,
+    "loading" : "lazy"
+  }
+}, {
+  "id" : "4f260ebe-4fd4-76c2-3b86-46d6c6197fbd",
+  "name" : "heading",
+  "display_width" : null,
+  "label" : "Heading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Lorem ipsum dolor sit amet, consectetur adipiscing"
+}, {
+  "id" : "6bf975e3-e2b2-68b1-d120-e43c9ab59e69",
+  "name" : "banner_content",
+  "display_width" : null,
+  "label" : "Banner Content",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext"
+} ]

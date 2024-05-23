@@ -1,0 +1,228 @@
+[ {
+  "id" : "c35cfd69-c0f8-7fa4-c1e8-563c6670846b",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "A TITLE FOR THIS SECTION HERE"
+}, {
+  "id" : "fbbd9467-cc00-4bfb-cda9-04dc78d4a970",
+  "name" : "heading",
+  "display_width" : null,
+  "label" : "Heading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "A platform supporting you in each step of <br> the <span>Customer Journey.</span>"
+}, {
+  "id" : "9c81bb86-979e-ba1a-9133-6355c372f572",
+  "name" : "subtitle",
+  "display_width" : null,
+  "label" : "Subtitle",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<p>Every interaction a customer has with your company is part of their journey. Many companies leave this to chance. With Startdeliver you do the opposite, you take charge and drive the process.</p>"
+}, {
+  "id" : "794459b2-5acf-2db9-f5af-64e279c42130",
+  "name" : "features_item",
+  "display_width" : null,
+  "label" : "Features Item",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 7
+  },
+  "children" : [ {
+    "id" : "d96d505c-aeaa-ddf9-c62c-c6842747df6e",
+    "name" : "image_field",
+    "display_width" : null,
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent20.net/hubfs/5565021/img1.png",
+      "alt" : "img1",
+      "width" : 41,
+      "height" : 47,
+      "max_width" : 41,
+      "max_height" : 47
+    }
+  }, {
+    "id" : "328f1fc3-a393-4033-8ff2-77d2e0f8d9c2",
+    "name" : "heading",
+    "display_width" : null,
+    "label" : "Heading",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Dev Portal"
+  }, {
+    "id" : "7dd6d68b-8c47-4748-e126-359b23b98f86",
+    "name" : "content",
+    "display_width" : null,
+    "label" : "Content",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<p>Get started quickly with documentation, tutorials and free sandbox workspace.</p>"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : [ {
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent20.net/hubfs/5565021/img1.png",
+      "alt" : "img1",
+      "width" : 41,
+      "height" : 47,
+      "max_width" : 41,
+      "max_height" : 47
+    },
+    "heading" : "Dev Portal",
+    "content" : "<p>Get started quickly with documentation, tutorials and free sandbox workspace.</p>"
+  }, {
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent20.net/hubfs/5565021/img1.png",
+      "alt" : "img1",
+      "width" : 41,
+      "height" : 47,
+      "max_width" : 41,
+      "max_height" : 47
+    },
+    "heading" : "Dev Portal",
+    "content" : "<p>Get started quickly with documentation, tutorials and free sandbox workspace.</p>"
+  }, {
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent20.net/hubfs/5565021/img1.png",
+      "alt" : "img1",
+      "width" : 41,
+      "height" : 47,
+      "max_width" : 41,
+      "max_height" : 47
+    },
+    "heading" : "Dev Portal",
+    "content" : "<p>Get started quickly with documentation, tutorials and free sandbox workspace.</p>"
+  }, {
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent20.net/hubfs/5565021/img1.png",
+      "alt" : "img1",
+      "width" : 41,
+      "height" : 47,
+      "max_width" : 41,
+      "max_height" : 47
+    },
+    "heading" : "Dev Portal",
+    "content" : "<p>Get started quickly with documentation, tutorials and free sandbox workspace.</p>"
+  }, {
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent20.net/hubfs/5565021/img1.png",
+      "alt" : "img1",
+      "width" : 41,
+      "height" : 47,
+      "max_width" : 41,
+      "max_height" : 47
+    },
+    "heading" : "Dev Portal",
+    "content" : "<p>Get started quickly with documentation, tutorials and free sandbox workspace.</p>"
+  }, {
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent20.net/hubfs/5565021/img1.png",
+      "alt" : "img1",
+      "width" : 41,
+      "height" : 47,
+      "max_width" : 41,
+      "max_height" : 47
+    },
+    "heading" : "Dev Portal",
+    "content" : "<p>Get started quickly with documentation, tutorials and free sandbox workspace.</p>"
+  }, {
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent20.net/hubfs/5565021/img1.png",
+      "alt" : "img1",
+      "width" : 41,
+      "height" : 47,
+      "max_width" : 41,
+      "max_height" : 47
+    },
+    "heading" : "Dev Portal",
+    "content" : "<p>Get started quickly with documentation, tutorials and free sandbox workspace.</p>"
+  } ]
+}, {
+  "id" : "fc41a647-51ae-ddd1-727b-34f1539fc455",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "5aa6f928-8db7-7fb9-d35e-7fa5427337c1",
+    "name" : "background_image",
+    "display_width" : null,
+    "label" : "Background Image",
+    "required" : false,
+    "locked" : false,
+    "type" : "backgroundimage",
+    "default" : {
+      "background_position" : "TOP_CENTER",
+      "background_size" : "cover",
+      "src" : "https://5565021.fs1.hubspotusercontent-na1.net/hubfs/5565021/StartDeliver_2023/Images/Home/bg-1.png"
+    }
+  }, {
+    "id" : "3f9ffb28-d9fb-8a76-8eb9-72e2991bc7cc",
+    "name" : "mob_bg_image",
+    "display_width" : null,
+    "label" : "Mob BG Image",
+    "required" : false,
+    "locked" : false,
+    "type" : "backgroundimage",
+    "default" : {
+      "background_position" : "TOP_CENTER",
+      "background_size" : "cover",
+      "src" : "https://5565021.fs1.hubspotusercontent-na1.net/hubfs/5565021/StartDeliver_2023/Images/Home/bg-1.png"
+    }
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "background_image" : {
+      "background_position" : "TOP_CENTER",
+      "background_size" : "cover",
+      "src" : "https://5565021.fs1.hubspotusercontent-na1.net/hubfs/5565021/StartDeliver_2023/Images/Home/bg-1.png"
+    },
+    "mob_bg_image" : {
+      "background_position" : "TOP_CENTER",
+      "background_size" : "cover",
+      "src" : "https://5565021.fs1.hubspotusercontent-na1.net/hubfs/5565021/StartDeliver_2023/Images/Home/bg-1.png"
+    }
+  }
+} ]

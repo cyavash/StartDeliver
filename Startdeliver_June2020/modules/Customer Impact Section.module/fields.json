@@ -1,0 +1,43 @@
+[ {
+  "id" : "b3f56318-1f55-21c9-c888-6441ec93f7a7",
+  "name" : "image_field",
+  "display_width" : null,
+  "label" : "Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://f.hubspotusercontent20.net/hubfs/5565021/impact-img.png",
+    "alt" : "impact-img",
+    "loading" : "lazy",
+    "width" : 130,
+    "height" : 152,
+    "max_width" : 130,
+    "max_height" : 152
+  }
+}, {
+  "id" : "94f62b2b-eef4-2876-eb26-3c62ce829e3a",
+  "name" : "heading",
+  "display_width" : null,
+  "label" : "Heading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Customer Impact and Desired Outcome"
+}, {
+  "id" : "baafd2f3-62a2-dd2a-ed7e-5d5fb9a5a115",
+  "name" : "content",
+  "display_width" : null,
+  "label" : "Content",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<p>Everyday Customer Success organizations are busy doing all sorts of activities, but which ones are effective and make our customers stay? and the opposite, which ones are not effective and waste our time?</p>\n<p>With a growing organization and a growing number of interactions, both human and digital, it all becomes even more critical. The key metric in Startdeliver is – Customer Impact, where you can trace all activities back to the impact they had on your customer.</p>"
+} ]

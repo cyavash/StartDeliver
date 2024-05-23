@@ -1,0 +1,25 @@
+<div class='faq-section'>
+  <div class='page-center'>
+    <div class='faq-heading'>
+      <h2>
+        {{ module.heading }}
+      </h2>
+    </div>
+    <div class='faq-listing'>
+      {% for item in module.add_faq %}
+      <div class='faq-card'>
+        <div class='faq-question'>
+          <p>
+            {{ item.question }}
+          </p>
+          <span class='plus-sign'>+</span>
+        </div>
+        <div class='faq-ans' style='display:none;'>
+          {{ item.answer }}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+

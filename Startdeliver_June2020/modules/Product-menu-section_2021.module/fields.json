@@ -1,0 +1,167 @@
+[ {
+  "id" : "2f6c06af-9433-eefc-4dcf-7d2604b1af50",
+  "name" : "sub_menu",
+  "display_width" : null,
+  "label" : "Add Sub Menu",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : "8b9217b7-de0d-21df-8260-f7a0dedf9f8a",
+    "default" : 2
+  },
+  "children" : [ {
+    "id" : "8b9217b7-de0d-21df-8260-f7a0dedf9f8a",
+    "name" : "sub_menu_title",
+    "display_width" : null,
+    "label" : "Sub Menu Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "By role:"
+  }, {
+    "id" : "1af85848-8b00-4c51-545c-fe01bec34b1f",
+    "name" : "add_menu",
+    "display_width" : null,
+    "label" : "Add Menu",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : null,
+      "max" : null,
+      "sorting_label_field" : "85611c05-72e3-e711-52cb-62f3277c36c9",
+      "default" : 4
+    },
+    "children" : [ {
+      "id" : "85611c05-72e3-e711-52cb-62f3277c36c9",
+      "name" : "menu_text",
+      "display_width" : null,
+      "label" : "Menu Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "Customer Success Manager"
+    }, {
+      "id" : "8130db00-b9a6-0e24-6248-ae8df52ffdd3",
+      "name" : "page_url",
+      "display_width" : null,
+      "label" : "Page URL",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+      "type" : "url",
+      "default" : {
+        "type" : "EXTERNAL",
+        "href" : "##",
+        "content_id" : null
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "default" : [ {
+      "menu_text" : "Customer Success Manager",
+      "page_url" : {
+        "type" : "EXTERNAL",
+        "href" : "##",
+        "content_id" : null
+      }
+    }, {
+      "menu_text" : "Customer Success Manager",
+      "page_url" : {
+        "type" : "EXTERNAL",
+        "href" : "##",
+        "content_id" : null
+      }
+    }, {
+      "menu_text" : "Customer Success Manager",
+      "page_url" : {
+        "type" : "EXTERNAL",
+        "href" : "##",
+        "content_id" : null
+      }
+    }, {
+      "menu_text" : "Customer Success Manager",
+      "page_url" : {
+        "type" : "EXTERNAL",
+        "href" : "##",
+        "content_id" : null
+      }
+    } ]
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : [ {
+    "sub_menu_title" : "By role:",
+    "add_menu" : [ {
+      "menu_text" : "Customer Success Manager",
+      "page_url" : {
+        "type" : "EXTERNAL",
+        "href" : "##",
+        "content_id" : null
+      }
+    }, {
+      "menu_text" : "Customer Success Manager",
+      "page_url" : {
+        "type" : "EXTERNAL",
+        "href" : "##",
+        "content_id" : null
+      }
+    }, {
+      "menu_text" : "Customer Success Manager",
+      "page_url" : {
+        "type" : "EXTERNAL",
+        "href" : "##",
+        "content_id" : null
+      }
+    }, {
+      "menu_text" : "Customer Success Manager",
+      "page_url" : {
+        "type" : "EXTERNAL",
+        "href" : "##",
+        "content_id" : null
+      }
+    } ]
+  }, {
+    "sub_menu_title" : "By role:",
+    "add_menu" : [ {
+      "menu_text" : "Customer Success Manager",
+      "page_url" : {
+        "type" : "EXTERNAL",
+        "href" : "##",
+        "content_id" : null
+      }
+    }, {
+      "menu_text" : "Customer Success Manager",
+      "page_url" : {
+        "type" : "EXTERNAL",
+        "href" : "##",
+        "content_id" : null
+      }
+    }, {
+      "menu_text" : "Customer Success Manager",
+      "page_url" : {
+        "type" : "EXTERNAL",
+        "href" : "##",
+        "content_id" : null
+      }
+    }, {
+      "menu_text" : "Customer Success Manager",
+      "page_url" : {
+        "type" : "EXTERNAL",
+        "href" : "##",
+        "content_id" : null
+      }
+    } ]
+  } ]
+} ]

@@ -1,0 +1,193 @@
+[ {
+  "id" : "b7bf7f4f-3036-9ce7-bc28-ed427278973b",
+  "name" : "heading",
+  "display_width" : null,
+  "label" : "Heading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "What others say <strong>And yes, we did ask them</strong>"
+}, {
+  "id" : "e9f780d2-50f9-31a2-5516-6b1028446daa",
+  "name" : "slider_item",
+  "display_width" : null,
+  "label" : "Slider Item",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 4
+  },
+  "children" : [ {
+    "id" : "575d7d33-ba31-0ad1-dccf-a1ad25f8e4e5",
+    "name" : "quote_image",
+    "display_width" : null,
+    "label" : "Quote Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent20.net/hubfs/5565021/quotes-img.png",
+      "alt" : "quotes-img",
+      "width" : 69,
+      "height" : 55,
+      "max_width" : 69,
+      "max_height" : 55
+    }
+  }, {
+    "id" : "245695b8-c832-bb68-2af7-54a73b32aa1c",
+    "name" : "quote",
+    "display_width" : null,
+    "label" : "Quote",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<p>You invest a lot of time and money into the steaks for a special occasion and when dinner time comes, they are tough. What happened? How can you cook steaks as tender as your favorite restaurant?</p>"
+  }, {
+    "id" : "170aacd5-1bf4-467e-1f5f-7c8b26af7bfc",
+    "name" : "quote_name",
+    "display_width" : null,
+    "label" : "Quote Name",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Garett Love"
+  }, {
+    "id" : "7132e1d2-86d2-3c3b-b20c-e1c1514f21a6",
+    "name" : "quote_role",
+    "display_width" : null,
+    "label" : "Quote Role",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Head of Customer Success"
+  }, {
+    "id" : "f50496c3-bfd1-7b72-e23d-ebeb8a22e422",
+    "name" : "logo",
+    "display_width" : null,
+    "label" : "Logo",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent20.net/hubfs/5565021/Learnifier.png",
+      "alt" : "Learnifier",
+      "width" : 600,
+      "height" : 158,
+      "max_width" : 600,
+      "max_height" : 158
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : [ {
+    "quote_image" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent20.net/hubfs/5565021/quotes-img.png",
+      "alt" : "quotes-img",
+      "width" : 69,
+      "height" : 55,
+      "max_width" : 69,
+      "max_height" : 55
+    },
+    "quote" : "<p>You invest a lot of time and money into the steaks for a special occasion and when dinner time comes, they are tough. What happened? How can you cook steaks as tender as your favorite restaurant?</p>",
+    "quote_name" : "Garett Love",
+    "quote_role" : "Head of Customer Success",
+    "logo" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent20.net/hubfs/5565021/Learnifier.png",
+      "alt" : "Learnifier",
+      "width" : 600,
+      "height" : 158,
+      "max_width" : 600,
+      "max_height" : 158
+    }
+  }, {
+    "quote_image" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent20.net/hubfs/5565021/quotes-img.png",
+      "alt" : "quotes-img",
+      "width" : 69,
+      "height" : 55,
+      "max_width" : 69,
+      "max_height" : 55
+    },
+    "quote" : "<p>You invest a lot of time and money into the steaks for a special occasion and when dinner time comes, they are tough. What happened? How can you cook steaks as tender as your favorite restaurant?</p>",
+    "quote_name" : "Garett Love",
+    "quote_role" : "Head of Customer Success",
+    "logo" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent20.net/hubfs/5565021/Learnifier.png",
+      "alt" : "Learnifier",
+      "width" : 600,
+      "height" : 158,
+      "max_width" : 600,
+      "max_height" : 158
+    }
+  }, {
+    "quote_image" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent20.net/hubfs/5565021/quotes-img.png",
+      "alt" : "quotes-img",
+      "width" : 69,
+      "height" : 55,
+      "max_width" : 69,
+      "max_height" : 55
+    },
+    "quote" : "<p>You invest a lot of time and money into the steaks for a special occasion and when dinner time comes, they are tough. What happened? How can you cook steaks as tender as your favorite restaurant?</p>",
+    "quote_name" : "Garett Love",
+    "quote_role" : "Head of Customer Success",
+    "logo" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent20.net/hubfs/5565021/Learnifier.png",
+      "alt" : "Learnifier",
+      "width" : 600,
+      "height" : 158,
+      "max_width" : 600,
+      "max_height" : 158
+    }
+  }, {
+    "quote_image" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent20.net/hubfs/5565021/quotes-img.png",
+      "alt" : "quotes-img",
+      "width" : 69,
+      "height" : 55,
+      "max_width" : 69,
+      "max_height" : 55
+    },
+    "quote" : "<p>You invest a lot of time and money into the steaks for a special occasion and when dinner time comes, they are tough. What happened? How can you cook steaks as tender as your favorite restaurant?</p>",
+    "quote_name" : "Garett Love",
+    "quote_role" : "Head of Customer Success",
+    "logo" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent20.net/hubfs/5565021/Learnifier.png",
+      "alt" : "Learnifier",
+      "width" : 600,
+      "height" : 158,
+      "max_width" : 600,
+      "max_height" : 158
+    }
+  } ]
+} ]

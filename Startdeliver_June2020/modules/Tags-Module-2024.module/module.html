@@ -1,0 +1,27 @@
+<div class="tags-section">
+  <div class="page-center-big">
+    <div class="circled-bg" style="background-color: {{ module.background_color }};">
+      <h2>
+       {{ module.heading }}
+      </h2>
+      
+      <div class="tags-container tc1">
+        {% for item in module.tags_1.tag_item %}
+          <span class="tag" style="background-color: {{ module.tags_1.background_color }}">{{ item }}</span>
+        {% endfor %}
+       </div><!-- end tags-container -->
+      
+      <div class="tags-container tc2">
+        {% for item in module.tags_2.tag_item %}
+          <span class="tag" style="background-color: {{ module.tags_2.background_color }}">{{ item }}</span>
+        {% endfor %}
+       </div><!-- end tags-container -->
+      
+      <div class="tags-container tc3">
+        {% for item in module.tags_3.tag_item %}
+          <span class="tag" style="background-color: {{ module.tags_3.background_color }}">{{ item }}</span>
+        {% endfor %}
+       </div><!-- end tags-container -->
+    </div><!-- end circled-bg -->
+  </div><!-- end page-center -->
+</div><!-- end section1 -->

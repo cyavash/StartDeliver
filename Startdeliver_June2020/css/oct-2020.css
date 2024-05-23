@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap');
+
+
+header.custom-header .header{
+  border-bottom: 1px solid rgba(8, 80, 254, 0.17);
+ 
+}
+.header {
+  background: transparent; 
+}
+header.custom-header .header {
+  border-bottom: 0 none!important; 
+}
+body {
+  background-color: transparent; 
+}
+h1,h2,h3,h4,h5,h6 {
+ font-family: 'IBM Plex Sans', sans-serif; 
+}
+
+.custom-header .header {
+  z-index: 100; 
+}
+body .dnd-section {
+  padding: 0; 
+}
+/*===== MAIN STYLES ======*/
+.happy-customers {
+  padding: 45px 0 15px 30px;
+  background: #fcf7fe;
+}
+.happy-customers h2 {
+  font-size: 32px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: -0.71px;
+  color: #434343;
+  margin-bottom: 10px;
+}
+.happy-customers h2 span {
+  font-weight: bold;
+}
+
+html body .product-mega {
+  width: 300px!important; 
+}
+
+/**/
+html body .custom-menu-primary .submenu.level-1>li.get-a-demo>a {
+  background: rgb(0,23,79); 
+  border-radius: 0!important; 
+  border: 1px solid rgb(0,23,79); 
+}
+body .custom-menu-primary .submenu.level-1>li.get-a-demo {
+  background: transparent!important;
+  border: 0!important;
+  border-radius: 0!important;
+}
+body .custom-menu-primary .submenu.level-1>li.log-in,
+body .custom-menu-primary .submenu.level-1>li.login
+{
+  background: transparent!important;
+  border: 0!important;
+  border-radius: 0!important;
+} 
+body .custom-menu-primary .submenu.level-1>li.log-in a,
+body .custom-menu-primary .submenu.level-1>li.login a
+{
+  border: 1px solid rgb(0,23,79); 
+  border-radius: 0!important;
+  color: rgb(0,23,79);
+} 
+body .custom-menu-primary .submenu.level-1>li.log-in a:hover,
+body .custom-menu-primary .submenu.level-1>li.login a:hover
+{
+  background-color: rgb(0,23,79);
+}
+
+
+
+/* Layout */
+@media (min-width: 768px) {
+   .row-fluid .span12 {
+    width: 99.99999998999999%!important;
+    *width: 99.94680850063828%;
+  }
+
+  .row-fluid .span11 {
+    width: 91.489361693%!important;
+    *width: 91.4361702036383%;
+  }
+
+  .row-fluid .span10 {
+    width: 82.97872339599999%!important;
+    *width: 82.92553190663828%;
+  }
+
+  .row-fluid .span9 {
+    width: 74.468085099%!important;
+    *width: 74.4148936096383%;
+  }
+
+  .row-fluid .span8 {
+    width: 65.95744680199999%!important;
+    *width: 65.90425531263828%;
+  }
+
+  .row-fluid .span7 {
+    width: 57.446808505%!important;
+    *width: 57.3936170156383%;
+  }
+
+  .row-fluid .span6 {
+    width: 48.93617020799999%!important;
+    *width: 48.88297871863829%;
+  }
+
+  .row-fluid .span5 {
+    width: 40.425531911%!important;
+    *width: 40.3723404216383%;
+  }
+
+  .row-fluid .span4 {
+    width: 31.914893614%!important;
+    *width: 31.8617021246383%;
+  }
+
+  .row-fluid .span3 {
+    width: 23.404255317%!important;
+    *width: 23.3510638276383%;
+  }
+
+  .row-fluid .span2 {
+    width: 14.89361702%!important;
+    *width: 14.8404255306383%;
+  }
+
+  .row-fluid .span1 {
+    width: 6.382978723%!important;
+    *width: 6.329787233638298%;
+  } 
+  
+}

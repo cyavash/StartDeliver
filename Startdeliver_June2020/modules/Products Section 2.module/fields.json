@@ -1,0 +1,121 @@
+[ {
+  "id" : "ddf7eaa0-9537-1531-b31b-a97d28454c1b",
+  "name" : "heading",
+  "display_width" : null,
+  "label" : "Heading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Create extraordinary <br><strong>Customer Success Journeys</strong>"
+}, {
+  "id" : "c2e746f9-0e60-740e-a9d8-9dc8a70abf16",
+  "name" : "item",
+  "display_width" : null,
+  "label" : "Item",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 4
+  },
+  "children" : [ {
+    "id" : "12d5b898-f60b-8997-42ca-092682250798",
+    "name" : "image_field",
+    "display_width" : null,
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent20.net/hubfs/5565021/img1-1.png",
+      "alt" : "img1-1",
+      "loading" : "lazy",
+      "width" : 365,
+      "height" : 380,
+      "max_width" : 365,
+      "max_height" : 380
+    }
+  }, {
+    "id" : "8ad6bcae-5484-0f14-a0c0-11a9953b7aaa",
+    "name" : "title",
+    "display_width" : null,
+    "label" : "Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  }, {
+    "id" : "cb431bfc-ff2a-5ca9-a2b1-18b19a9432ef",
+    "name" : "content",
+    "display_width" : null,
+    "label" : "Content",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<p>Every interaction a customer has with your company is part of their journey. Many companies leave this to chance. With Customer Success Journeys you do the opposite, you take charge and control the process. Design the experience from trial to sales handover, from new users to new markets. Customize the Journey based on characteristics and desired outcome. Customize on status, progress and build your path of next steps for every customer.</p>"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : [ {
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent20.net/hubfs/5565021/img1-1.png",
+      "alt" : "img1-1",
+      "loading" : "lazy",
+      "width" : 365,
+      "height" : 380,
+      "max_width" : 365,
+      "max_height" : 380
+    },
+    "content" : "<p>Every interaction a customer has with your company is part of their journey. Many companies leave this to chance. With Customer Success Journeys you do the opposite, you take charge and control the process. Design the experience from trial to sales handover, from new users to new markets. Customize the Journey based on characteristics and desired outcome. Customize on status, progress and build your path of next steps for every customer.</p>"
+  }, {
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent20.net/hubfs/5565021/img1-1.png",
+      "alt" : "img1-1",
+      "loading" : "lazy",
+      "width" : 365,
+      "height" : 380,
+      "max_width" : 365,
+      "max_height" : 380
+    },
+    "content" : "<p>Every interaction a customer has with your company is part of their journey. Many companies leave this to chance. With Customer Success Journeys you do the opposite, you take charge and control the process. Design the experience from trial to sales handover, from new users to new markets. Customize the Journey based on characteristics and desired outcome. Customize on status, progress and build your path of next steps for every customer.</p>"
+  }, {
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent20.net/hubfs/5565021/img1-1.png",
+      "alt" : "img1-1",
+      "loading" : "lazy",
+      "width" : 365,
+      "height" : 380,
+      "max_width" : 365,
+      "max_height" : 380
+    },
+    "content" : "<p>Every interaction a customer has with your company is part of their journey. Many companies leave this to chance. With Customer Success Journeys you do the opposite, you take charge and control the process. Design the experience from trial to sales handover, from new users to new markets. Customize the Journey based on characteristics and desired outcome. Customize on status, progress and build your path of next steps for every customer.</p>"
+  }, {
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent20.net/hubfs/5565021/img1-1.png",
+      "alt" : "img1-1",
+      "loading" : "lazy",
+      "width" : 365,
+      "height" : 380,
+      "max_width" : 365,
+      "max_height" : 380
+    },
+    "content" : "<p>Every interaction a customer has with your company is part of their journey. Many companies leave this to chance. With Customer Success Journeys you do the opposite, you take charge and control the process. Design the experience from trial to sales handover, from new users to new markets. Customize the Journey based on characteristics and desired outcome. Customize on status, progress and build your path of next steps for every customer.</p>"
+  } ]
+} ]

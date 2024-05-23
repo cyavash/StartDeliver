@@ -1,0 +1,127 @@
+<div class="impact-speaker-wrapper" id="speakers">
+  <div class="bg_impact impact-speaker">
+    <div class="page-center">
+      <div class="heading">
+        <h2>{{ module.title }}</h2>
+      </div>
+      <div class="row ft-speaker">
+        {% for item in module.feature_speakers %}
+        <div class="single-box">
+          <div class="user">
+            <img src="{{ item.thumb.src }}" alt="{{ item.thumb.alt }}">
+            <div class="content">
+              <strong>{{ item.name_ }}</strong>
+              <span>{{ item.designation }}</span>
+            </div>
+          </div>
+          <div class="text">
+            {{ item.content }}
+          </div>
+          <div class="link">
+            {% set href = item.link.link.url.href %}
+            {% if item.link.link.url.type is equalto "EMAIL_ADDRESS" %}
+            {% set href = "mailto:" + href %}
+            {% endif %}
+            <a href="{{ href }}"
+               {% if item.link.link.open_in_new_tab %}target="_blank"{% endif %}
+               {% if item.link.link.rel %}rel="{{ item.link.link.rel }}"{% endif %}
+               >
+              {{ item.link.text }}
+            </a>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+
+  </div>
+  <div class="small-speaker-sec">
+    <div class="page-center">
+      <div class="small-speaker">
+        {% for item in module.speakers %}
+        <div class="single-box">
+          <div>
+            <img src="{{ item.thumb.src }}" alt="{{ item.thumb.alt }}">
+            <strong>{{ item.name_ }}</strong>
+            <span>{{ item.designation }}</span>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{% require_css %}
+<style>
+  .impact-speaker{
+    {{ module.style.backgroundimage_field.css }}
+  }
+  .impact-speaker { padding: 90px 0; position: relative; overflow: hidden; }
+  .impact-speaker-wrapper { background: #171717; color: #fff; }
+  .impact-speaker > .page-center { position: relative; z-index: 1; }
+  .impact-speaker h2 { color: inherit; text-align: center; position: relative; padding: 0 0 46px; margin: 0 0 105px; }
+  .impact-speaker h2:before { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 45px; background-image: url(https://5565021.fs1.hubspotusercontent-na1.net/hubfs/5565021/impact-day/Shape%20img.png); background-position: center; background-repeat: no-repeat; }
+  .impact-speaker .ft-speaker { display: flex; flex-wrap: wrap; justify-content: space-between; }
+  .impact-speaker .ft-speaker > div { width: calc(33.33% - 30px); }
+  .impact-speaker .ft-speaker img { height: 130px; width: 130px; object-fit: cover; border-radius: 100%; }
+  .impact-speaker .ft-speaker .user { display: flex; flex-wrap: wrap; align-items: center; }
+  .impact-speaker .ft-speaker .user .content { width: calc(100% - 130px); padding-left: 35px; }
+  .impact-speaker .ft-speaker .user .content strong { display: block; line-height: 37px; font-size: 32px; padding: 0 0 4px; }
+  .impact-speaker .ft-speaker .user .content  span { font-size: 18px; line-height: 25px; display: block; }
+  .impact-speaker .ft-speaker .text { padding: 16px 0 24px; font-size: 16px; line-height: 22px; }
+  .impact-speaker .ft-speaker .text * { font-size: inherit; line-height: inherit; }
+  .impact-speaker .ft-speaker .link { }
+  .impact-speaker .ft-speaker .link a { font-weight: 600; color: #E39FE8; line-height: 20px; font-size: 15px; display: inline-block; }
+  .impact-speaker:After { content: ''; position: absolute; bottom: 0; left: 0; width: 100%; height: 100%;/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#171717+0,171717+100&0+0,1+100 */ background: -moz-linear-gradient(top, rgba(23, 23, 23, 0) 0%, rgba(23, 23, 23, 1) 100%); /* FF3.6-15 */     /* Chrome10-25,Safari5.1-6 */
+    background: -moz-linear-gradient(top, rgba(23, 23, 23, 0) 0%, rgba(23, 23, 23, 1) 70%, rgba(23, 23, 23, 1) 100%); /* FF3.6-15 */ background: -webkit-linear-gradient(top, rgba(23, 23, 23, 0) 0%, rgba(23, 23, 23, 1) 70%, rgba(23, 23, 23, 1) 100%); /* Chrome10-25,Safari5.1-6 */ background: linear-gradient(to bottom, rgba(23, 23, 23, 0) 0%, rgba(23, 23, 23, 1) 70%, rgba(23, 23, 23, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00171717', endColorstr='#171717', GradientType=0); /* IE6-9 */ }
+  .impact-speaker .ft-speaker .text p { margin: 0; }
+  .impact-speaker .ft-speaker .text p + p { margin-top: 10px; }
+  .small-speaker-sec { padding: 0 0 100px; }
+  .small-speaker-sec .small-speaker { display: flex; flex-wrap: wrap;  }
+  .small-speaker-sec .small-speaker .single-box { width: calc(100% / 5 - 14px); margin:0 7px; text-align: center; padding: 25px 0; }
+  .small-speaker-sec .small-speaker img { height: 110px; width: 110px; border-radius: 100%; display: block; margin: 0 auto; }
+  .small-speaker-sec .small-speaker strong { display: block; font-size: 20px; line-height: 32px; font-weight: 700; padding: 16px 0 0; }
+  .small-speaker-sec .small-speaker span { font-size: 16px; display: block; }
+  .impact-speaker.bg_impact:before { background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), linear-gradient(133.59deg, #838CF7 0%, #F0BBF0 100%); mix-blend-mode: multiply; opacity: 0.8; }
+  .impact-speaker .ft-speaker > div {
+    margin: 15px;
+  }
+  @media(max-width:1339px){
+    .impact-speaker .ft-speaker img { height: 100px; width: 100px; }
+    .impact-speaker .ft-speaker .user .content { width: calc(100% - 100px); padding-left: 25px; }
+    .impact-speaker .ft-speaker .user .content strong { font-size: 27px; line-height: 1.2; }
+    .impact-speaker .ft-speaker .user .content span { font-size: 16px; }
+    .impact-speaker .ft-speaker > div { width: calc(33.33% - 30px); }
+  }
+  @media(max-width:1200px){
+
+  }
+  @media(max-width:991px){
+    .impact-speaker .ft-speaker > div { width: 100%; margin:0; }
+    .impact-speaker .ft-speaker .user .content strong br { display: none; }
+    .impact-speaker .ft-speaker > div + div { border-top: 1px solid #ffffff2b; }
+    .impact-speaker .ft-speaker > div { padding: 30px 0; }
+    .impact-speaker .ft-speaker .text { padding: 16px 0 4px; }
+    .impact-speaker h2 { margin: 0 0 5px; }
+    .impact-speaker { padding: 90px 0 20px; }
+    .small-speaker-sec .small-speaker .single-box { width: calc(100% / 4 - 15px); margin: 7px; padding: 15px 0; }
+    .small-speaker-sec { padding: 0 0 50px; }
+  }
+  @media(max-width:767px){
+    .small-speaker-sec .small-speaker .single-box { width: calc(100% / 3 - 15px); }
+    .impact-speaker { padding: 70px 0 10px; }
+    .small-speaker-sec { padding: 0 0 40px; }
+  }
+  @media(max-width:575px){
+    .impact-speaker .ft-speaker img { height: 80px; width: 80px; }
+    .impact-speaker .ft-speaker .user .content { width: calc(100% - 80px); padding-left: 15px; }
+    .impact-speaker .ft-speaker .user .content strong { font-size: 21px; }
+    .small-speaker-sec .small-speaker .single-box { width: calc(100% / 2 - 15px); padding: 6px 0; }
+    .small-speaker-sec .small-speaker strong { font-size: 19px; line-height: 1; }
+  }
+</style>
+{% end_require_css %}
+
+

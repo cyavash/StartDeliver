@@ -1,0 +1,22 @@
+.one-column-content-section {
+  padding: 70px 0;
+}
+
+.one-column-content {
+  margin: 0 auto;
+  width: 100%;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 42px;
+  text-align: center;
+  color: #2B2B2B;
+}
+
+@media(max-width:480px){
+  .one-column-content-section {
+    padding: 40px 0;
+  }
+  .one-column-content{
+    font-size:20px;
+  }
+}

@@ -1,0 +1,25 @@
+.customer-impact {
+  background: linear-gradient(135.09deg, rgba(5, 227, 189, 0.1) 1.2%, rgba(128, 138, 246, 0.1) 99.12%, rgba(252, 192, 238, 0.1) 120.19%),
+linear-gradient(0deg, #FFFFFF, #FFFFFF);
+  padding: 80px 0;
+  
+}
+.customer-impact .span5 {
+
+}
+.customer-impact img {
+  padding-left: 15%;
+  margin-bottom: 50px;
+}
+.customer-impact h2 {
+ font-weight: 700; 
+}
+.customer-impact p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  width: 460px;
+  max-width: 100%;
+}
+.customer-impact .span7 {
+  padding-top: 50px; 
+}

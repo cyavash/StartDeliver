@@ -1,0 +1,118 @@
+.left-content-right-image {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.left-content-right-image .left-content {
+  width: 60%;
+}
+
+.left-content-right-image-section {
+  padding: 230px 0 100px 0;
+  position:relative;
+  overflow:hidden;
+}
+.left-content-right-image-section .right-shape {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.left-content-right-image-section .right-shape img {
+  max-width: 776px;
+}
+
+.left-content-right-image-section .left-shape {
+  position: absolute;
+  top: 90px;
+  left: 0;
+  z-index: -1;
+}
+
+.left-content-right-image .section-heading h1 {
+  font-weight: normal;
+  font-size: 69px;
+  line-height: 64px;
+  letter-spacing: -0.71px;
+  color: #000000;
+}
+.left-content-right-image .section-content{
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 42px;
+  color: #434343;
+  padding-top: 50px;
+  max-width: 89%;
+}
+.left-content-right-image .right-image {
+  width: 40%;
+}
+
+@media(max-width:992px){
+  .left-content-right-image .section-heading h1 {
+    font-size: 45px;
+    line-height: 1.2;
+  }
+
+  .left-content-right-image .section-content {
+    font-size: 24px;
+    line-height: 1.2;
+    max-width: 100%;
+    padding-top: 30px;
+  }
+
+  .left-content-right-image-section {
+    padding: 130px 0 50px 0;
+  }
+
+  .left-content-right-image-section .right-shape img {
+    max-width: 500px;
+  }
+
+  .left-content-right-image-section .left-shape {
+    width: 100px;
+    top: 70px;
+    left: -20px;
+  }
+}
+
+@media(max-width:767px){
+  .left-content-right-image {
+    flex-direction: column;
+  }
+
+  .left-content-right-image > div {
+    width: 100% !important;
+  }
+
+  .left-content-right-image .right-image {
+    padding-top: 30px;
+  }
+
+  .left-content-right-image-section {
+    padding-top: 100px;
+  }
+
+  .left-content-right-image .section-heading h1 {
+    font-size: 40px;
+  }
+
+  .left-content-right-image .section-heading h1 br {
+    display: none;
+  }
+
+  .left-content-right-image .section-content {
+    font-size: 20px;
+    padding-top: 20px;
+  }
+}
+
+/**/
+.right-shape,
+.left-shape,
+.right-image 
+{
+  display: none; 
+}

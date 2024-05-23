@@ -1,0 +1,22 @@
+<div class='cta-section cta-section-v2' style='background-color:{{ module.bg_color.css }};'>
+  <div class='page-center'>
+    <div class='cta-section-inner'>
+      <div class='cta-content'>
+        {{ module.content }}
+      </div>
+      <div class='cta-button'>
+        <a href='{{ module.button_url.href }}' class='button'><span>{{ module.button_text }}</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+            <path d="M1 6.00021H11" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M6 1L11 6L6 11" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<style>
+  .cta-section-v2 .cta-content h2, .cta-section-v2 .cta-content p{
+    color:{{ module.text_color.css }}
+  }
+</style>

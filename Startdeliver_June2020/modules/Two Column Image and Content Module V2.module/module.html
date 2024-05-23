@@ -1,0 +1,51 @@
+<div class='two-column-section-v2'>
+  <div class='page-center'>
+    <div class='two-column-section-inner'>
+      {% if !module.image_position_swap %}
+      <div class='left-image'>
+        {% if module.select_image.src %}
+        {% set sizeAttrs = 'width="{{ module.select_image.width }}" height="{{ module.select_image.height }}"' %}
+        {% if module.select_image.size_type == 'auto' %}
+        {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+        {% elif module.select_image.size_type == 'auto_custom_max' %}
+        {% set sizeAttrs = 'width="{{ module.select_image.max_width }}" height="{{ module.select_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+        {% endif %}
+        {% set loadingAttr = module.select_image.loading != 'disabled' ? 'loading="{{ module.select_image.loading }}"' : '' %}
+        <img src="{{ module.select_image.src }}" alt="{{ module.select_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+        {% endif %}
+      </div>
+      {% endif %}
+      <div class='right-content'>
+        {{ module.content }}
+        {% if module.add_feature %}
+        <div class='feature_listing'>
+          {% for item in module.add_feature %}
+          <div class='feature_card'>
+            <div class='feature_title'>
+              <p><img src='https://f.hubspotusercontent20.net/hubfs/5565021/Startdeliver_June2020/Image/badge-check-1.png' alt='badge'> <b>{{ item.feature_title }}</b></p>
+            </div>
+            <div class='feature_content'>
+              {{ item.feature_content }}
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+        {% endif %}
+      </div>
+      {% if module.image_position_swap %}
+      <div class='left-image'>
+        {% if module.select_image.src %}
+        {% set sizeAttrs = 'width="{{ module.select_image.width }}" height="{{ module.select_image.height }}"' %}
+        {% if module.select_image.size_type == 'auto' %}
+        {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+        {% elif module.select_image.size_type == 'auto_custom_max' %}
+        {% set sizeAttrs = 'width="{{ module.select_image.max_width }}" height="{{ module.select_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+        {% endif %}
+        {% set loadingAttr = module.select_image.loading != 'disabled' ? 'loading="{{ module.select_image.loading }}"' : '' %}
+        <img src="{{ module.select_image.src }}" alt="{{ module.select_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+        {% endif %}
+      </div>
+      {% endif %}
+    </div>
+  </div>
+</div>

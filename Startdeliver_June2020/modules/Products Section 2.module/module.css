@@ -1,0 +1,69 @@
+.products-section2 {
+  padding-bottom: 85px; 
+}
+.products-section2 h2 {
+  margin-bottom: 100px; 
+}
+
+.products-section2 .row-fluid .span5 {
+  position: relative; 
+}
+.products-section2 .row-fluid .span5 strong {
+  position: absolute; 
+  margin-left: 30px;
+  font-size: 24px;
+}
+.products-section2 .row-fluid1 .span5 strong {
+  top: 86px;
+}
+.products-section2 .row-fluid2 .span5 strong {
+  top: 65px;
+}
+.products-section2 .row-fluid3 .span5 strong {
+  top: 65px;
+}
+
+@media screen and (max-width: 1199px) {
+  .products-section2 img {
+    padding-right: 150px; 
+  } 
+  .products-section2 .row-fluid .span5 strong {
+     margin-left: -100px; 
+    margin-top: -25px;
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .products-section2 img {
+    padding-right: 90px; 
+  }
+  .products-section2 .row-fluid .span5 strong {
+    margin-left: -75px; 
+    margin-top: -35px;
+  }
+}  
+
+@media screen and (max-width: 767px) {
+  .products-section2 img {
+    margin: 15px 0; 
+  }
+  .products-section2 .row-fluid .span5 strong {
+    margin-left: -60px; 
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .products-section2 img {
+    padding-right: 70px; 
+  }
+}
+@media screen and (max-width: 370px) {
+  .products-section2 .row-fluid .span5 strong {
+    margin-top: 0; 
+  }
+}
+@media screen and (max-width: 340px) {
+  .products-section2 .row-fluid .span5 strong {
+    margin-top: -5px; 
+  }
+}

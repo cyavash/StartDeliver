@@ -1,0 +1,55 @@
+<div class="features">
+  <div class="page-center">
+    <div class="row-fluid">
+      <div class="span9">
+        <h2>
+          {{ module.heading }}  
+        </h2>
+        {% inline_rich_text field="subtitle" value="{{ module.subtitle }}" %}        
+      </div>    
+    </div>
+    
+    <div class="row-fluid row-fluid-flex">
+        {% for item in module.features_item %}
+        <div class="span3">
+         <div class="features-item">
+          {% if item.image_field.src %}
+            {% set sizeAttrs = 'width="{{ item.image_field.width }}" height="{{ item.image_field.height }}"' %}
+            {% if item.image_field.size_type == 'auto' %}
+              {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+            {% elif item.image_field.size_type == 'auto_custom_max' %}
+              {% set sizeAttrs = 'width="100%" height="auto" style="max-width: {{ item.image_field.max_width }}px; max-height: {{ item.image_field.max_height }}px"' %}
+            {% endif %}
+            <img src="{{ item.image_field.src }}" alt="{{ item.image_field.alt }}" {{ sizeAttrs }}>
+          {% endif %}
+          <h3>{{ item.heading }}</h3>
+          {% inline_rich_text field="content" value="{{ item.content }}" %}
+          </div><!-- end features-item --> 
+         </div>
+        {% endfor %}
+      
+        <div class="span3">
+          <div class="lets-talk-box">
+            {% if module.design_image.src %}
+              {% set sizeAttrs = 'width="{{ module.design_image.width }}" height="{{ module.design_image.height }}"' %}
+              {% if module.design_image.size_type == 'auto' %}
+                {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+              {% elif module.design_image.size_type == 'auto_custom_max' %}
+                {% set sizeAttrs = 'width="100%" height="auto" style="max-width: {{ module.design_image.max_width }}px; max-height: {{ module.design_image.max_height }}px"' %}
+              {% endif %}
+              <img src="{{ module.design_image.src }}" alt="{{ module.design_image.alt }}" {{ sizeAttrs }}>
+            {% endif %}
+            {% cta guid="{{ module.cta_field }}" %}
+          </div>  
+        </div>
+    </div><!-- end row-fluid -->
+  </div><!-- end page-center -->
+</div><!-- end features -->
+
+<style>
+.features {
+  background: url('{{ module.background_oval_image.src }}');
+  background-position: 130% 74%;
+  background-repeat: no-repeat;
+}
+</style>

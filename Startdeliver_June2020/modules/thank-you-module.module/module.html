@@ -1,0 +1,22 @@
+<div class="thank-you">
+  <div class="page-center">
+    <h1>
+      {{ module.heading }}
+    </h1>
+    <div class="ty-text">
+        {% inline_rich_text field="content" value="{{ module.content }}" %}      
+    </div>
+    
+    <div class="row-flex">
+      {% for item in module.box %}
+      <div class="box-custom" style="background-color: {{ item.box_color }}">
+        <h2 class="thankyou">
+          {{ item.title }}
+        </h2>
+        <p>{{ item.description }}</p>
+        <a href="{{ item.button_link }}">{{ item.button_text }}</a>
+      </div><!-- end box-custom --> 
+      {% endfor %}
+    </div><!-- end row-flex -->
+  </div><!-- end page-center -->
+</div><!-- end thank-you -->

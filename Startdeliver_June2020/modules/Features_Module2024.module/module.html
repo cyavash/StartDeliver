@@ -1,0 +1,56 @@
+<div class="{{name}} featr-wrap"> 
+  <div class="page-center">
+    <div class="featr-hdr-otr"> 
+      <div class="featr-hdr">
+        <h4>
+          {{ module.title }}
+        </h4>
+        <h2>{{ module.heading }}</h2>
+        {{ module.subtitle }} 
+      </div>    
+    </div>
+    
+    <div class="featr-list-otr">
+      {% for item in module.features_item %}
+        <div class="featr-item">
+         <div class="featr-item-inr"> 
+           <div class="featr-icon">
+             {% if item.image_field.src %}
+              {% set sizeAttrs = 'width="{{ item.image_field.width }}" height="{{ item.image_field.height }}"' %}
+              {% if item.image_field.size_type == 'auto' %}
+                {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+              {% elif item.image_field.size_type == 'auto_custom_max' %}
+                {% set sizeAttrs = 'width="100%" height="auto" style="max-width: {{ item.image_field.max_width }}px; max-height: {{ item.image_field.max_height }}px"' %}
+              {% endif %}
+              <img src="{{ item.image_field.src }}" alt="{{ item.image_field.alt }}" {{ sizeAttrs }}>
+            {% endif %}
+           </div> 
+           <div class="featr-title">
+             <h3>{{ item.heading }}</h3>
+           </div>
+           <div class="featr-txt">
+             {{ item.content }}
+           </div> 
+          </div>  
+         </div>
+        {% endfor %}
+        <div class="featr-item" style="background: transparent!important;">
+           
+        </div>
+    </div> 
+  </div> 
+</div> 
+
+{% require_css %}
+<style>   
+  .{{name}}.featr-wrap { 
+    {{ module.style.background_image.css }}
+  }
+  @media (max-width: 767px) {
+    .{{name}}.featr-wrap { 
+      {{ module.style.mob_bg_image.css }}
+    }
+  }
+</style>
+{% end_require_css %}
+ 

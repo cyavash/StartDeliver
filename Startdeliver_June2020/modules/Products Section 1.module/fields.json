@@ -1,0 +1,397 @@
+[ {
+  "id" : "d709eea9-918f-e4be-3930-e181a267b0f5",
+  "name" : "background_image",
+  "display_width" : null,
+  "label" : "Background Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://f.hubspotusercontent20.net/hubfs/5565021/product1-bg.png",
+    "alt" : "product1-bg",
+    "loading" : "lazy",
+    "width" : 549,
+    "height" : 1039,
+    "max_width" : 549,
+    "max_height" : 1039
+  }
+}, {
+  "id" : "63e2a2d3-4c16-7956-03b8-361f81421cff",
+  "name" : "item1",
+  "display_width" : null,
+  "label" : "Item1",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "3fa27a66-90d6-40f6-e93c-7b1d3a3987d4",
+    "name" : "image_field",
+    "display_width" : null,
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent20.net/hubfs/5565021/product-img1.png",
+      "alt" : "product-img1",
+      "loading" : "lazy",
+      "width" : 663,
+      "height" : 554,
+      "max_width" : 663,
+      "max_height" : 554
+    }
+  }, {
+    "id" : "7534103e-235d-81fa-8910-414c80af6934",
+    "name" : "image_2",
+    "display_width" : null,
+    "label" : "Image 2",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent20.net/hubfs/5565021/product1-icon1-1.png",
+      "alt" : "product1-icon1-1",
+      "loading" : "lazy",
+      "width" : 65,
+      "height" : 64,
+      "max_width" : 65,
+      "max_height" : 64
+    }
+  }, {
+    "id" : "993e73fe-5152-f191-0204-d76d62f3520e",
+    "name" : "content",
+    "display_width" : null,
+    "label" : "Content",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<p>Usage health, feedback, support overview, renewals, and all the customer data you need to be proactive.</p>\n<p>Your information is safe and available. Secure all your customer data in Startdeliver.</p>"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent20.net/hubfs/5565021/product-img1.png",
+      "alt" : "product-img1",
+      "loading" : "lazy",
+      "width" : 663,
+      "height" : 554,
+      "max_width" : 663,
+      "max_height" : 554
+    },
+    "image_2" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent20.net/hubfs/5565021/product1-icon1-1.png",
+      "alt" : "product1-icon1-1",
+      "loading" : "lazy",
+      "width" : 65,
+      "height" : 64,
+      "max_width" : 65,
+      "max_height" : 64
+    },
+    "content" : "<p>Usage health, feedback, support overview, renewals, and all the customer data you need to be proactive.</p>\n<p>Your information is safe and available. Secure all your customer data in Startdeliver.</p>"
+  }
+}, {
+  "id" : "b9f69e69-8b26-d33c-a855-792a3c94e0f6",
+  "name" : "item2",
+  "display_width" : null,
+  "label" : "Item2",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "8b81ad1c-2d13-529d-3da6-08d6b46ac25c",
+    "name" : "image_field",
+    "display_width" : null,
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent20.net/hubfs/5565021/wave.png",
+      "alt" : "wave",
+      "loading" : "lazy",
+      "width" : 64,
+      "height" : 52,
+      "max_width" : 64,
+      "max_height" : 52
+    }
+  }, {
+    "id" : "691e0b1c-d1b0-1160-f248-02a1b30faa1f",
+    "name" : "content",
+    "display_width" : null,
+    "label" : "Content",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<p>Task Management with Projects, Playbooks, Tasks, Templates, and all you need for growth on Customers</p>\n<p>Apps and Integrations to make sure you get from reactive to proactive in your Customer Success</p>"
+  }, {
+    "id" : "0424bd7e-e35e-81e8-434a-fced58785a79",
+    "name" : "image_2",
+    "display_width" : null,
+    "label" : "Image 2",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent20.net/hubfs/5565021/product-img2b.png",
+      "alt" : "product-img2b",
+      "loading" : "lazy",
+      "width" : 412,
+      "height" : 274,
+      "max_width" : 412,
+      "max_height" : 274
+    }
+  }, {
+    "id" : "6e551f1d-a8db-0ae9-c2de-11ca6d8c9851",
+    "name" : "image_field3",
+    "display_width" : null,
+    "label" : "Image3",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent20.net/hubfs/5565021/product-img2.png",
+      "alt" : "product-img2",
+      "loading" : "lazy",
+      "width" : 650,
+      "height" : 452,
+      "max_width" : 650,
+      "max_height" : 452
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent20.net/hubfs/5565021/wave.png",
+      "alt" : "wave",
+      "loading" : "lazy",
+      "width" : 64,
+      "height" : 52,
+      "max_width" : 64,
+      "max_height" : 52
+    },
+    "content" : "<p>Task Management with Projects, Playbooks, Tasks, Templates, and all you need for growth on Customers</p>\n<p>Apps and Integrations to make sure you get from reactive to proactive in your Customer Success</p>",
+    "image_2" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent20.net/hubfs/5565021/product-img2b.png",
+      "alt" : "product-img2b",
+      "loading" : "lazy",
+      "width" : 412,
+      "height" : 274,
+      "max_width" : 412,
+      "max_height" : 274
+    },
+    "image_field3" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent20.net/hubfs/5565021/product-img2.png",
+      "alt" : "product-img2",
+      "loading" : "lazy",
+      "width" : 650,
+      "height" : 452,
+      "max_width" : 650,
+      "max_height" : 452
+    }
+  }
+}, {
+  "id" : "019dccc2-047a-d65f-1d3a-a249dafafe6f",
+  "name" : "item3",
+  "display_width" : null,
+  "label" : "Item3",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "f385c884-aec8-a5a1-435a-85b5e977063b",
+    "name" : "image_field",
+    "display_width" : null,
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent20.net/hubfs/5565021/product-img3.png",
+      "alt" : "product-img3",
+      "loading" : "lazy",
+      "width" : 606,
+      "height" : 663,
+      "max_width" : 606,
+      "max_height" : 663
+    }
+  }, {
+    "id" : "16974d71-4a0c-bdcc-5a86-52b3dac66c91",
+    "name" : "image_2",
+    "display_width" : null,
+    "label" : "Image 2",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent20.net/hubfs/5565021/product3-icon1.png",
+      "alt" : "product3-icon1",
+      "loading" : "lazy",
+      "width" : 64,
+      "height" : 52,
+      "max_width" : 64,
+      "max_height" : 52
+    }
+  }, {
+    "id" : "b4ce9ed1-1c06-34e1-e09c-9ad7e83d6b1d",
+    "name" : "content",
+    "display_width" : null,
+    "label" : "Content",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<p>Notifications, Feeds and triggered activities on early warnings and opportunities based on Customer data.</p>\n<p>Automate Tasks, Playbooks, Surveys, Product-tours, Marketing Automation based on Usage and much more.</p>"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent20.net/hubfs/5565021/product-img3.png",
+      "alt" : "product-img3",
+      "loading" : "lazy",
+      "width" : 606,
+      "height" : 663,
+      "max_width" : 606,
+      "max_height" : 663
+    },
+    "image_2" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent20.net/hubfs/5565021/product3-icon1.png",
+      "alt" : "product3-icon1",
+      "loading" : "lazy",
+      "width" : 64,
+      "height" : 52,
+      "max_width" : 64,
+      "max_height" : 52
+    },
+    "content" : "<p>Notifications, Feeds and triggered activities on early warnings and opportunities based on Customer data.</p>\n<p>Automate Tasks, Playbooks, Surveys, Product-tours, Marketing Automation based on Usage and much more.</p>"
+  }
+}, {
+  "id" : "5a58ecd2-e93b-f5e4-04d7-380ec9e82723",
+  "name" : "item4",
+  "display_width" : null,
+  "label" : "Item4",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "ae645831-55b9-a993-b9c9-ae07049c2d0b",
+    "name" : "image_field",
+    "display_width" : null,
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent20.net/hubfs/5565021/product4-icon1.png",
+      "alt" : "product4-icon1",
+      "loading" : "lazy",
+      "width" : 62,
+      "height" : 62,
+      "max_width" : 62,
+      "max_height" : 62
+    }
+  }, {
+    "id" : "18c72f1b-3874-9563-1baa-44c866af8a3e",
+    "name" : "content",
+    "display_width" : null,
+    "label" : "Content",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<p>Reports section lorem ipsum</p>\n<p>Vitae semper quis lectus nulla at volutpat. Facilisis sed odio morbi quis commodo odio aenean sed. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit.</p>"
+  }, {
+    "id" : "e3a5892f-979d-0a29-519c-4b57abc6d304",
+    "name" : "image_2",
+    "display_width" : null,
+    "label" : "Image 2",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent20.net/hubfs/5565021/product-img4.png",
+      "alt" : "product-img4",
+      "loading" : "lazy",
+      "width" : 670,
+      "height" : 601,
+      "max_width" : 670,
+      "max_height" : 601
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent20.net/hubfs/5565021/product4-icon1.png",
+      "alt" : "product4-icon1",
+      "loading" : "lazy",
+      "width" : 62,
+      "height" : 62,
+      "max_width" : 62,
+      "max_height" : 62
+    },
+    "content" : "<p>Reports section lorem ipsum</p>\n<p>Vitae semper quis lectus nulla at volutpat. Facilisis sed odio morbi quis commodo odio aenean sed. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit.</p>",
+    "image_2" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent20.net/hubfs/5565021/product-img4.png",
+      "alt" : "product-img4",
+      "loading" : "lazy",
+      "width" : 670,
+      "height" : 601,
+      "max_width" : 670,
+      "max_height" : 601
+    }
+  }
+} ]

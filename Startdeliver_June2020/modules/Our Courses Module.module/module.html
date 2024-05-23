@@ -1,0 +1,70 @@
+<div class='our-courses-module'>
+  <div class='page-center'>
+    <div class='our-courses-heading'>
+      <h2>
+        {{ module.section_heading }}
+      </h2>
+    </div>
+    <div class='our-courses-listing'>
+      {% for item in module.add_courses %}
+      <div class='courses-card courses-card-{{loop.index}}'>
+        {% if item.page_url.href %}
+        <a href='{{ item.page_url.href }}'>
+        {% endif %}
+          <div class='courses-image'>
+            {% if item.select_image.src %}
+            {% set sizeAttrs = 'width="{{ item.select_image.width }}" height="{{ item.select_image.height }}"' %}
+            {% if item.select_image.size_type == 'auto' %}
+            {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+            {% elif item.select_image.size_type == 'auto_custom_max' %}
+            {% set sizeAttrs = 'width="{{ item.select_image.max_width }}" height="{{ item.select_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+            {% endif %}
+            {% set loadingAttr = item.select_image.loading != 'disabled' ? 'loading="{{ item.select_image.loading }}"' : '' %}
+            <img src="{{ item.select_image.src }}" alt="{{ item.select_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }} >
+            {% endif %}
+            <div class='courses-tag'>
+              <p>
+                {{ item.tag_name }}
+              </p>
+            </div>
+            <div class='shield-icon'>
+              {% if item.shield_image.src %}
+              {% set sizeAttrs = 'width="{{ item.shield_image.width }}" height="{{ item.shield_image.height }}"' %}
+              {% if item.shield_image.size_type == 'auto' %}
+              {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+              {% elif item.shield_image.size_type == 'auto_custom_max' %}
+              {% set sizeAttrs = 'width="{{ item.shield_image.max_width }}" height="{{ item.shield_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+              {% endif %}
+              {% set loadingAttr = item.shield_image.loading != 'disabled' ? 'loading="{{ item.shield_image.loading }}"' : '' %}
+              <img src="{{ item.shield_image.src }}" alt="{{ item.shield_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+              {% endif %}
+            </div>
+          </div>
+        {% if item.page_url.href %}  
+        </a>
+        {% endif %}
+        <div class='courses-content'>
+          {{ item.content }}
+        </div>
+      </div>
+      <style>  
+          {% if item.border_color %}
+            .courses-card-{{loop.index}} .courses-image:after {
+              background: {{ item.border_color }}!important;
+            }
+          {% endif %}
+          {% if item.checkmark_color %}
+            .courses-card-{{loop.index}} .courses-content ul li:before {
+              content: "\f00c";  
+              font: normal normal normal 22px/1 FontAwesome;
+              background: none!important;
+              top: 3px!important;
+              color: {{ item.checkmark_color}};
+            }
+          {% endif %}
+        </style>
+      {% endfor %}
+    </div>       
+  </div>
+</div>
+

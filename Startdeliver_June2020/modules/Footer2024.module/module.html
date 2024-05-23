@@ -1,0 +1,56 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div id="footer">
+  <div class="page-center">
+    <div class="footer-logo">
+      <a href="https://www.startdeliver.com/">
+      {% if module.footer_logo.src %}
+        {% set sizeAttrs = 'width="{{ module.footer_logo.width }}" height="{{ module.footer_logo.height }}"' %}
+        {% if module.footer_logo.size_type == 'auto' %}
+          {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+        {% elif module.footer_logo.size_type == 'auto_custom_max' %}
+          {% set sizeAttrs = 'width="100%" height="auto" style="max-width: {{ module.footer_logo.max_width }}px; max-height: {{ module.footer_logo.max_height }}px"' %}
+        {% endif %}
+        <img src="{{ module.footer_logo.src }}" alt="{{ module.footer_logo.alt }}" {{ sizeAttrs }}>
+      {% endif %}
+      </a>  
+    </div><!-- end footer-logo -->
+    
+    <div class="row-flex-footer">
+      <div class="col">
+        {% inline_rich_text field="footer_list_1" value="{{ module.footer_list_1 }}" %}
+      </div><!-- end col -->
+      <div class="col">
+        {% inline_rich_text field="footer_list_1" value="{{ module.footer_list_2 }}" %}
+      </div><!-- end col -->
+      <div class="col">
+        {% inline_rich_text field="footer_list_1" value="{{ module.footer_list_3 }}" %}
+      </div><!-- end col -->
+      <div class="col">
+        {% inline_rich_text field="footer_list_1" value="{{ module.footer_list_4 }}" %}
+      </div><!-- end col -->
+      <div class="col">
+        {% inline_rich_text field="footer_list_1" value="{{ module.footer_list_5 }}" %}
+      </div><!-- end col -->
+      <div class="col">
+        
+      </div>
+    </div><!-- end row-flex -->
+    
+    <div class="row-bottom">
+       <div class="col-first">
+         {% inline_rich_text field="footer_contact" value="{{ module.footer_contact }}" %}
+      </div>
+      <div class="col-last">
+        <ul class="footer-social">
+        {% for item in module.social_item %}
+          <li><a href="{{ item.social_link }}">{{ item.social_icon }}</a></li>  
+        {% endfor %}
+        </ul>
+        <p>
+          {{ module.footer_copyright }}
+        </p>
+      </div>
+    </div><!-- end row-bottom -->  
+  </div><!-- end page-center -->
+</div><!-- end footer -->

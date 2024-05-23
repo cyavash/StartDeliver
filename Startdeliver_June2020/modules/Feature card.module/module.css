@@ -1,0 +1,75 @@
+.fa-bullseye:before {
+  content: "\f140";
+}
+.fa-thumbs-up:before {
+  content: "\f164";
+}
+
+.fa-flag:before {
+  content: "\f024";
+}
+
+.fa-check-square:before {
+  content: "\f14a";
+}
+
+.fa-comments:before {
+  content: "\f086";
+}
+.fa-list-ul:before {
+  content: "\f0ca";
+}
+
+.fa-cloud:before {
+  content: "\f0c2";
+}
+
+.fa-user-circle:before {
+  content: "\f2bd";
+}
+
+.fa-columns:before {
+  content: "\f0db";
+}
+
+.fa-gears:before, .fa-cogs:before {
+  content: "\f085";
+}
+
+.fa-exchange:before {
+  content: "\f0ec";
+}
+.fa-puzzle-piece:before {
+  content: "\f12e";
+}
+.fa-coffee:before {
+  content: "\f0f4";
+}
+
+
+
+.feature-block {
+  margin-top: 2.5rem;
+  margin-bottom: 2.7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-right: 1.875rem;
+}
+
+.feature_icon {
+  max-width: 1.875rem;
+  margin-right: .625rem;
+  font-size: 1.375rem;
+  color: #0850FE;
+}
+
+.feature_title {
+  font-size: 0.875rem;
+  font-weight: bold;
+  padding-bottom: 0.53rem;
+}
+
+.feature_blurb {
+  font-size: 0.875rem;
+}

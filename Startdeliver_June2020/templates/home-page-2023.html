@@ -1,0 +1,34 @@
+<!--
+templateType: page
+isAvailableForNewContent: true
+label: Home Page 2023
+-->
+
+{% extends "./layouts/base_2021.html" %}
+
+{% block header %}
+<div class="hs-home-layout">
+  {% global_partial path="../templates/partials/header_2021.html" %}
+  {% endblock header %}
+  {% block body %}
+  <main class="body-container-wrapper">
+    {% dnd_area "DND_Main" class='', label='Main Section' %}
+     {% dnd_section full_width=true %}
+
+     {% end_dnd_section %}   
+    {% end_dnd_area %}
+  </main>
+  {% endblock body %}
+  {% block footer %}
+  <div class="footer-section">
+    {% dnd_area "DND_footer" class='', label='Footer' %}
+    {% dnd_section full_width=true %}
+    {% dnd_module path='../modules/footer', width=12, offset=0, label="" %}
+    {% end_dnd_module %}
+    {% end_dnd_section %}   
+    {% end_dnd_area %}
+  </div>
+</div>
+{% endblock footer%}
+
+

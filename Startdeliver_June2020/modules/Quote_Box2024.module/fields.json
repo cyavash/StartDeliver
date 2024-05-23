@@ -1,0 +1,133 @@
+[ {
+  "id" : "fb24f64d-058f-37e7-ce90-f4ff36a2e1cc",
+  "name" : "quote_item",
+  "display_width" : null,
+  "label" : "Quote Item",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 2
+  },
+  "children" : [ {
+    "id" : "fb5353fc-79e9-e2b3-a397-8573433864a4",
+    "name" : "quote_name",
+    "display_width" : null,
+    "label" : "Quote Name",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Mattias Österberg"
+  }, {
+    "id" : "f7322632-f0a8-c9b0-95e2-bbf23a2f3e2d",
+    "name" : "role",
+    "display_width" : null,
+    "label" : "Role",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Head of Customer Success"
+  }, {
+    "id" : "6e43e9e7-2048-6fd1-fe6a-9ce1413662b0",
+    "name" : "company",
+    "display_width" : null,
+    "label" : "Company",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "FIBBL"
+  }, {
+    "id" : "105b228b-001d-6fc8-48b0-3982f3fb7115",
+    "name" : "quote_text",
+    "display_width" : null,
+    "label" : "Quote Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "\"With Startdeliver I know exactly what I should focus on. <br> Admin time has gone down drastically.\""
+  }, {
+    "id" : "dc580648-7647-019e-e6af-aa645c5fc544",
+    "name" : "image_field",
+    "display_width" : null,
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://5565021.fs1.hubspotusercontent-na1.net/hubfs/5565021/img1-3.png",
+      "alt" : "img1-3",
+      "loading" : "lazy",
+      "width" : 218,
+      "height" : 213,
+      "max_width" : 218,
+      "max_height" : 213
+    }
+  }, {
+    "id" : "ae0ceabd-da21-6caa-29f5-51ce81bd2efa",
+    "name" : "box_color",
+    "display_width" : null,
+    "label" : "Box Color",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "#07CCCD"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : [ {
+    "quote_name" : "Mattias Österberg",
+    "role" : "Head of Customer Success",
+    "company" : "FIBBL",
+    "quote_text" : "\"With Startdeliver I know exactly what I should focus on. <br> Admin time has gone down drastically.\"",
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://5565021.fs1.hubspotusercontent-na1.net/hubfs/5565021/img1-3.png",
+      "alt" : "img1-3",
+      "loading" : "lazy",
+      "width" : 218,
+      "height" : 213,
+      "max_width" : 218,
+      "max_height" : 213
+    },
+    "box_color" : "#07CCCD"
+  }, {
+    "quote_name" : "Mattias Österberg",
+    "role" : "Head of Customer Success",
+    "company" : "FIBBL",
+    "quote_text" : "\"With Startdeliver I know exactly what I should focus on. <br> Admin time has gone down drastically.\"",
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://5565021.fs1.hubspotusercontent-na1.net/hubfs/5565021/img1-3.png",
+      "alt" : "img1-3",
+      "loading" : "lazy",
+      "width" : 218,
+      "height" : 213,
+      "max_width" : 218,
+      "max_height" : 213
+    },
+    "box_color" : "#07CCCD"
+  } ]
+} ]

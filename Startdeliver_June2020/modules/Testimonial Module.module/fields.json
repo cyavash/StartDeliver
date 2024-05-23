@@ -1,0 +1,107 @@
+[ {
+  "id" : "6c88e749-68eb-2f00-0f3e-64cf7d04a6ff",
+  "name" : "section_heading",
+  "display_width" : null,
+  "label" : "Section Heading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Lorem ipsum is placeholder text commonly used in the graphic"
+}, {
+  "id" : "406dfedf-183b-53be-353a-f1721be9069f",
+  "name" : "add_slide",
+  "display_width" : null,
+  "label" : "Add Slide",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : "635e4e06-479e-1fdb-99d3-b24b5c7436dc",
+    "default" : 4
+  },
+  "children" : [ {
+    "id" : "5e87de97-b857-9651-2943-bb86a051bf22",
+    "name" : "select_image",
+    "display_width" : null,
+    "label" : "Select Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    }
+  }, {
+    "id" : "fbcf02c5-307e-4ada-59cd-a81ffeb569e7",
+    "name" : "content",
+    "display_width" : null,
+    "label" : "Content",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext"
+  }, {
+    "id" : "635e4e06-479e-1fdb-99d3-b24b5c7436dc",
+    "name" : "test_name",
+    "display_width" : null,
+    "label" : "Name",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  }, {
+    "id" : "f8e899e4-caac-eb55-bbab-342820235246",
+    "name" : "destination",
+    "display_width" : null,
+    "label" : "Destination",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : [ {
+    "select_image" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    }
+  }, {
+    "select_image" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    }
+  }, {
+    "select_image" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    }
+  }, {
+    "select_image" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    }
+  } ]
+} ]

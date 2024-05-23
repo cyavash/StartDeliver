@@ -1,0 +1,38 @@
+h1,h2,h3,h4,h5,h6,p 
+{
+  color: #434343; 
+}
+
+.banner-variant1 {
+  clear: both;
+  margin-top: 160px;
+}
+.banner-variant h1 {
+  margin-bottom: 45px; 
+}
+.banner-variant1 h1,
+.banner-variant1 p {
+  width: 760px;
+  max-width: 100%;
+}
+.banner-variant1 img {
+  display: block;
+  margin: auto;
+  margin-top: 80px;
+}
+.banner-content2 {
+   margin-top: 100px;
+}
+.banner-content2 p {
+  width: 720px;
+  max-width: 100%;
+  margin: auto;
+  font-size: 30px;
+  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .banner-content2 p {
+    font-size: 25px;
+  }
+}

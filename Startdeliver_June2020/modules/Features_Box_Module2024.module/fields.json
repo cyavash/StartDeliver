@@ -1,0 +1,162 @@
+[ {
+  "id" : "fd9fa028-1849-6cde-3558-aa62c70748b0",
+  "name" : "sub_title",
+  "display_width" : null,
+  "label" : "Sub Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "KEY FEATURES"
+}, {
+  "id" : "fbbd9467-cc00-4bfb-cda9-04dc78d4a970",
+  "name" : "heading",
+  "display_width" : null,
+  "label" : "Heading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Get rid of the worst headaches for Customer Success"
+}, {
+  "id" : "794459b2-5acf-2db9-f5af-64e279c42130",
+  "name" : "features_item",
+  "display_width" : null,
+  "label" : "Features Item",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : "328f1fc3-a393-4033-8ff2-77d2e0f8d9c2",
+    "default" : 3
+  },
+  "children" : [ {
+    "id" : "328f1fc3-a393-4033-8ff2-77d2e0f8d9c2",
+    "name" : "heading",
+    "display_width" : null,
+    "label" : "Heading",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "By usage:"
+  }, {
+    "id" : "7dd6d68b-8c47-4748-e126-359b23b98f86",
+    "name" : "content",
+    "display_width" : null,
+    "label" : "Content",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<p>Find out how active your customers are. Talk to the right customers first.</p>"
+  }, {
+    "id" : "12b1d97a-c7ef-71d1-a1c9-1d77fb90dd8f",
+    "name" : "color_field",
+    "display_width" : null,
+    "label" : "Box Color",
+    "required" : false,
+    "locked" : false,
+    "show_opacity" : true,
+    "type" : "color",
+    "default" : {
+      "color" : "#E8EDFF",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "3d943302-9f13-e390-aef6-d2d0eb147c38",
+    "name" : "title_color",
+    "display_width" : null,
+    "label" : "Title Color",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "#2050fe"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : [ {
+    "heading" : "By usage:",
+    "content" : "<p>Find out how active your customers are. Talk to the right customers first.</p>",
+    "color_field" : {
+      "color" : "#E8EDFF",
+      "opacity" : 100
+    },
+    "title_color" : "#2050fe"
+  }, {
+    "heading" : "By usage:",
+    "content" : "<p>Find out how active your customers are. Talk to the right customers first.</p>",
+    "color_field" : {
+      "color" : "#E8EDFF",
+      "opacity" : 100
+    },
+    "title_color" : "#2050fe"
+  }, {
+    "heading" : "By usage:",
+    "content" : "<p>Find out how active your customers are. Talk to the right customers first.</p>",
+    "color_field" : {
+      "color" : "#E8EDFF",
+      "opacity" : 100
+    },
+    "title_color" : "#2050fe"
+  } ]
+}, {
+  "id" : "fc41a647-51ae-ddd1-727b-34f1539fc455",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "5aa6f928-8db7-7fb9-d35e-7fa5427337c1",
+    "name" : "background_image",
+    "display_width" : null,
+    "label" : "Background Image",
+    "required" : false,
+    "locked" : false,
+    "type" : "backgroundimage",
+    "default" : {
+      "background_position" : "TOP_CENTER",
+      "background_size" : "cover",
+      "src" : "https://5565021.fs1.hubspotusercontent-na1.net/hubfs/5565021/StartDeliver_2023/Images/Home/bg-1.png"
+    }
+  }, {
+    "id" : "ae11bf2a-1cc9-699b-242f-ad806aeadcb6",
+    "name" : "background",
+    "display_width" : null,
+    "label" : "Background-color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#00174F",
+      "opacity" : 100
+    }
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "background_image" : {
+      "background_position" : "TOP_CENTER",
+      "background_size" : "cover",
+      "src" : "https://5565021.fs1.hubspotusercontent-na1.net/hubfs/5565021/StartDeliver_2023/Images/Home/bg-1.png"
+    },
+    "background" : {
+      "color" : "#00174F",
+      "opacity" : 100
+    }
+  }
+} ]

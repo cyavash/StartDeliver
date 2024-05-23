@@ -1,0 +1,114 @@
+[ {
+  "id" : "78f11b98-fc88-a6b0-63dc-88f51b4ad8ac",
+  "name" : "item",
+  "display_width" : null,
+  "label" : "Block Item",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : "0c2cdd44-c2dc-0aee-535b-c13ce25b8980",
+    "default" : 2
+  },
+  "children" : [ {
+    "id" : "1cf10b46-63d9-961e-ceae-1c67ed96d268",
+    "name" : "sub_title",
+    "display_width" : null,
+    "label" : "Sub Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "CHURN BE GONE:"
+  }, {
+    "id" : "0c2cdd44-c2dc-0aee-535b-c13ce25b8980",
+    "name" : "title",
+    "display_width" : null,
+    "label" : "Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Take action based on <span> customer usage </span>"
+  }, {
+    "id" : "344efb03-ddd7-ed92-1763-3b2f89315c40",
+    "name" : "content",
+    "display_width" : null,
+    "label" : "Content",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<ul>\n<li>Know when to contact customers</li>\n<li>Health score based on usage of your product</li>\n<li>Stop churn before it happens</li>\n</ul>"
+  }, {
+    "id" : "c481a15f-8a72-d7a5-327d-75392ee2f66e",
+    "name" : "image",
+    "display_width" : null,
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://5565021.fs1.hubspotusercontent-na1.net/hubfs/5565021/StartDeliver_2023/Images/Home/Hanna%20Iversen.png",
+      "alt" : "Hanna Iversen",
+      "loading" : "lazy",
+      "width" : 529,
+      "height" : 625,
+      "max_width" : 529,
+      "max_height" : 625
+    }
+  }, {
+    "id" : "04ae9be3-b4c2-0e78-eb7b-8e87494b61e1",
+    "name" : "flip",
+    "display_width" : null,
+    "label" : "Flip Direction",
+    "required" : false,
+    "locked" : false,
+    "display" : "checkbox",
+    "type" : "boolean",
+    "default" : false
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : [ {
+    "sub_title" : "CHURN BE GONE:",
+    "title" : "Take action based on <span> customer usage </span>",
+    "content" : "<ul>\n<li>Know when to contact customers</li>\n<li>Health score based on usage of your product</li>\n<li>Stop churn before it happens</li>\n</ul>",
+    "image" : {
+      "size_type" : "auto",
+      "src" : "https://5565021.fs1.hubspotusercontent-na1.net/hubfs/5565021/StartDeliver_2023/Images/Home/Hanna%20Iversen.png",
+      "alt" : "Hanna Iversen",
+      "loading" : "lazy",
+      "width" : 529,
+      "height" : 625,
+      "max_width" : 529,
+      "max_height" : 625
+    },
+    "flip" : false
+  }, {
+    "sub_title" : "CHURN BE GONE:",
+    "title" : "Take action based on <span> customer usage </span>",
+    "content" : "<ul>\n<li>Know when to contact customers</li>\n<li>Health score based on usage of your product</li>\n<li>Stop churn before it happens</li>\n</ul>",
+    "image" : {
+      "size_type" : "auto",
+      "src" : "https://5565021.fs1.hubspotusercontent-na1.net/hubfs/5565021/StartDeliver_2023/Images/Home/Hanna%20Iversen.png",
+      "alt" : "Hanna Iversen",
+      "loading" : "lazy",
+      "width" : 529,
+      "height" : 625,
+      "max_width" : 529,
+      "max_height" : 625
+    },
+    "flip" : false
+  } ]
+} ]

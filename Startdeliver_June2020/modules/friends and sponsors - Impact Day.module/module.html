@@ -1,0 +1,80 @@
+<div class="bg_impact impact-friends" id="partners">
+  <div class="page-center">
+    <div class="heading">
+      <h2>{{ module.title }}</h2>
+      <div class="text">{{ module.content }}</div>
+    </div>
+    <div class="box-wrapper">
+      {% for item in module.logo %}
+      <div class="single-box">
+        <img src="{{ item.src }}" alt="{{ item.alt }}" >
+      </div>
+      {% endfor %}
+    </div>
+    <div class="partner-strip">
+      <div class="content">
+        <h3>{{ module.partner_box.title }}</h3>
+        <div class="text">{{ module.partner_box.content }}</div>
+      </div>
+      <div class="btn-wrapper">
+        {% set href = module.partner_box.button.link.url.href %}
+        {% if module.partner_box.button.link.url.type is equalto "EMAIL_ADDRESS" %}
+        {% set href = "mailto:" + href %}
+        {% endif %}
+        <a href="{{ href }}"
+           {% if module.partner_box.button.link.open_in_new_tab %}target="_blank"{% endif %}
+           {% if module.partner_box.button.link.rel %}rel="{{ module.partner_box.button.link.rel }}"{% endif %}
+           >
+          {{ module.partner_box.button.text }}
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% require_css %}
+<style>
+  .impact-friends{
+    {{ module.style.backgroundimage_field.css }}
+  }
+  .impact-friends{padding:70px 0 105px;text-align:center;color:#fff;}
+  .impact-friends .page-center{position:relative;z-index:1;}
+  .impact-friends h2{color:inherit;}
+  .impact-friends .heading{padding:0 0 60px;}
+  .impact-friends .heading .text{max-width:450px;margin:0 auto 0;}
+  .impact-friends .box-wrapper{display:flex;flex-wrap:wrap;justify-content:center;}
+  .impact-friends .box-wrapper .single-box{width:calc(100% / 5);padding:20px 16px;text-align:center;}
+  .impact-friends.bg_impact:before{background:linear-gradient(0deg,rgba(0,0,0,0.3),rgba(0,0,0,0.3)),linear-gradient(133.59deg,#838CF7 0%,#F0BBF0 100%);}
+  .impact-friends .partner-strip{display:flex;align-items:center;max-width:960px;margin:0 auto;padding:140px 0 0;}
+  .impact-friends .partner-strip > div{width:50%;}
+  
+  .impact-friends .partner-strip h3{color:inherit;}
+  .impact-friends .partner-strip .content{text-align:left;}
+  .impact-friends .partner-strip .btn-wrapper{position:relative;}
+  .impact-friends .partner-strip .btn-wrapper:before{content:'';position:absolute;height:160px;width:100%;background-image:url(https://5565021.fs1.hubspotusercontent-na1.net/hubfs/5565021/impact-day/SHAPE.png);background-size:contain;background-repeat:no-repeat;background-position:center;top:50%;left:50%;transform:translate(-50%,-50%);z-index:-1;margin-top:20px;margin-left:60px;}
+
+  @media(max-width:1339px){
+
+  }
+  @media(max-width:1200px){
+    .impact-friends .partner-strip { padding: 90px 0 0; }
+  }
+  @media(max-width:991px){
+    .impact-friends .box-wrapper .single-box { width: calc(100% / 4); padding: 14px 13px; }
+  }
+  @media(max-width:767px){
+    .impact-friends .heading { padding: 0 0 30px; }
+    .impact-friends .box-wrapper .single-box { width: calc(100% / 3); padding: 14px 13px; }
+    .impact-friends .partner-strip { padding: 60px 0 0; flex-wrap: wrap; }
+    .impact-friends .partner-strip > div { width: 100%; }
+    .impact-friends .partner-strip .content { text-align: center; padding: 0 0 30px; }
+    .impact-friends .partner-strip .btn-wrapper:before { margin: 0; height: 120px; width: 100%; }
+    .impact-friends { padding: 60px 0 85px; }
+  }
+  @media(max-width:575px){
+    .impact-friends { padding: 50px 0 65px; }
+    .impact-friends .box-wrapper .single-box { width: calc(100% / 2); padding: 10px; }
+    .impact-friends .partner-strip { padding: 40px 0 0; }
+  }
+</style>
+{% end_require_css %}

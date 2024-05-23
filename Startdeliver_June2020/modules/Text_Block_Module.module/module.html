@@ -1,0 +1,53 @@
+<div class="{{name}} txt-block-wrap">
+  <div class="page-center"> 
+    <div class="txt-block-main">
+      {% for item in module.item %}
+        <div class="txt-block-otr {% if item.flip %} txt-flip {% endif %}">  
+          <div class="txt-block-rgt"> 
+            <div class="txt-block-image"> 
+              {% if item.image.src %}
+                {% set sizeAttrs = 'width="{{ item.image.width }}" height="{{ item.image.height }}"' %}
+                {% if item.image.size_type == 'auto' %}
+                  {% set sizeAttrs = 'width="{{ item.image.width }}" height="{{ item.image.height }}" style="max-width: 100%; height: auto;"' %}
+                {% elif item.image.size_type == 'auto_custom_max' %}
+                  {% set sizeAttrs = 'width="{{ item.image.max_width }}" height="{{ item.image.max_height }}" style="max-width: 100%; height: auto;"' %}
+                {% endif %}
+                 {% set loadingAttr = item.image.loading != 'disabled' ? 'loading="{{ item.image.loading }}"' : '' %}
+                <img src="{{ item.image.src }}" alt="{{ item.image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+              {% endif %}
+            </div>
+          </div>   
+          <div class="txt-block-left">  
+            <div class="txt-block-inner"> 
+              {% if item.sub_title %}
+                <div class="txt-block-stle">
+                  <h5>{{ item.sub_title }}</h5>
+                </div> 
+              {% endif %}  
+              {% if item.title %}
+                <div class="txt-block-title">
+                  <h3>{{ item.title }}</h3>
+                </div> 
+              {% endif %}  
+              {% if item.content %}
+                <div class="txt-block-txt"> 
+                  {{ item.content }}
+                </div>  
+               {% endif %}   
+              </div> 
+          </div>
+        </div>  
+      {% endfor %}
+    </div>
+	</div> 
+</div>
+
+ 
+{% require_css %}
+<style> 
+    
+  
+</style>
+{% end_require_css %}
+
+ 

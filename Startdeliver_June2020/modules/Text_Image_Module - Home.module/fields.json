@@ -1,0 +1,67 @@
+[ {
+  "id" : "8ccad982-0677-62eb-7f58-6642c2b453de",
+  "name" : "heading",
+  "display_width" : null,
+  "label" : "Heading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Improve Onboarding. <span style=\"color: #F51AA4;\"> Increase Net Revenue Retention.</span>  <span style=\"color: #0850FE;\"> Better CX. </span> <span style=\"color: #00174F; font-weight: 600; \"> Shorter Time to Value.  </span>"
+}, {
+  "id" : "1cf10b46-63d9-961e-ceae-1c67ed96d268",
+  "name" : "sub_title",
+  "display_width" : null,
+  "label" : "Sub Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "PLUG-N-PLAY INTEGRATIONS:"
+}, {
+  "id" : "0c2cdd44-c2dc-0aee-535b-c13ce25b8980",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Track customers better to help them <span> better </span>"
+}, {
+  "id" : "344efb03-ddd7-ed92-1763-3b2f89315c40",
+  "name" : "content",
+  "display_width" : null,
+  "label" : "Content",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<ul>\n<li>See all customer data in one place</li>\n<li>Find out what triggers churn</li>\n<li>Increase CLV</li>\n</ul>"
+}, {
+  "id" : "c481a15f-8a72-d7a5-327d-75392ee2f66e",
+  "name" : "image",
+  "display_width" : null,
+  "label" : "Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://5565021.fs1.hubspotusercontent-na1.net/hubfs/5565021/StartDeliver_2023/Images/Home/DATA-1.png",
+    "alt" : "DATA-1",
+    "loading" : "lazy",
+    "width" : 917,
+    "height" : 604,
+    "max_width" : 917,
+    "max_height" : 604
+  }
+} ]

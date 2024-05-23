@@ -1,0 +1,33 @@
+<div class='carrers-section' style='background-color:{{ module.background_color.css }};'>
+  <div class='page-center'>
+    <div class='carrers-subheading'>
+      <p>
+        {{ module.sub_heading }}
+      </p>
+    </div>
+    <div class='carrers-heading'>
+      <h2>
+        {{ module.heading }}
+      </h2>
+    </div>
+    <div class='carrers-listing'>
+      {% for item in module.add_column %}
+      <div class='carrers-column'>
+        {{ item.content }}
+      </div>
+      {% endfor %}
+    </div>
+    <div class='carrers-image'>
+      {% if module.user_image.src %}
+      {% set sizeAttrs = 'width="{{ module.user_image.width }}" height="{{ module.user_image.height }}"' %}
+      {% if module.user_image.size_type == 'auto' %}
+      {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+      {% elif module.user_image.size_type == 'auto_custom_max' %}
+      {% set sizeAttrs = 'width="{{ module.user_image.max_width }}" height="{{ module.user_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+      {% endif %}
+      {% set loadingAttr = module.user_image.loading != 'disabled' ? 'loading="{{ module.user_image.loading }}"' : '' %}
+      <img src="{{ module.user_image.src }}" alt="{{ module.user_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+      {% endif %}
+    </div>
+  </div>
+</div>

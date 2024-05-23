@@ -1,0 +1,219 @@
+[ {
+  "id" : "6b539480-4e18-7980-90b2-47cfae5c5ab9",
+  "name" : "heading",
+  "display_width" : null,
+  "label" : "Heading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Discover Impact Tracks <strong>- Education and inspiration based on your roll</strong> "
+}, {
+  "id" : "965c1f93-8c7d-cb3d-2b40-a221a94007ba",
+  "name" : "slider_item",
+  "display_width" : null,
+  "label" : "Slider Item",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 3
+  },
+  "children" : [ {
+    "id" : "95ba665d-4c8b-6388-2c5f-17af57ebcb34",
+    "name" : "background_color",
+    "display_width" : null,
+    "label" : "Background Color",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "red"
+  }, {
+    "id" : "fc28704e-7756-270f-ab8b-f3cad24d3001",
+    "name" : "heading",
+    "display_width" : null,
+    "label" : "Heading",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Customer Success <strong>Leadership Track</strong>"
+  }, {
+    "id" : "47fbe179-ac81-204b-8f16-3cdcdbc8e119",
+    "name" : "content",
+    "display_width" : null,
+    "label" : "Content",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<p><strong>This track is for leaders and aspiring leaders of Customer Success teams and organizations.</strong> How to coach, manage and lead organizations through growth, turbulent markets and an ever growing customer base.</p>"
+  }, {
+    "id" : "7a143a3e-c9a9-68b3-0883-4347732260c2",
+    "name" : "subheading",
+    "display_width" : null,
+    "label" : "Track Content",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : null,
+      "max" : null,
+      "sorting_label_field" : null,
+      "default" : 2
+    },
+    "children" : [ {
+      "id" : "f2313908-e433-d1d1-25c3-29aae175a146",
+      "name" : "subheading",
+      "display_width" : null,
+      "label" : "Subheading",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "KEYNOTE"
+    }, {
+      "id" : "d9e8267b-0f24-1349-0525-0ab680c2edf8",
+      "name" : "subheading_link",
+      "display_width" : null,
+      "label" : "Subheading Link",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "#id-5"
+    }, {
+      "id" : "25079dbc-25b8-35e9-224c-22e98636feab",
+      "name" : "text_color",
+      "display_width" : null,
+      "label" : "Subheading Color",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "#1fa791"
+    }, {
+      "id" : "8b82e71d-4d53-a9e5-f210-cc53955323d4",
+      "name" : "content",
+      "display_width" : null,
+      "label" : "Content",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "High Performing Customer Success teams"
+    }, {
+      "id" : "338da213-bcb7-0aca-f9ee-a1e0535e81a1",
+      "name" : "role",
+      "display_width" : null,
+      "label" : "Name and Role",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "Sofie Folkesson, Position Green"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "default" : [ {
+      "subheading" : "KEYNOTE",
+      "subheading_link" : "#id-5",
+      "text_color" : "#1fa791",
+      "content" : "High Performing Customer Success teams",
+      "role" : "Sofie Folkesson, Position Green"
+    }, {
+      "subheading" : "KEYNOTE",
+      "subheading_link" : "#id-5",
+      "text_color" : "#1fa791",
+      "content" : "High Performing Customer Success teams",
+      "role" : "Sofie Folkesson, Position Green"
+    } ]
+  }, {
+    "id" : "4d01aada-0cc5-3c52-9db0-dece34995112",
+    "name" : "bottom_content",
+    "display_width" : null,
+    "label" : "Bottom Content",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<p><em>+ more inspiring keynotes, panels and networking speed dates!</em></p>"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : [ {
+    "background_color" : "red",
+    "heading" : "Customer Success <strong>Leadership Track</strong>",
+    "content" : "<p><strong>This track is for leaders and aspiring leaders of Customer Success teams and organizations.</strong> How to coach, manage and lead organizations through growth, turbulent markets and an ever growing customer base.</p>\n<p><span class=\"subheading\"><a href=\"#id-5\" style=\"color: {{ item.text_color }}!important;\">KEYNOTE</a></span> <strong>High Performing Customer Success teams</strong><br>Sofie Folkesson, Position Green</p>\n<p><span class=\"subheading\"><a href=\"#id-14\" style=\"color: {{ item.text_color }}!important;\">CS OPERATIONS WORKSHOP</a></span> <strong>Driving Success with Data by identifying and tacking Metrics that matter</strong><br>Gustav Gustavsson, Business</p>\n<p><em>+ more inspiring keynotes, panels and networking speed dates!</em></p>",
+    "subheading" : [ {
+      "subheading" : "KEYNOTE",
+      "subheading_link" : "#id-5",
+      "text_color" : "#1fa791",
+      "content" : "High Performing Customer Success teams",
+      "role" : "Sofie Folkesson, Position Green"
+    }, {
+      "subheading" : "KEYNOTE",
+      "subheading_link" : "#id-5",
+      "text_color" : "#1fa791",
+      "content" : "High Performing Customer Success teams",
+      "role" : "Sofie Folkesson, Position Green"
+    } ],
+    "bottom_content" : "<p><em>+ more inspiring keynotes, panels and networking speed dates!</em></p>"
+  }, {
+    "background_color" : "red",
+    "heading" : "Customer Success <strong>Leadership Track</strong>",
+    "content" : "<p><strong>This track is for leaders and aspiring leaders of Customer Success teams and organizations.</strong> How to coach, manage and lead organizations through growth, turbulent markets and an ever growing customer base.</p>\n<p><span class=\"subheading\"><a href=\"#id-5\" style=\"color: {{ item.text_color }}!important;\">KEYNOTE</a></span> <strong>High Performing Customer Success teams</strong><br>Sofie Folkesson, Position Green</p>\n<p><span class=\"subheading\"><a href=\"#id-14\" style=\"color: {{ item.text_color }}!important;\">CS OPERATIONS WORKSHOP</a></span> <strong>Driving Success with Data by identifying and tacking Metrics that matter</strong><br>Gustav Gustavsson, Business</p>\n<p><em>+ more inspiring keynotes, panels and networking speed dates!</em></p>",
+    "subheading" : [ {
+      "subheading" : "KEYNOTE",
+      "subheading_link" : "#id-5",
+      "text_color" : "#1fa791",
+      "content" : "High Performing Customer Success teams",
+      "role" : "Sofie Folkesson, Position Green"
+    }, {
+      "subheading" : "KEYNOTE",
+      "subheading_link" : "#id-5",
+      "text_color" : "#1fa791",
+      "content" : "High Performing Customer Success teams",
+      "role" : "Sofie Folkesson, Position Green"
+    } ],
+    "bottom_content" : "<p><em>+ more inspiring keynotes, panels and networking speed dates!</em></p>"
+  }, {
+    "background_color" : "red",
+    "heading" : "Customer Success <strong>Leadership Track</strong>",
+    "content" : "<p><strong>This track is for leaders and aspiring leaders of Customer Success teams and organizations.</strong> How to coach, manage and lead organizations through growth, turbulent markets and an ever growing customer base.</p>\n<p><span class=\"subheading\"><a href=\"#id-5\" style=\"color: {{ item.text_color }}!important;\">KEYNOTE</a></span> <strong>High Performing Customer Success teams</strong><br>Sofie Folkesson, Position Green</p>\n<p><span class=\"subheading\"><a href=\"#id-14\" style=\"color: {{ item.text_color }}!important;\">CS OPERATIONS WORKSHOP</a></span> <strong>Driving Success with Data by identifying and tacking Metrics that matter</strong><br>Gustav Gustavsson, Business</p>\n<p><em>+ more inspiring keynotes, panels and networking speed dates!</em></p>",
+    "subheading" : [ {
+      "subheading" : "KEYNOTE",
+      "subheading_link" : "#id-5",
+      "text_color" : "#1fa791",
+      "content" : "High Performing Customer Success teams",
+      "role" : "Sofie Folkesson, Position Green"
+    }, {
+      "subheading" : "KEYNOTE",
+      "subheading_link" : "#id-5",
+      "text_color" : "#1fa791",
+      "content" : "High Performing Customer Success teams",
+      "role" : "Sofie Folkesson, Position Green"
+    } ],
+    "bottom_content" : "<p><em>+ more inspiring keynotes, panels and networking speed dates!</em></p>"
+  } ]
+} ]

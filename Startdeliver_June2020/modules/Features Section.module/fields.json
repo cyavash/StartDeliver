@@ -1,0 +1,215 @@
+[ {
+  "id" : "fbbd9467-cc00-4bfb-cda9-04dc78d4a970",
+  "name" : "heading",
+  "display_width" : null,
+  "label" : "Heading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Features that wont make your customers happy, <strong>but that will make sure you can make your customers happy</strong>"
+}, {
+  "id" : "9c81bb86-979e-ba1a-9133-6355c372f572",
+  "name" : "subtitle",
+  "display_width" : null,
+  "label" : "Subtitle",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<p>We believe automation should be easy, because everyone deserves to work smarter - not harder. Start today by connecting all your apps and collect the full view of the customer.</p>"
+}, {
+  "id" : "794459b2-5acf-2db9-f5af-64e279c42130",
+  "name" : "features_item",
+  "display_width" : null,
+  "label" : "Features Item",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 7
+  },
+  "children" : [ {
+    "id" : "d96d505c-aeaa-ddf9-c62c-c6842747df6e",
+    "name" : "image_field",
+    "display_width" : null,
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent20.net/hubfs/5565021/img1.png",
+      "alt" : "img1",
+      "width" : 41,
+      "height" : 47,
+      "max_width" : 41,
+      "max_height" : 47
+    }
+  }, {
+    "id" : "328f1fc3-a393-4033-8ff2-77d2e0f8d9c2",
+    "name" : "heading",
+    "display_width" : null,
+    "label" : "Heading",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Dev Portal"
+  }, {
+    "id" : "7dd6d68b-8c47-4748-e126-359b23b98f86",
+    "name" : "content",
+    "display_width" : null,
+    "label" : "Content",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<p>Get started quickly with documentation, tutorials and free sandbox workspace.</p>"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : [ {
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent20.net/hubfs/5565021/img1.png",
+      "alt" : "img1",
+      "width" : 41,
+      "height" : 47,
+      "max_width" : 41,
+      "max_height" : 47
+    },
+    "heading" : "Dev Portal",
+    "content" : "<p>Get started quickly with documentation, tutorials and free sandbox workspace.</p>"
+  }, {
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent20.net/hubfs/5565021/img1.png",
+      "alt" : "img1",
+      "width" : 41,
+      "height" : 47,
+      "max_width" : 41,
+      "max_height" : 47
+    },
+    "heading" : "Dev Portal",
+    "content" : "<p>Get started quickly with documentation, tutorials and free sandbox workspace.</p>"
+  }, {
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent20.net/hubfs/5565021/img1.png",
+      "alt" : "img1",
+      "width" : 41,
+      "height" : 47,
+      "max_width" : 41,
+      "max_height" : 47
+    },
+    "heading" : "Dev Portal",
+    "content" : "<p>Get started quickly with documentation, tutorials and free sandbox workspace.</p>"
+  }, {
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent20.net/hubfs/5565021/img1.png",
+      "alt" : "img1",
+      "width" : 41,
+      "height" : 47,
+      "max_width" : 41,
+      "max_height" : 47
+    },
+    "heading" : "Dev Portal",
+    "content" : "<p>Get started quickly with documentation, tutorials and free sandbox workspace.</p>"
+  }, {
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent20.net/hubfs/5565021/img1.png",
+      "alt" : "img1",
+      "width" : 41,
+      "height" : 47,
+      "max_width" : 41,
+      "max_height" : 47
+    },
+    "heading" : "Dev Portal",
+    "content" : "<p>Get started quickly with documentation, tutorials and free sandbox workspace.</p>"
+  }, {
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent20.net/hubfs/5565021/img1.png",
+      "alt" : "img1",
+      "width" : 41,
+      "height" : 47,
+      "max_width" : 41,
+      "max_height" : 47
+    },
+    "heading" : "Dev Portal",
+    "content" : "<p>Get started quickly with documentation, tutorials and free sandbox workspace.</p>"
+  }, {
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent20.net/hubfs/5565021/img1.png",
+      "alt" : "img1",
+      "width" : 41,
+      "height" : 47,
+      "max_width" : 41,
+      "max_height" : 47
+    },
+    "heading" : "Dev Portal",
+    "content" : "<p>Get started quickly with documentation, tutorials and free sandbox workspace.</p>"
+  } ]
+}, {
+  "id" : "fb64a03a-8d47-d8cc-ad63-0dba1f7c2649",
+  "name" : "cta_field",
+  "display_width" : null,
+  "label" : "CTA",
+  "required" : false,
+  "locked" : false,
+  "type" : "cta",
+  "default" : "ce40e2d9-f6a7-487c-a636-f4274c41297f"
+}, {
+  "id" : "5cc9442f-6188-f60d-2e92-f1e87bf7714b",
+  "name" : "design_image",
+  "display_width" : null,
+  "label" : "Design Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "exact",
+    "src" : "https://f.hubspotusercontent20.net/hubfs/5565021/letstalk-design1.png",
+    "alt" : "letstalk-design1",
+    "width" : 112,
+    "height" : 69,
+    "max_width" : 112,
+    "max_height" : 69
+  }
+}, {
+  "id" : "fb60db1d-a8f3-d22d-cb11-db855b971134",
+  "name" : "background_oval_image",
+  "display_width" : null,
+  "label" : "Background Oval Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://f.hubspotusercontent20.net/hubfs/5565021/shape1.png",
+    "alt" : "shape1",
+    "width" : 708,
+    "height" : 510,
+    "max_width" : 708,
+    "max_height" : 510
+  }
+} ]

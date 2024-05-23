@@ -1,0 +1,80 @@
+.what-can {
+  clear: both; 
+  margin: 80px 0 60px 0;
+}
+.what-can h2 {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 32px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.16;
+  margin-bottom: 30px;
+  letter-spacing: -0.71px;
+  color: #464040;
+}
+.what-can h2 strong {
+  display: block;
+  font-weight: bold;
+}
+.what-can p {
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.35;
+  letter-spacing: -0.2px;
+  color: #434343;
+}
+.what-can ul {
+  margin-left: 0;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-left: 24px;
+}
+.what-can li {
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.35;
+  letter-spacing: -0.2px;
+  color: #434343;
+}
+.what-can a.cta_button {
+  line-height: 60px!important;
+}
+.what-can a.cta_button span {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.11px;
+  text-align: center;
+  color: #0950fe;
+  line-height: 60px;
+}
+.what-can a.cta_button:hover span {
+  color: #FFF!important;
+}
+.what-can a.cta_button:hover {
+  background-color: #0950fe!important; 
+}
+.what-can img {
+  float: right;
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 767px) {
+  .what-can {
+    margin: 0 0 -50px 0; 
+    margin: 60px 0 0 0;
+  }
+  .what-can img { 
+    float: none;
+    margin: 30px auto;
+    padding-top: 20px;
+  }
+}

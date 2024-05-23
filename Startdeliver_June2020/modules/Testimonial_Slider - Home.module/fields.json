@@ -1,0 +1,193 @@
+[ {
+  "id" : "b7bf7f4f-3036-9ce7-bc28-ed427278973b",
+  "name" : "heading",
+  "display_width" : null,
+  "label" : "Heading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "<span>Nice </span> words about a <span>nice </span> platform that lets you be <span>nice </span> to your <span>nice </span> customers."
+}, {
+  "id" : "e9f780d2-50f9-31a2-5516-6b1028446daa",
+  "name" : "slider_item",
+  "display_width" : null,
+  "label" : "Slider Item",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : "170aacd5-1bf4-467e-1f5f-7c8b26af7bfc",
+    "default" : 4
+  },
+  "children" : [ {
+    "id" : "575d7d33-ba31-0ad1-dccf-a1ad25f8e4e5",
+    "name" : "quote_image",
+    "display_width" : null,
+    "label" : "Quote Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://5565021.fs1.hubspotusercontent-na1.net/hubfs/5565021/StartDeliver_2023/Images/Home/quote.svg",
+      "alt" : "quote",
+      "width" : 35,
+      "height" : 28,
+      "max_width" : 35,
+      "max_height" : 28
+    }
+  }, {
+    "id" : "245695b8-c832-bb68-2af7-54a73b32aa1c",
+    "name" : "quote",
+    "display_width" : null,
+    "label" : "Quote",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<p>We tried several competitors to Startdeliver but none could compare in the flexibility. We wanted a dynamic easy to use tool with the possibility of adding integrations as we develop and switch between different solutions.&nbsp;</p>"
+  }, {
+    "id" : "170aacd5-1bf4-467e-1f5f-7c8b26af7bfc",
+    "name" : "quote_name",
+    "display_width" : null,
+    "label" : "Quote Name",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Mattias Österberg"
+  }, {
+    "id" : "7132e1d2-86d2-3c3b-b20c-e1c1514f21a6",
+    "name" : "quote_role",
+    "display_width" : null,
+    "label" : "Quote Role",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Product Manager"
+  }, {
+    "id" : "f50496c3-bfd1-7b72-e23d-ebeb8a22e422",
+    "name" : "logo",
+    "display_width" : null,
+    "label" : "Logo",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://5565021.fs1.hubspotusercontent-na1.net/hubfs/5565021/flowbox%20logo.png",
+      "alt" : "flowbox logo",
+      "width" : 480,
+      "height" : 120,
+      "max_width" : 480,
+      "max_height" : 120
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : [ {
+    "quote_image" : {
+      "size_type" : "auto",
+      "src" : "https://5565021.fs1.hubspotusercontent-na1.net/hubfs/5565021/StartDeliver_2023/Images/Home/quote.svg",
+      "alt" : "quote",
+      "width" : 35,
+      "height" : 28,
+      "max_width" : 35,
+      "max_height" : 28
+    },
+    "quote" : "<p>We tried several competitors to Startdeliver but none could compare in the flexibility. We wanted a dynamic easy to use tool with the possibility of adding integrations as we develop and switch between different solutions.&nbsp;</p>",
+    "quote_name" : "Mattias Österberg",
+    "quote_role" : "Product Manager",
+    "logo" : {
+      "size_type" : "auto",
+      "src" : "https://5565021.fs1.hubspotusercontent-na1.net/hubfs/5565021/flowbox%20logo.png",
+      "alt" : "flowbox logo",
+      "width" : 480,
+      "height" : 120,
+      "max_width" : 480,
+      "max_height" : 120
+    }
+  }, {
+    "quote_image" : {
+      "size_type" : "auto",
+      "src" : "https://5565021.fs1.hubspotusercontent-na1.net/hubfs/5565021/StartDeliver_2023/Images/Home/quote.svg",
+      "alt" : "quote",
+      "width" : 35,
+      "height" : 28,
+      "max_width" : 35,
+      "max_height" : 28
+    },
+    "quote" : "<p>We tried several competitors to Startdeliver but none could compare in the flexibility. We wanted a dynamic easy to use tool with the possibility of adding integrations as we develop and switch between different solutions.&nbsp;</p>",
+    "quote_name" : "Mattias Österberg",
+    "quote_role" : "Product Manager",
+    "logo" : {
+      "size_type" : "auto",
+      "src" : "https://5565021.fs1.hubspotusercontent-na1.net/hubfs/5565021/flowbox%20logo.png",
+      "alt" : "flowbox logo",
+      "width" : 480,
+      "height" : 120,
+      "max_width" : 480,
+      "max_height" : 120
+    }
+  }, {
+    "quote_image" : {
+      "size_type" : "auto",
+      "src" : "https://5565021.fs1.hubspotusercontent-na1.net/hubfs/5565021/StartDeliver_2023/Images/Home/quote.svg",
+      "alt" : "quote",
+      "width" : 35,
+      "height" : 28,
+      "max_width" : 35,
+      "max_height" : 28
+    },
+    "quote" : "<p>We tried several competitors to Startdeliver but none could compare in the flexibility. We wanted a dynamic easy to use tool with the possibility of adding integrations as we develop and switch between different solutions.&nbsp;</p>",
+    "quote_name" : "Mattias Österberg",
+    "quote_role" : "Product Manager",
+    "logo" : {
+      "size_type" : "auto",
+      "src" : "https://5565021.fs1.hubspotusercontent-na1.net/hubfs/5565021/flowbox%20logo.png",
+      "alt" : "flowbox logo",
+      "width" : 480,
+      "height" : 120,
+      "max_width" : 480,
+      "max_height" : 120
+    }
+  }, {
+    "quote_image" : {
+      "size_type" : "auto",
+      "src" : "https://5565021.fs1.hubspotusercontent-na1.net/hubfs/5565021/StartDeliver_2023/Images/Home/quote.svg",
+      "alt" : "quote",
+      "width" : 35,
+      "height" : 28,
+      "max_width" : 35,
+      "max_height" : 28
+    },
+    "quote" : "<p>We tried several competitors to Startdeliver but none could compare in the flexibility. We wanted a dynamic easy to use tool with the possibility of adding integrations as we develop and switch between different solutions.&nbsp;</p>",
+    "quote_name" : "Mattias Österberg",
+    "quote_role" : "Product Manager",
+    "logo" : {
+      "size_type" : "auto",
+      "src" : "https://5565021.fs1.hubspotusercontent-na1.net/hubfs/5565021/flowbox%20logo.png",
+      "alt" : "flowbox logo",
+      "width" : 480,
+      "height" : 120,
+      "max_width" : 480,
+      "max_height" : 120
+    }
+  } ]
+} ]

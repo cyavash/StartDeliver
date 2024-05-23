@@ -1,0 +1,25 @@
+<div class='lp-header'>
+  <a href='{{ module.startdeliver_link.href }}' class='lp-header-link'><img src='https://f.hubspotusercontent20.net/hubfs/5565021/Startdeliver_June2020/Image/arrow-right.png' width='16'> &nbsp;{{ module.startdeliver_com_text }}</a>
+  <div class='page-center'>
+    {% logo
+      override_inherited_src="{{ module.site_logo.override_inherited_src }}"
+      src="{{ module.site_logo.src }}"
+      alt="{{ module.site_logo.alt }}"
+      width="{{ module.site_logo.width }}"
+      height="{{ module.site_logo.height }}"
+      suppress_company_name="{{ module.site_logo.suppress_company_name }}"
+    %}
+  </div>
+</div>
+<div class='lp-banner-section' style='background-image:url({{ module.background_image.src }});'>
+  <div class='page-center'>
+    <div class='lp-banner-heading'>
+      <h1>
+        {{ module.heading }}
+      </h1>
+    </div>
+    <div class='lp-banner-content'>
+      {{ module.banner_content }}
+    </div>
+  </div>
+</div>

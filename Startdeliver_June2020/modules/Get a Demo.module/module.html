@@ -1,0 +1,23 @@
+<div class="get-demo">
+  <div class="page-center">
+    <div class="row-fluid">
+      <div class="span8">
+        <h2>
+          {{ module.heading }}
+        </h2>
+        {% inline_rich_text field="content" value="{{ module.content }}" %}
+      </div>
+      <div class="span4">
+        {% if module.design_image.src %}
+          {% set sizeAttrs = 'width="{{ module.design_image.width }}" height="{{ module.design_image.height }}"' %}
+          {% if module.design_image.size_type == 'auto' %}
+            {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+          {% elif module.design_image.size_type == 'auto_custom_max' %}
+            {% set sizeAttrs = 'width="100%" height="auto" style="max-width: {{ module.design_image.max_width }}px; max-height: {{ module.design_image.max_height }}px"' %}
+          {% endif %}
+          <img src="{{ module.design_image.src }}" alt="{{ module.design_image.alt }}" {{ sizeAttrs }}>
+        {% endif %}
+      </div>
+    </div><!-- end row-fluid -->    
+  </div><!-- end page-center -->
+</div><!-- end get-demo -->

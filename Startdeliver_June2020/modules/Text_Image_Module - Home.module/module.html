@@ -1,0 +1,58 @@
+<div class="{{name}} txt-img-wrap">
+  <div class="page-center">
+    
+    {% if module.heading %}
+      <div class="txt-img-header">
+         <h2>{{ module.heading }}</h2>
+      </div> 
+    {% endif %}  
+    
+    
+    <div class="txt-img-otr">  
+      <div class="txt-img-left">  
+        <div class="txt-img-inner"> 
+          {% if module.sub_title %}
+            <div class="txt-img-stle">
+              <h5>{{ module.sub_title }}</h5>
+            </div> 
+          {% endif %}  
+          {% if module.title %}
+            <div class="txt-img-title">
+              <h3>{{ module.title }}</h3>
+            </div> 
+          {% endif %}  
+          {% if module.content %}
+            <div class="txt-img-txt"> 
+              {{ module.content }}
+            </div>  
+           {% endif %}   
+          </div> 
+      </div>
+      <div class="txt-img-rgt"> 
+        <div class="txt-img-image"> 
+          {% if module.image.src %}
+            {% set sizeAttrs = 'width="{{ module.image.width }}" height="{{ module.image.height }}"' %}
+            {% if module.image.size_type == 'auto' %}
+              {% set sizeAttrs = 'width="{{ module.image.width }}" height="{{ module.image.height }}" style="max-width: 100%; height: auto;"' %}
+            {% elif module.image.size_type == 'auto_custom_max' %}
+              {% set sizeAttrs = 'width="{{ module.image.max_width }}" height="{{ module.image.max_height }}" style="max-width: 100%; height: auto;"' %}
+            {% endif %}
+             {% set loadingAttr = module.image.loading != 'disabled' ? 'loading="{{ module.image.loading }}"' : '' %}
+            <img src="{{ module.image.src }}" alt="{{ module.image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+          {% endif %}
+        </div>
+      </div>   
+       
+    </div> 
+	</div> 
+</div>
+
+ 
+{% require_css %}
+<style> 
+    
+  
+</style>
+{% end_require_css %}
+
+ 

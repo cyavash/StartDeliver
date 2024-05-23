@@ -1,0 +1,36 @@
+[ {
+  "id" : "6fc8aaa2-5ad0-971f-c4ed-e1388a93fe06",
+  "name" : "content",
+  "display_width" : null,
+  "label" : "Content",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<h2>Create <strong>extraordinary</strong> Customer Success Journeys</h2>\n<p>Tell us about your needs and we will help you find a Solution.</p>"
+}, {
+  "id" : "1eb0a6a7-a680-4d46-c01e-3cbd7fd7db04",
+  "name" : "button_text",
+  "display_width" : null,
+  "label" : "Button Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Get a demo"
+}, {
+  "id" : "c99fa6a3-f1ff-dfd2-2164-ada3e828a355",
+  "name" : "button_url",
+  "display_width" : null,
+  "label" : "Button URL",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "type" : "url",
+  "default" : {
+    "type" : "EXTERNAL",
+    "href" : "##",
+    "content_id" : null
+  }
+} ]

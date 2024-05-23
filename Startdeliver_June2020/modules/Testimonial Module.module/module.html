@@ -1,0 +1,40 @@
+<div class='testimonial-module'>
+  <div class='page-center'>
+    <div class='testimonial-heading'>
+      <h2>
+        {{ module.section_heading }}
+      </h2>
+    </div>
+    <div class='testimonial-slider'>
+      {% for item in module.add_slide %}
+      <div class='testimonial-card'>
+        <div class='testimonial-image'>
+          {% if item.select_image.src %}
+          {% set sizeAttrs = 'width="{{ item.select_image.width }}" height="{{ item.select_image.height }}"' %}
+          {% if item.select_image.size_type == 'auto' %}
+          {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+          {% elif item.select_image.size_type == 'auto_custom_max' %}
+          {% set sizeAttrs = 'width="{{ item.select_image.max_width }}" height="{{ item.select_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+          {% endif %}
+          {% set loadingAttr = item.select_image.loading != 'disabled' ? 'loading="{{ item.select_image.loading }}"' : '' %}
+          <img src="{{ item.select_image.src }}" alt="{{ item.select_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+          {% endif %}
+        </div>
+        <div class='testimonial-content'>
+          {{ item.content }}
+        </div>
+        <div class='testimonial-name'>
+          <p>
+            {{ item.test_name }}
+          </p>
+        </div>
+        <div class='testimonial-destination'>
+          <p>
+            {{ item.destination }}
+          </p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

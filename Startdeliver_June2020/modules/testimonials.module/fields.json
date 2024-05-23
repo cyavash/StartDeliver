@@ -1,0 +1,73 @@
+[ {
+  "id" : "89d46da8-85e8-de81-2460-8b13d6fa19ce",
+  "name" : "image",
+  "display_width" : null,
+  "label" : "Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : false,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://cdn2.hubspot.net/hubfs/5565021/Startdeliver_June2020/Image/quote.jpg",
+    "alt" : "quote",
+    "width" : 60,
+    "height" : 49,
+    "max_width" : 60,
+    "max_height" : 49
+  }
+}, {
+  "id" : "ccbe495e-13d3-e3d9-bde6-7f3db9ae4e95",
+  "name" : "content",
+  "display_width" : null,
+  "label" : "Content",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext"
+}, {
+  "id" : "79867cc9-466a-094f-e52a-757d416200d7",
+  "name" : "author_image",
+  "display_width" : null,
+  "label" : "Author Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://cdn2.hubspot.net/hubfs/5565021/Startdeliver_June2020/Image/astrid-320x320.jpg",
+    "alt" : "astrid-320x320",
+    "width" : 258,
+    "height" : 258,
+    "max_width" : 258,
+    "max_height" : 258
+  }
+}, {
+  "id" : "1f656116-527d-1369-22f7-3331cfc6566f",
+  "name" : "author_name",
+  "display_width" : null,
+  "label" : "Author Name",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Astrid Ståhl"
+}, {
+  "id" : "5b114f06-c9b8-0a8f-b4ea-18ed7876d8b0",
+  "name" : "author_designation",
+  "display_width" : null,
+  "label" : "Author Designation",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Chief Customer Officer, Upsales Nordic AB"
+} ]

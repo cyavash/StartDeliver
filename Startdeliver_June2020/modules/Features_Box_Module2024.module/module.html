@@ -1,0 +1,27 @@
+<div class="{{name}} bfeatr-wrap">
+  <div class="page-center">
+    
+    <img src="https://5565021.fs1.hubspotusercontent-na1.net/hubfs/5565021/lines.svg" class="line1" alt="">
+    <div class="bfeatr-hdr-otr"> 
+      <div class="bfeatr-hdr">
+        <h4>{{ module.sub_title }}</h4> 
+        <h2>{{ module.heading }}</h2> 
+      </div>    
+    </div>
+    
+    <div class="bfeatr-list-otr">
+      {% for item in module.features_item %}
+        <div class="bfeatr-item" style="background-color:{{ item.color_field.color }};">
+         <div class="bfeatr-item-inr">  
+           <div class="bfeatr-title">
+             <h3 style="color: {{ item.title_color }}">{{ item.heading }}</h3>
+           </div>
+           <div class="bfeatr-txt">
+             {{ item.content }}
+           </div> 
+          </div> 
+         </div>
+      {% endfor %}  
+    </div> 
+  </div> 
+</div> 

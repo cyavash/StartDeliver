@@ -1,0 +1,87 @@
+[ {
+  "id" : "ef0ea996-fdb7-df1b-ea57-09cf9829ee25",
+  "name" : "content",
+  "display_width" : null,
+  "label" : "Content",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<h2><strong>Measure adoption</strong> in product &amp; addons</h2>"
+}, {
+  "id" : "89ea03f3-e401-a27b-48a1-9e1072708e25",
+  "name" : "select_image",
+  "display_width" : null,
+  "label" : "Select Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://f.hubspotusercontent20.net/hubfs/5565021/Startdeliver_June2020/Image/MeasureAdoption.png",
+    "alt" : "MeasureAdoption",
+    "loading" : "lazy",
+    "width" : 520,
+    "height" : 421,
+    "max_width" : 520,
+    "max_height" : 421
+  }
+}, {
+  "id" : "4632feb7-b977-cef3-f8ed-c99cc10a9c95",
+  "name" : "image_position_swap",
+  "display_width" : null,
+  "label" : "Image Position Swap? Yes/No",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : false
+}, {
+  "id" : "04dd6c99-6527-b44b-e850-2f25344aefba",
+  "name" : "add_feature",
+  "display_width" : null,
+  "label" : "Add Feature",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : "d7d4ad27-3d8f-e0f7-e1bb-82227b123755",
+    "default" : 2
+  },
+  "children" : [ {
+    "id" : "d7d4ad27-3d8f-e0f7-e1bb-82227b123755",
+    "name" : "feature_title",
+    "display_width" : null,
+    "label" : "Feature Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Feature"
+  }, {
+    "id" : "7fa8ed2a-1ac4-4768-7abe-6820571d907a",
+    "name" : "feature_content",
+    "display_width" : null,
+    "label" : "Feature Content",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : [ {
+    "feature_title" : "Feature",
+    "feature_content" : "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>"
+  }, {
+    "feature_title" : "Feature",
+    "feature_content" : "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>"
+  } ]
+} ]

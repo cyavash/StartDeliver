@@ -1,0 +1,22 @@
+<div class="custom-get-demo" id="book-a-demo" style="background-image:url('{{ module.background_image.src }}');">
+  <div class="page-center">
+    <img class="form-block__mock_up" src="{{ module.left_image.src }}" alt="{{ module.left_image.alt }}" >
+    <img class="form-block__cartoon" src="{{ module.image_type_2.src }}" alt="{{ module.image_type_2.alt }}" >
+    <div class="custom-get-form">
+      <h2 class="form-block__title">
+        {{ module.heading }}
+      </h2>
+      <div class="form-block__blurb">
+        {{ module.content }}
+      </div>
+      {% form
+	form_to_use="{{ module.form.form_id }}"
+	response_response_type="{{ module.form.response_type }}"
+	response_message="{{ module.form.message }}"
+	response_redirect_id="{{ module.form.redirect_id }}"
+	response_redirect_url="{{module.form.redirect_url}}"
+	gotowebinar_webinar_key="{{ module.form.gotowebinar_webinar_key }}"
+%}
+    </div>
+  </div>  
+</div>

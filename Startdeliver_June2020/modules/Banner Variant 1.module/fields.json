@@ -1,0 +1,73 @@
+[ {
+  "id" : "a83aa453-f465-b195-dce0-f57ea77c3075",
+  "name" : "background_image",
+  "display_width" : null,
+  "label" : "Background Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://f.hubspotusercontent20.net/hubfs/5565021/banner-bg-1.png",
+    "alt" : "banner-bg-1",
+    "loading" : "lazy",
+    "width" : 552,
+    "height" : 796,
+    "max_width" : 552,
+    "max_height" : 796
+  }
+}, {
+  "id" : "d00c112a-6ba2-272b-107f-7aaf08a0d58e",
+  "name" : "heading",
+  "display_width" : null,
+  "label" : "Heading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Customer Success <strong>Platform</strong>"
+}, {
+  "id" : "2ba3d470-f105-ae2d-81d6-bfc98682271a",
+  "name" : "content",
+  "display_width" : null,
+  "label" : "Content",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<p>Lower churn, more satisfied customers and faster growth comes from doing the right things first. The things that have real impact for your customers. Design, Drive and Deliver your Customer Journeys with Startdeliver - Customer Success Platforms.</p>"
+}, {
+  "id" : "2baad2d6-1e69-1389-7ac6-abbb03767d28",
+  "name" : "image_field",
+  "display_width" : null,
+  "label" : "Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://f.hubspotusercontent20.net/hubfs/5565021/banner-img.png",
+    "alt" : "banner-img",
+    "loading" : "lazy",
+    "width" : 1004,
+    "height" : 441,
+    "max_width" : 1004,
+    "max_height" : 441
+  }
+}, {
+  "id" : "9658d517-4c14-0091-7cbc-92e84765cd89",
+  "name" : "content_2",
+  "display_width" : null,
+  "label" : "Content 2",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<p>Every interaction a customer has with your company is part of their journey. Many companies leave this to chance. With Startdeliver you do the opposite, you take charge and drive the process.</p>"
+} ]

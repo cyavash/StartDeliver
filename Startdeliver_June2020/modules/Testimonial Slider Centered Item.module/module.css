@@ -1,0 +1,194 @@
+.testimonial-section1 {
+  padding: 60px 0;
+  background-color: #e7fcf9;
+  background: linear-gradient(90deg, #edf7fc 0%, #eef6fd 35%, #f0f5fe 60%, #f2f4fe 100%);
+}
+@media (max-width: 1200px){
+  body .dnd-section {
+      padding-top: 0 !important;
+      padding-bottom: 0 !important;
+  }
+}
+.carousel {
+  -webkit-box-shadow: 5px 5px 16px 15px #D7E3FB; 
+  box-shadow: 0px 5px 16px 15px #D7E3FB;
+}
+.carousel .item { 
+  background: transparent!important; 
+  /*box-shadow: 0 5px 46px -5px rgba(6, 80, 254, 0.62);  */
+}
+.item-inner {
+  display: flex;
+  align-items: center;
+  background:#FFF;
+}
+.item-content {
+  position: relative;
+  padding: 50px 55px;
+}
+.item-content .quote p {
+  font-size: 30px;
+  max-width: 100%;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.1;
+  letter-spacing: -0.89px;
+  color: #464040;
+}
+.item-content .quote p strong {
+  display: block;
+  font-weight: bold;
+}
+.item-content-bottom {
+  position: relative;
+  top: 190px;
+}
+.item-content p.item-name {
+  font-size: 17.5px;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.28;
+  letter-spacing: -0.39px;
+  color: #464040;
+  font-size: 22px;
+  margin: 0;
+}
+.item-content p.item-role {
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: -0.5px;
+  margin: 0;
+  color: #464040;
+}
+.testimonial-section1 .item-inner img {
+  /*box-shadow: 0 17px 36px -12px rgba(6, 80, 254, 0.62);*/
+  max-height: 760px;  
+}
+.item-content .item-logo img {
+  width: 220px!important;
+  max-width: 100%!important;
+  margin-top: 10px;
+  box-shadow: none;
+  border: 0; 
+}
+.testimonial-section1 .carousel .slick-dots li {
+  width: 110px;
+  height: 5px;
+  margin-right: 25px;
+  margin-top: 10px;
+}
+.testimonial-section1 .carousel .slick-dots li button {
+  height: 5px;
+  width: 110px;
+  padding: 0;
+  border-radius: 0;
+  background: #FFF;
+}
+.testimonial-section1 .carousel .slick-dots li button:before {
+  display: none!important;
+}
+.testimonial-section1 .carousel .slick-dots li.slick-active button { 
+  background-color: #0950fe; 
+}
+
+.happy-section {
+  width: 800px;
+  max-width: 100%;
+  margin: auto;
+  margin-top: 70px;
+  text-align: center;
+}
+.happy-section h3 {
+  font-size: 31px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.42;
+  letter-spacing: -0.69px;
+  text-align: right;
+  color: #464040;
+}
+.happy-section h3 strong {
+  font-weight: bold; 
+}
+.cta-design {
+  position: relative; 
+}
+.cta-design a.cta_button {
+  background: #FFF!important;
+  line-height: 60px;
+  position: relative;
+  z-index: 5;
+}
+.cta-design a.cta_button span {
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.11px;
+  text-align: center;
+  color: #0950fe!important;
+  line-height: 60px!important;
+}
+.cta-design a.cta_button:hover {
+  background-color: #0950fe!important;;
+}
+.cta-design a.cta_button:hover span {
+  color: #FFF!important;
+}
+.cta-design img {
+ float: right; 
+ margin-right: -36px;
+ margin-top: -25px;
+} 
+
+@media screen and (max-width: 991px) {
+  .cta-design img {
+    margin-right: -50px; 
+  }
+  .item-inner {
+    display: block; 
+    text-align: center;
+  }
+  .item-inner img {
+    display: block;
+    margin: auto;
+  }
+  .item-content-bottom {
+    top: 0;
+    padding-top: 50px;
+  }
+  .item-content p.item-name {
+    font-size: 17px; 
+  }
+  .item-content p.item-role {
+    font-size: 17px; 
+  }
+}
+@media screen and (max-width: 767px) {
+  .testimonial-section1 .carousel .slick-dots li {
+    width: 55px; 
+  }
+  .testimonial-section1 .carousel .slick-dots li button {
+    width: 55px; 
+  }
+  .cta-design img {
+    margin-right: 0px;
+    margin-top: 0;
+  }
+  .cta-design img, .lets-talk-box img
+  {
+    display: none; 
+  }
+}
+@media screen and (min-width: 1200px) {
+  .item-content .quote p {
+    /*font-size: 40px;*/
+    width: 372px;
+    max-width: 100%;
+    font-size: 35px;
+    /*font-size: 30px;*/
+  }
+}

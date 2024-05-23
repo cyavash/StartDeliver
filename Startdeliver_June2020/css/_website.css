@@ -1,0 +1,261 @@
+/* ******************************************************************************
+*********************************************************************************
+This file contains all the neccessary styles to control how your landing pages
+look if there is anything specific to your landing pages.
+*********************************************************************************
+****************************************************************************** */
+
+/* Home Page */
+
+.hs-home-layout header.custom-header {
+  min-height: 0;
+}
+.banner-area .dnd-section{
+  padding:0 !important;
+}
+
+.custom-customers-section {
+  -webkit-box-shadow: 0 0 16px rgba(8, 80, 254, 0.1);
+  box-shadow: 0 0 16px rgba(8, 80, 254, 0.1);
+  position: relative;
+}
+
+.custom-customers-section .feature_heading {
+  text-align: center;
+  margin: 0.625rem auto 6rem;
+  line-height: 1.2;
+}
+
+.custom-customers-section .blurb_heading {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.custom-customers-section img {
+  -webkit-box-shadow: 0 3px 16px rgba(7, 80, 254, 0.1);
+  box-shadow: 0 3px 16px rgba(7, 80, 254, 0.1);
+  position: relative;
+}
+
+.custom-customers-section hr {
+  margin: 0;
+  height: 0;
+  border-top: 1px solid #DAE0ED;
+}
+
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.feature_icon .fa{
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.custom-developers-section .developers-block__header {
+  margin-bottom: 4rem;
+}
+
+.custom-developers-section .span6 code {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  background: #eaeef3;
+  padding: 2.5rem;
+  height: 100%;
+  color: #00193a;
+}
+
+.custom-developers-section .span6 pre {
+  display: block;
+  font-size: 87.5%;
+  color: #212529;
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  overflow: auto;
+}
+
+.hljs-comment {
+  color: #738191;
+}
+
+.hljs-keyword, .hljs-selector-tag, .hljs-title, .hljs-section, .hljs-doctag, .hljs-name, .hljs-strong {
+  font-weight: bold;
+}
+.hljs-string, .hljs-title, .hljs-section, .hljs-built_in, .hljs-literal, .hljs-type, .hljs-addition, .hljs-tag, .hljs-quote, .hljs-name, .hljs-selector-id, .hljs-selector-class {
+  color: #0048ab;
+}
+
+code, kbd, pre, samp {
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+/* 
+.custom-developers-section .dnd-column:first-of-type .span6:last-child {
+padding: 2rem;
+padding-left: 47px;
+padding-right: 47px;
+} */
+
+.custom-developers-section .developers-block-right__sub_heading {
+  margin-bottom: 2rem;
+}
+
+.custom-developers-section .hs_cos_wrapper_type_linked_image {
+  margin: 0 auto 1.25rem;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  text-align: center;
+  padding-bottom: 1.54rem;
+  width: 50px;
+  display: block;
+}
+
+.custom-developers-section .service-block__sub__header {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.custom-developers-section .service-block__header {
+  margin-bottom: 5rem;
+}
+
+.custom-developers-section .service-block__blurb {
+  margin: 0;
+  font-weight: 300;
+  margin-top: 0.75rem;
+}
+
+::-webkit-input-placeholder,
+.hs-input::-webkit-input-placeholder{
+  color: #6c757d;
+  opacity: 1;
+} /* Webkit Browsers */
+:-moz-placeholder,
+.hs-input::-webkit-input-placeholder{
+  color: #6c757d;
+  opacity: 1;
+} /* Firefox 18- */
+::-moz-placeholder,
+.hs-input::-webkit-input-placeholder{
+  color: #6c757d;
+  opacity: 1;
+} /* Firefox 19+ */
+:-ms-input-placeholder,
+.hs-input::-webkit-input-placeholder{
+  color: #6c757d;
+  opacity: 1;
+} /* IE10 */
+
+
+.hs-error-msgs label{
+  margin-top: 10px !important;
+}
+
+@media(max-width:1200px){
+  .page-center {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+/*   body .dnd-section {
+    padding: 3.75rem 0 !important;
+  }
+ */
+  .custom-developers-section .dnd-section:first-of-type {
+    padding: 0 !important;
+  }
+
+  .testimonies-block__icon img {
+    max-width: 100%;
+    width: 40px;
+  }
+
+  .testimonies-block__quotation {
+    font-size: 1.25rem;
+  }
+
+  .testimonies-block__holder .content {
+    max-width: 90%;
+  }
+
+  .custom-get-demo-section .dnd-section {
+    padding: 0 !important;
+  }
+
+  .custom-testimonials-section .dnd-section {
+    padding: 4rem 0 !important;
+  }
+
+}
+
+
+@media(max-width:992px){
+  .page-center {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+  }
+  /* 
+  body .dnd-section {
+  padding: 2.5rem 0 !important;
+} */
+
+  .custom-customers-section .feature_heading {
+    text-align: left !important;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .custom-customers-section .blurb_heading {
+    font-size: 1.5rem;
+  }
+
+  .custom-developers-section .service-block__header {
+    margin-top: 2.5rem;
+  }
+
+  .custom-developers-section .service-block__blurb {
+    margin-bottom: 1.25rem;
+  }
+
+
+}
+
+
+@media(max-width:767px){
+  /*   .custom-customers-section .hs_cos_wrapper_type_linked_image {
+  padding-right: 15px;
+  padding-left: 15px;
+  display: block;
+} */
+
+  .custom-developers-section .service-block__header {
+    margin-top: 5rem;
+  }
+
+  .dnd-section>.row-fluid .span12 {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+
+  .hs-home-layout .dnd-section>.row-fluid .span12{
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+}
+
+
+
+/* Home Page */

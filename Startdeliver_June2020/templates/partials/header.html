@@ -1,0 +1,21 @@
+<!--
+templateType: global_partial
+label: Page Header
+-->
+<header class="custom-header">
+  <div class="header">
+    <div class="custom-header-logo">
+      {% set logo_file =  get_asset_url('../../images/startdeliver-logo.png') %}
+      {% module "header_logo" path="@hubspot/logo", label="Header Logo", link='/',  label="Header Logo", img={src="{{logo_file}}", width= 242, override_inherited_src= true} %}
+    </div>
+    <div class="custom-menu-primary">
+      {% module "navigation-primary" path="../../modules/menu-section_2021", label="Primary Menu" %}
+    </div>
+    <div class="toggle-mobile-menu ">
+      <a class="" href="#"></a>
+    </div>
+  </div>
+</header>
+
+{% module "navigation-mega-menu" path="../../modules/Product-menu-section_2021", label="Product Mega Menu" %}
+

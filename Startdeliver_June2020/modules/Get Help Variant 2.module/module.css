@@ -1,0 +1,23 @@
+.get-help2 {
+  background: #FFF;
+  padding: 60px 0 30px 0;
+}
+.get-help2 h2 {
+  width: 100%;  
+}
+.get-help2 p {
+  width: 100%;
+}
+.get-help2 .cta-holder {
+  margin-top: 10px;  
+  position: relative;
+}
+.get-help2 .cta-holder a {
+  position: relative;
+  z-index: 5;
+}
+.get-help2 .cta-holder img {
+  position: absolute;
+  margin-left: 192px;
+  top: 34px;
+}

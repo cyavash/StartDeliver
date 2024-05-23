@@ -1,0 +1,108 @@
+.txt-block-wrap { 
+    position: relative;
+    background-color: #F7F6FE;
+}
+
+.txt-block-main {
+    padding: 70px 0;
+    position: relative;
+}
+     
+.txt-block-wrap > div { 
+    position: relative;
+    z-index: 9;
+}
+
+.txt-block-txt p {
+    font-weight: 400;
+    font-size: 32px;
+}
+      
+.txt-block-otr {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.txt-flip { 
+    flex-direction: row-reverse;
+}
+
+
+.txt-block-left {
+    width: 49%;
+}
+
+.txt-block-rgt {
+    width: 49%;
+}
+
+.txt-block-stle h5 {
+    color: #0850FE;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: -0.71px;
+}
+
+.txt-block-title h3 {
+    color: #000;
+    font-size: 48px;
+    font-weight: 400;
+    letter-spacing: -0.71px;
+}
+
+.txt-block-title h3 span { 
+    font-weight: 600; 
+}
+
+.txt-block-txt ul li {
+    font-size: 20px;
+    background-image: url(https://www.startdeliver.com/hubfs/StartDeliver_2023/Images/Home/badge-check.svg);
+    background-repeat: no-repeat;
+    list-style: none;
+    padding-left: 40px;
+    background-size: 22px;
+    background-position: left 6px;
+    margin-bottom: 10px;
+}
+
+.txt-block-txt ul {
+    padding: 0px;
+}
+
+
+
+
+/******** Mobile Styling *********/
+
+@media (max-width: 1080px) {
+
+  
+}
+
+@media only screen and (min-width:768px) and (max-width: 1024px) and (orientation: portrait) {
+  
+  
+}  
+
+@media (max-width: 767px) {
+      
+  .txt-block-left, .txt-block-rgt {
+      width: 100%;
+  }
+
+  .txt-block-title h3 { 
+      font-size: 34px; 
+  }
+  
+  .txt-block-main, .txt-block-wrap {
+      padding: 30px 0; 
+  }
+
+}
+
+@media (max-width: 479px) {
+
+  
+}

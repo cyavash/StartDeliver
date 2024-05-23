@@ -1,0 +1,35 @@
+[ {
+  "id" : "848c9203-90a5-a27c-1b40-26800b093e9c",
+  "name" : "icon_name",
+  "display_width" : null,
+  "label" : "Icon Name",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "971d7749-f102-4b76-a2ec-2b9efdad00dd",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Outcome health"
+}, {
+  "id" : "b7d919d7-3964-1bc2-4655-a7abe25e8e15",
+  "name" : "content",
+  "display_width" : null,
+  "label" : "Content",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+} ]

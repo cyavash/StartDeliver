@@ -1,0 +1,38 @@
+<div class='left-content-right-image-section'>
+  <div class='page-center'>
+    <div class='left-content-right-image'>
+      <div class='left-content'>
+        <div class='section-heading'>
+          <h1>
+            {{ module.heading }}
+          </h1>
+        </div>
+        <div class='section-content'>
+          {{ module.content }}
+        </div>
+      </div>
+      <div class='right-image'>
+        {% if module.right_image.src %}
+        {% set sizeAttrs = 'width="{{ module.right_image.width }}" height="{{ module.right_image.height }}"' %}
+        {% if module.right_image.size_type == 'auto' %}
+        {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+        {% elif module.right_image.size_type == 'auto_custom_max' %}
+        {% set sizeAttrs = 'width="{{ module.right_image.max_width }}" height="{{ module.right_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+        {% endif %}
+        {% set loadingAttr = module.right_image.loading != 'disabled' ? 'loading="{{ module.right_image.loading }}"' : '' %}
+        <img src="{{ module.right_image.src }}" alt="{{ module.right_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+  <div class='right-shape'>
+    {% if module.shape_image.src %}
+    <img src="{{ module.shape_image.src }}" alt="{{ module.shape_image.alt }}" >
+    {% endif %}
+  </div>
+  <div class='left-shape'>
+    {% if module.dot_shape_image.src %}
+    <img src="{{ module.dot_shape_image.src }}" alt="{{ module.dot_shape_image.alt }}">
+    {% endif %}
+  </div>
+</div>

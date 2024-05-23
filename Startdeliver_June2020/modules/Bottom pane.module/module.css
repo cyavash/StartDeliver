@@ -1,0 +1,89 @@
+.custom-get-demo {
+  background-color: #FDFDFF;
+  padding: 11rem 0;
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+}
+
+.custom-get-demo .form-block__mock_up {
+  position: absolute;
+  bottom: 0;
+  right: 80%;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.custom-get-demo .form-block__cartoon {
+  position: absolute;
+  bottom: 0;
+  left: 15%;
+  max-width: 20%;
+}
+
+.custom-get-form {
+  width: 37rem;
+  max-width: 100%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.custom-get-form h2 {
+  margin-bottom: 1.25rem;
+  text-align: center;
+}
+
+
+.custom-get-form .form-block__blurb {
+  text-align: center;
+  margin-bottom: 3.7rem;
+  font-size: 1rem;
+}
+
+.custom-get-form form {
+  max-width: 100%;
+}
+
+.custom-get-form .hs-form-required {
+  display: none;
+}
+
+.hs-form-field {
+  margin-bottom: 2rem;
+}
+
+.custom-get-form .hs-form label {
+  margin: 0;
+}
+
+.custom-get-form .hs-input {
+  max-width: 100%;
+}
+
+.custom-get-form fieldset {
+  max-width: 100% !important;
+}
+
+.custom-get-form .form-title {
+  display: none;
+}
+
+.custom-get-form .hs-button {
+  margin: 0;
+}
+
+.custom-get-form .actions {
+  text-align: center;
+}
+
+@media(max-width:992px){
+  .custom-get-demo {
+    padding: 3rem 0;
+  }
+
+  .custom-get-demo .form-block__mock_up,.custom-get-demo .form-block__cartoon {
+    display: none;
+  }
+}

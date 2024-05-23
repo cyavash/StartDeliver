@@ -1,0 +1,70 @@
+<!--
+templateType: global_partial
+isAvailableForNewContent: false
+-->
+<!-- Begin partial -->
+<div class="footer">
+  <div class="page-center">
+    <div class="row">
+      <div class="logo">
+        {% module "module_164926915531984" path="@hubspot/logo", label="Logo" %}
+      </div>
+      <div class="text">
+        {% module "module_1649sw26918343285" path="@hubspot/rich_text", label="Content" %}
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <div class="page-center">
+
+
+      <div class="copyright-inner">
+        <div class="text">
+          {% module "module_16492691sdfsd8343285" path="@hubspot/rich_text", label="Copyright Left Content" %}
+        </div>
+        <div class="text">
+          {% module "module_164926sdf918343285" path="@hubspot/rich_text", label="Copyright Right Content" %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End partial -->
+
+
+{% require_css %}
+<style>
+  .footer { background: #EBF9FB; color: #2E2E2E; padding: 30px 0 0; }
+  .footer .row { display: flex; flex-wrap: wrap; text-align: left; padding: 0 0 29px; }
+  .footer p { margin: 0; }
+  .footer .copyright { background: #2E2E2E; color: #fff; padding: 16px 0; font-size: 16px; line-height: 22px; border-bottom: 0; margin-bottom: -1px; }
+  .footer .row .logo { width: 330px; }
+  .footer .row .text { width: calc(100% - 330px); font-size: 16px; line-height: 20px; text-align: right; }
+  .footer .row .text > div { text-align: left; display: inline-block; }
+  .footer .copyright .copyright-inner { display: flex; flex-wrap: wrap; text-align: left; justify-content: space-between; }
+  .footer .copyright .copyright-inner .text + .text { text-align: right; }
+  .footer .copyright .copyright-inner a { color: inherit; }
+  @media(max-width:1439px){
+
+  }
+  @media(max-width:1200px){
+
+  }
+  @media(max-width:991px){
+    .footer .row .logo { width: 200px; }
+    .footer .row .text { width: calc(100% - 200px); padding-left: 30px; }
+  }
+  @media(max-width:767px){
+    .footer .row .text { width: 100%; padding: 20px 0 0; }
+    .footer .row .logo { width: 100%; }
+  }
+  @media(max-width:550px){
+    .footer { text-align: center; padding: 10px 0 0; }
+    .footer .row { justify-content: center; text-align: center; }
+    .footer .row .text { text-align: center; }
+    .footer .row .text * { TEXT-ALIGN: CENTER; }
+    .footer .copyright .copyright-inner { text-align: center; display: block; }
+    .footer .copyright .copyright-inner .text + .text { text-align: center; padding: 10px 0 0; }
+  }
+</style>
+{% end_require_css %}

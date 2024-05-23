@@ -1,0 +1,75 @@
+[ {
+  "id" : "08719527-a027-3dc9-8389-aa7d7da52f48",
+  "name" : "heading",
+  "display_width" : null,
+  "label" : "Heading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Some of our <strong>happy</strong users:"
+}, {
+  "id" : "4cf8fba5-a095-3fc9-907c-36c843a90680",
+  "name" : "image_item",
+  "display_width" : null,
+  "label" : "Image Item",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "66387b3f-7858-6d71-0bbc-9838237e9817",
+    "name" : "image_field",
+    "display_width" : null,
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent20.net/hubfs/5565021/Learnifier.png",
+      "alt" : "Learnifier",
+      "loading" : "lazy",
+      "width" : 600,
+      "height" : 158,
+      "max_width" : 600,
+      "max_height" : 158
+    }
+  }, {
+    "id" : "157bf2d9-2655-45a6-5677-1167f1ce876c",
+    "name" : "image_link",
+    "display_width" : null,
+    "label" : "Image Link",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent20.net/hubfs/5565021/Learnifier.png",
+      "alt" : "Learnifier",
+      "loading" : "lazy",
+      "width" : 600,
+      "height" : 158,
+      "max_width" : 600,
+      "max_height" : 158
+    }
+  }
+} ]

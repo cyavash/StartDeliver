@@ -1,0 +1,17 @@
+<div class="feature-block">
+  <div class="feature_icon">
+    <i class="fa fa-{{ module.icon_name }}" aria-hidden="true"></i>
+  </div>
+  <div class="feature_content">
+    {% if module.title %}
+    <div class="feature_title">
+      {{ module.title }}
+    </div>
+    {% endif %}
+    {% if module.content %}
+    <div class="feature_blurb">
+      {{ module.content }}
+    </div>
+    {% endif %}
+  </div>
+</div>

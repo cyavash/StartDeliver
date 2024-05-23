@@ -1,0 +1,403 @@
+[ {
+  "id" : "2b10a7d1-b632-710a-3393-ac4ff270bb6c",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "<b>Agenda</b> & schema"
+}, {
+  "id" : "45772eb6-d320-11b4-b0eb-02efcffe0c19",
+  "name" : "single_group",
+  "display_width" : null,
+  "label" : "Single Group",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : "21c877be-d028-e6c8-16a4-99ec6d428121",
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "bd7d7cfc-e555-89e0-2550-886b14618177",
+    "name" : "id__",
+    "display_width" : null,
+    "label" : "ID",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "id-1"
+  }, {
+    "id" : "12f76c0b-945c-e77c-187b-8bbf060aa037",
+    "name" : "box_view",
+    "display_width" : null,
+    "label" : "Box View",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "default" : false
+  }, {
+    "id" : "9c13bf95-ddec-0612-14b6-4c6fb41d8e17",
+    "name" : "time",
+    "display_width" : null,
+    "label" : "Time",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "8:00"
+  }, {
+    "id" : "83817285-bf21-e96b-1582-28e8f57ecc5e",
+    "name" : "day",
+    "display_width" : null,
+    "label" : "Day",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Foajén"
+  }, {
+    "id" : "21c877be-d028-e6c8-16a4-99ec6d428121",
+    "name" : "title",
+    "display_width" : null,
+    "label" : "Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Breakfast and registration"
+  }, {
+    "id" : "eeb5340d-9a48-4c3a-9b36-00c72fe4dae6",
+    "name" : "content",
+    "display_width" : null,
+    "label" : "Content",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "visibility" : {
+      "controlling_field" : "12f76c0b-945c-e77c-187b-8bbf060aa037",
+      "controlling_field_path" : null,
+      "controlling_value_regex" : "false",
+      "property" : null,
+      "operator" : "EQUAL",
+      "access" : null
+    },
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore. "
+  }, {
+    "id" : "f3fd3c6b-f2da-e2df-8764-1c68dab79613",
+    "name" : "user_",
+    "display_width" : null,
+    "label" : "User",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "12f76c0b-945c-e77c-187b-8bbf060aa037",
+      "controlling_field_path" : null,
+      "controlling_value_regex" : "false",
+      "property" : null,
+      "operator" : "EQUAL",
+      "access" : null
+    },
+    "display" : "toggle",
+    "type" : "boolean",
+    "default" : false
+  }, {
+    "id" : "5d75701d-4f46-d228-522f-ae5ad92bcab1",
+    "name" : "user",
+    "display_width" : null,
+    "label" : "User",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : null,
+      "max" : null,
+      "sorting_label_field" : "b291d67c-c871-c5e5-d04f-b47c4391e28c",
+      "default" : null
+    },
+    "visibility" : {
+      "controlling_field" : "f3fd3c6b-f2da-e2df-8764-1c68dab79613",
+      "controlling_field_path" : null,
+      "controlling_value_regex" : "true",
+      "property" : null,
+      "operator" : "EQUAL",
+      "access" : null
+    },
+    "children" : [ {
+      "id" : "b291d67c-c871-c5e5-d04f-b47c4391e28c",
+      "name" : "name_",
+      "display_width" : null,
+      "label" : "Name",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "Pelle Jansson, Google"
+    }, {
+      "id" : "54051c41-0da2-a042-1000-7890b2559953",
+      "name" : "thumb",
+      "display_width" : null,
+      "label" : "Thumb",
+      "required" : false,
+      "locked" : false,
+      "responsive" : true,
+      "resizable" : true,
+      "show_loading" : false,
+      "type" : "image",
+      "default" : {
+        "size_type" : "auto",
+        "src" : "https://5565021.fs1.hubspotusercontent-na1.net/hubfs/5565021/Kate%20Leske%2c%20Nosto.jpeg",
+        "alt" : "Kate Leske, Nosto",
+        "loading" : "lazy",
+        "width" : 385,
+        "height" : 385,
+        "max_width" : 385,
+        "max_height" : 385
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "default" : {
+      "name_" : "Pelle Jansson, Google",
+      "thumb" : {
+        "size_type" : "auto",
+        "src" : "https://5565021.fs1.hubspotusercontent-na1.net/hubfs/5565021/Kate%20Leske%2c%20Nosto.jpeg",
+        "alt" : "Kate Leske, Nosto",
+        "loading" : "lazy",
+        "width" : 385,
+        "height" : 385,
+        "max_width" : 385,
+        "max_height" : 385
+      }
+    }
+  }, {
+    "id" : "b501d6bd-6620-5b6d-b114-e9141358c9d2",
+    "name" : "box_view_group",
+    "display_width" : null,
+    "label" : "Box View Group",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : null,
+      "max" : null,
+      "sorting_label_field" : "daa1f354-cade-78c5-0f5d-3309d93a33b0",
+      "default" : null
+    },
+    "visibility" : {
+      "controlling_field" : "12f76c0b-945c-e77c-187b-8bbf060aa037",
+      "controlling_field_path" : null,
+      "controlling_value_regex" : "true",
+      "property" : null,
+      "operator" : "EQUAL",
+      "access" : null
+    },
+    "children" : [ {
+      "id" : "cbdc4879-8fdc-dd63-ba48-97105f1f0ac6",
+      "name" : "small_title",
+      "display_width" : null,
+      "label" : "Small Title",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "MARKETING TRACK – RUM 1"
+    }, {
+      "id" : "daa1f354-cade-78c5-0f5d-3309d93a33b0",
+      "name" : "title",
+      "display_width" : null,
+      "label" : "Title",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "Titel på keynote om marketing"
+    }, {
+      "id" : "0973dd5c-6c42-e4c2-dc8d-31278e8c4f59",
+      "name" : "content",
+      "display_width" : null,
+      "label" : "Content",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod."
+    }, {
+      "id" : "7920f924-0e21-cef5-9196-bdefc09387da",
+      "name" : "user",
+      "display_width" : null,
+      "label" : "User",
+      "required" : false,
+      "locked" : false,
+      "occurrence" : {
+        "min" : null,
+        "max" : null,
+        "sorting_label_field" : null,
+        "default" : 1
+      },
+      "children" : [ {
+        "id" : "bf0345ce-1fc7-38ce-06f6-df817be06146",
+        "name" : "name_",
+        "display_width" : null,
+        "label" : "Name",
+        "required" : false,
+        "locked" : false,
+        "validation_regex" : "",
+        "allow_new_line" : false,
+        "show_emoji_picker" : false,
+        "type" : "text",
+        "default" : "Pelle Jansson, Google"
+      }, {
+        "id" : "3d656163-dd05-6409-7c72-496610616c93",
+        "name" : "thumb",
+        "display_width" : null,
+        "label" : "Thumb",
+        "required" : false,
+        "locked" : false,
+        "responsive" : true,
+        "resizable" : true,
+        "show_loading" : false,
+        "type" : "image",
+        "default" : {
+          "size_type" : "auto",
+          "src" : "https://5565021.fs1.hubspotusercontent-na1.net/hubfs/5565021/Kate%20Leske%2c%20Nosto.jpeg",
+          "alt" : "Kate Leske, Nosto",
+          "loading" : "lazy",
+          "width" : 385,
+          "height" : 385,
+          "max_width" : 385,
+          "max_height" : 385
+        }
+      } ],
+      "tab" : "CONTENT",
+      "expanded" : false,
+      "group_occurrence_meta" : null,
+      "type" : "group",
+      "default" : [ {
+        "name_" : "Pelle Jansson, Google",
+        "thumb" : {
+          "size_type" : "auto",
+          "src" : "https://5565021.fs1.hubspotusercontent-na1.net/hubfs/5565021/Kate%20Leske%2c%20Nosto.jpeg",
+          "alt" : "Kate Leske, Nosto",
+          "loading" : "lazy",
+          "width" : 385,
+          "height" : 385,
+          "max_width" : 385,
+          "max_height" : 385
+        }
+      } ]
+    }, {
+      "id" : "5d732f18-21ce-f002-fc95-8bce140ddfb8",
+      "name" : "background_color",
+      "display_width" : null,
+      "label" : "Background Color",
+      "required" : false,
+      "locked" : false,
+      "type" : "color",
+      "default" : {
+        "color" : "#ECECFF",
+        "opacity" : 100
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "default" : {
+      "small_title" : "MARKETING TRACK – RUM 1",
+      "title" : "Titel på keynote om marketing",
+      "content" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.",
+      "user" : [ {
+        "name_" : "Pelle Jansson, Google",
+        "thumb" : {
+          "size_type" : "auto",
+          "src" : "https://5565021.fs1.hubspotusercontent-na1.net/hubfs/5565021/Kate%20Leske%2c%20Nosto.jpeg",
+          "alt" : "Kate Leske, Nosto",
+          "loading" : "lazy",
+          "width" : 385,
+          "height" : 385,
+          "max_width" : 385,
+          "max_height" : 385
+        }
+      } ],
+      "background_color" : {
+        "color" : "#ECECFF",
+        "opacity" : 100
+      }
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "id__" : "id-1",
+    "box_view" : false,
+    "time" : "8:00",
+    "day" : "Foajén",
+    "title" : "Breakfast and registration",
+    "content" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore. ",
+    "user_" : false,
+    "user" : {
+      "name_" : "Pelle Jansson, Google",
+      "thumb" : {
+        "size_type" : "auto",
+        "src" : "https://5565021.fs1.hubspotusercontent-na1.net/hubfs/5565021/Kate%20Leske%2c%20Nosto.jpeg",
+        "alt" : "Kate Leske, Nosto",
+        "loading" : "lazy",
+        "width" : 385,
+        "height" : 385,
+        "max_width" : 385,
+        "max_height" : 385
+      }
+    },
+    "box_view_group" : {
+      "small_title" : "MARKETING TRACK – RUM 1",
+      "title" : "Titel på keynote om marketing",
+      "content" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.",
+      "user" : [ {
+        "name_" : "Pelle Jansson, Google",
+        "thumb" : {
+          "size_type" : "auto",
+          "src" : "https://5565021.fs1.hubspotusercontent-na1.net/hubfs/5565021/Kate%20Leske%2c%20Nosto.jpeg",
+          "alt" : "Kate Leske, Nosto",
+          "loading" : "lazy",
+          "width" : 385,
+          "height" : 385,
+          "max_width" : 385,
+          "max_height" : 385
+        }
+      } ],
+      "background_color" : {
+        "color" : "#ECECFF",
+        "opacity" : 100
+      }
+    }
+  }
+} ]

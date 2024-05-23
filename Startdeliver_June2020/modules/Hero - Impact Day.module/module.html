@@ -1,0 +1,71 @@
+<div class="impact-hero bg_impact">
+  <div class="shape">
+    {% if module.style.shape.src %}
+    {% set sizeAttrs = 'width="{{ module.style.shape.width }}" height="{{ module.style.shape.height }}"' %}
+    {% if module.style.shape.size_type == 'auto' %}
+    {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+    {% elif module.style.shape.size_type == 'auto_custom_max' %}
+    {% set sizeAttrs = 'width="{{ module.style.shape.max_width }}" height="{{ module.style.shape.max_height }}" style="max-width: 100%; height: auto;"' %}
+    {% endif %}
+    {% set loadingAttr = module.style.shape.loading != 'disabled' ? 'loading="{{ module.style.shape.loading }}"' : '' %}
+    <img src="{{ module.style.shape.src }}" alt="{{ module.style.shape.alt }}">
+    {% endif %}
+  </div>
+  <div class="page-center">
+    <div class="content">
+      <h1>{{ module.title }}</h1>
+      <div class="text">
+        {{ module.content }}
+      </div>
+      <div class="boxs">
+        {% for item in module.field_group %}
+        <div class="single-row">
+          <img src="{{ item.icon.src }}" alt="{{ item.icon.alt }}">
+          <span>{{ item.title }}</span>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% require_css %}
+<style>
+  .impact-hero{
+    {{ module.style.backgroundimage_field.css }}
+  }
+  .impact-hero { color: #fff; position: relative; overflow: hidden; height: 100vh; min-height: 750px; display: flex; align-items: center; justify-content: center; }
+  .impact-hero h1 { color: inherit; font-size: 64px; font-weight:400; }
+  .impact-hero .shape { position: absolute; left: 0; top: 0; width: 64%; height: 100%; }
+  .impact-hero .shape + div { position: relative; z-index: 1; }
+  .impact-hero .content { width: 60%; }
+  .impact-hero .shape img { width: 100%; height: 100%; }
+  .impact-hero .boxs { display: flex; flex-wrap: wrap; gap: 25px; }
+  .impact-hero .boxs .single-row { display: flex; align-items: center; justify-content: center; }
+  .impact-hero .boxs .single-row span { margin-left: 10px; color: #E39FE8; font-weight: 600; font-size: 16px; }
+  .impact-hero .content .text { padding: 10px 0 10px; }
+
+  @media(max-width:1439px){
+
+  }
+  @media(max-width:1200px){
+    .impact-hero h1 { font-size: 38px; }
+    .impact-hero { min-height: 630px; }
+  }
+  @media(max-width:991px){
+    .impact-hero { min-height: auto; height: auto; padding: 160px 0 80px; }
+    .impact-hero .shape { width: 78%; }
+  }
+  @media(max-width:767px){
+    .impact-hero .content { width: 80%; }
+    .impact-hero .shape { width: 90%; }
+  }
+  @media(max-width:575px){
+    .impact-hero .shape { width: 220%; }
+    .impact-hero .content { width: 100%; }
+    .impact-hero { padding: 140px 0 60px; }
+    .impact-hero .boxs { gap: 10px; }
+    .impact-hero h1 { font-size: 30px; }
+  }
+</style>
+{% end_require_css %}

@@ -1,0 +1,171 @@
+[ {
+  "id" : "310919d5-9268-cb44-acab-2cc5a0e3fbeb",
+  "name" : "section_heading",
+  "display_width" : null,
+  "label" : "Section Heading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Our Courses"
+}, {
+  "id" : "a838d272-e9e0-4776-94c9-d6ac2b4a755f",
+  "name" : "add_courses",
+  "display_width" : null,
+  "label" : "Add Courses",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : "5349fe8f-8a94-475a-e017-8d2854319da3",
+    "default" : 2
+  },
+  "children" : [ {
+    "id" : "5349fe8f-8a94-475a-e017-8d2854319da3",
+    "name" : "tag_name",
+    "display_width" : null,
+    "label" : "Tag Name",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  }, {
+    "id" : "6e17ae07-65e3-4404-0809-60aba54c17ac",
+    "name" : "select_image",
+    "display_width" : null,
+    "label" : "Select Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    }
+  }, {
+    "id" : "5c12e5b4-453d-a907-17c7-0cd57b0db884",
+    "name" : "page_url",
+    "display_width" : null,
+    "label" : "Image Page URL",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "BLOG" ],
+    "type" : "url",
+    "default" : {
+      "type" : "EXTERNAL",
+      "href" : "##",
+      "content_id" : null
+    }
+  }, {
+    "id" : "77a44ba9-897f-5f4e-a515-9bbc59ae0d4d",
+    "name" : "shield_image",
+    "display_width" : null,
+    "label" : "Shield Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "src" : "https://f.hubspotusercontent20.net/hubfs/5565021/Startdeliver_June2020/Image/Icon01.png",
+      "alt" : "Icon01",
+      "width" : 67,
+      "height" : 72,
+      "max_width" : 67,
+      "max_height" : 72
+    }
+  }, {
+    "id" : "6539a080-8430-2042-b617-5c279f962c90",
+    "name" : "content",
+    "display_width" : null,
+    "label" : "Content",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext"
+  }, {
+    "id" : "a05e9127-bcc4-6278-3a14-915eea86ad00",
+    "name" : "border_color",
+    "display_width" : null,
+    "label" : "Border  color",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "placeholder" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : ""
+  }, {
+    "id" : "79189dc9-d822-ce8c-ef57-ef1bb2fb0530",
+    "name" : "checkmark_color",
+    "display_width" : null,
+    "label" : "Checkmark color",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "placeholder" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : ""
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : [ {
+    "select_image" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    },
+    "page_url" : {
+      "type" : "EXTERNAL",
+      "href" : "##",
+      "content_id" : null
+    },
+    "shield_image" : {
+      "src" : "https://f.hubspotusercontent20.net/hubfs/5565021/Startdeliver_June2020/Image/Icon01.png",
+      "alt" : "Icon01",
+      "width" : 67,
+      "height" : 72,
+      "max_width" : 67,
+      "max_height" : 72
+    },
+    "border_color" : "",
+    "checkmark_color" : ""
+  }, {
+    "select_image" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    },
+    "page_url" : {
+      "type" : "EXTERNAL",
+      "href" : "##",
+      "content_id" : null
+    },
+    "shield_image" : {
+      "src" : "https://f.hubspotusercontent20.net/hubfs/5565021/Startdeliver_June2020/Image/Icon01.png",
+      "alt" : "Icon01",
+      "width" : 67,
+      "height" : 72,
+      "max_width" : 67,
+      "max_height" : 72
+    },
+    "border_color" : "",
+    "checkmark_color" : ""
+  } ]
+} ]

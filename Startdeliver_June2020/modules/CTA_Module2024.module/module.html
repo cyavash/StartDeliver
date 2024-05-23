@@ -1,0 +1,31 @@
+<div class="{{name}} cta-wrap">
+  <div class="page-center">
+    <img src="https://5565021.fs1.hubspotusercontent-na1.net/hubfs/5565021/line3-1.svg" alt="" class="line3">
+    <div class="cta-otr ">   
+      <div class="cta-inner"> 
+      {% if module.heading %}
+        <div class="cta-header">
+          <h3 style="margin-bottom: 30px;">{{ module.heading }}</h3>
+        </div> 
+      {% endif %}  
+      {% cta guid="{{ module.cta_field }}" %}
+      </div>    
+    </div> 
+	</div>
+</div>
+
+ 
+{% require_css %}
+<style> 
+   
+  .{{name}}.cta-wrap { 
+      background: {{ module.bg_gradient }}; 
+  } 
+   
+  
+</style>
+{% end_require_css %}
+
+
+
+

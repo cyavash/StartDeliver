@@ -1,0 +1,24 @@
+[ {
+  "id" : "39bb3a9a-d4ca-c821-cd8a-ba32c0f5817d",
+  "name" : "content",
+  "display_width" : null,
+  "label" : "Content",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.</p>"
+}, {
+  "id" : "579b1127-8ad3-909d-58b3-e1f0fe70669d",
+  "name" : "content_width",
+  "display_width" : null,
+  "label" : "Content Width",
+  "required" : false,
+  "locked" : false,
+  "display" : "slider",
+  "min" : 500,
+  "max" : 1140,
+  "step" : 1,
+  "suffix" : "px",
+  "type" : "number",
+  "default" : 750
+} ]

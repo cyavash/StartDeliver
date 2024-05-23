@@ -1,0 +1,45 @@
+<!--
+templateType: page
+isAvailableForNewContent: true
+label: Impact Day
+-->
+{% extends "./layouts/base_2021.html" %}
+
+
+{{ require_css(get_asset_url("/Startdeliver_June2020/css/stylesheet-landing-2023.css")) }}
+
+{% block header %}
+<div class="hs-home-layout">
+  {% global_partial path="../templates/partials/header-landing2023.html" %}
+{% endblock header %}
+{% block body %}
+  <main class="body-container-wrapper 2023">
+    {% dnd_area "DND_Main" class='', label='Main Section' %}
+     {% dnd_section full_width=true %}
+        {% dnd_module path="/Startdeliver_June2020/modules/Hero - Impact Day2023", label="Hero - Impact Day" %}{% end_dnd_module %}
+     {% end_dnd_section %}   
+     {% dnd_section full_width=true %}
+        {% dnd_module path="/Startdeliver_June2020/modules/About - Impact Day2023", label="About - Impact Day" %}{% end_dnd_module %}
+     {% end_dnd_section %}   
+     {% dnd_section full_width=true %}
+        {% dnd_module path="/Startdeliver_June2020/modules/Keynote speakers - Impact Day2023", label="Keynote speakers - Impact Day" %}{% end_dnd_module %}
+     {% end_dnd_section %}   
+     {% dnd_section full_width=true %}
+        {% dnd_module path="/Startdeliver_June2020/modules/Agenda and schema - Impact Day2023", label="Agenda and schema - Impact Day" %}{% end_dnd_module %}
+     {% end_dnd_section %}   
+     {% dnd_section full_width=true %}
+        {% dnd_module path="/Startdeliver_June2020/modules/friends and sponsors - Impact Day2023", label="friends and sponsors - Impact Day" %}{% end_dnd_module %}
+     {% end_dnd_section %}   
+     {% dnd_section full_width=true %}
+        {% dnd_module path="/Startdeliver_June2020/modules/Join CTA Strip - Impact Day2023", label="Join CTA Strip - Impact Day" %}{% end_dnd_module %}
+     {% end_dnd_section %}   
+    {% end_dnd_area %}
+    </main>
+{% endblock body %}
+  
+{% block footer %}
+  {% global_partial path="../templates/partials/footer-landing2023.html" %}
+</div>
+{% endblock footer%}
+
+

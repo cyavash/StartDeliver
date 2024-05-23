@@ -1,0 +1,119 @@
+[ {
+  "id" : "91c1946a-a14d-4320-92c5-d8573dd1bb64",
+  "name" : "heading",
+  "display_width" : null,
+  "label" : "Heading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Your CS team is about to level up 🍄"
+}, {
+  "id" : "5205bee5-26fd-e879-22d7-56d0daec9193",
+  "name" : "content",
+  "display_width" : null,
+  "label" : "Content",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<p>We will reach out shortly. In the meantime, check out the latest from the Startdeliver team:</p>"
+}, {
+  "id" : "7cb36f55-9163-4a28-431a-1e7f4e5fa585",
+  "name" : "box",
+  "display_width" : null,
+  "label" : "Box",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 3
+  },
+  "children" : [ {
+    "id" : "8acc60e0-f196-764c-9730-1a827bf066d1",
+    "name" : "title",
+    "display_width" : null,
+    "label" : "Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Webinar:"
+  }, {
+    "id" : "69e97cbb-9584-9189-a335-df96f8fad810",
+    "name" : "description",
+    "display_width" : null,
+    "label" : "Description",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Onboarding mistakes."
+  }, {
+    "id" : "b655f541-4005-883b-b21b-f760301cbb57",
+    "name" : "button_text",
+    "display_width" : null,
+    "label" : "Button Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Sign Up"
+  }, {
+    "id" : "08825063-86cc-b8de-73e4-721f7709ed18",
+    "name" : "button_link",
+    "display_width" : null,
+    "label" : "Button Link",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "#"
+  }, {
+    "id" : "c94f1606-5213-04e6-bba8-9597fe6d3d73",
+    "name" : "box_color",
+    "display_width" : null,
+    "label" : "Box Color",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "#8089D9"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : [ {
+    "title" : "Webinar:",
+    "description" : "Onboarding mistakes.",
+    "button_text" : "Sign Up",
+    "button_link" : "#",
+    "box_color" : "#8089D9"
+  }, {
+    "title" : "Webinar:",
+    "description" : "Onboarding mistakes.",
+    "button_text" : "Sign Up",
+    "button_link" : "#",
+    "box_color" : "#8089D9"
+  }, {
+    "title" : "Webinar:",
+    "description" : "Onboarding mistakes.",
+    "button_text" : "Sign Up",
+    "button_link" : "#",
+    "box_color" : "#8089D9"
+  } ]
+} ]

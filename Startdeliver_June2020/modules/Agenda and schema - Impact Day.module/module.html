@@ -1,0 +1,111 @@
+<div class="impact-agenda"id="agenda">
+  <div class="page-center">
+    <h2>{{ module.title }}</h2>
+    <div class="row">
+      {% for item in module.single_group %}
+      <div class="single-row" id="{{ item.id__ }}">
+        <div class="date">
+          <strong>{{ item.time }}</strong>
+          <span>{{ item.day }}</span>
+        </div>
+        <div class="content">
+          <h3>{{ item.title }}</h3>
+          {% if !item.box_view %}
+          <div class="content-inner">
+            {% if item.user_ %}
+            <div class="user-wrapper">
+              {% for item2 in item.user %}
+              <div class="user">
+                <img src="{{ item2.thumb.src }}" alt="{{ item2.thumb.alt }}">
+                <span>{{ item2.name_ }}</span>
+              </div>
+              {% endfor %}
+            </div>
+            {% endif %}
+            <div class="text">
+              {{ item.content }}
+            </div>
+          </div>
+          {% else %}
+          <div class="content-inner-row">
+            {% for item2 in item.box_view_group %}
+            <div class="inner-single-box" style="background:{{ item2.background_color.color }};">
+              <div>
+                <div class="sub-title">{{ item2.small_title }}</div>
+                <h3>{{ item2.title }}</h3>
+               <div class="user-wrapper">
+                 {% for item3 in item2.user %}
+                      <div class="user">
+                        <img src="{{ item3.thumb.src }}" alt="{{ item3.thumb.alt }}">
+                        <span>{{ item3.name_ }}</span>
+                      </div>
+                 {% endfor %}
+                </div>
+                <div class="text">{{ item2.content }}</div>
+              </div>
+              
+            </div>
+            {% endfor %}
+          </div>
+          {% endif %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>         
+  </div>
+</div>
+
+{% require_css %}
+<style>
+  .impact-agenda { padding: 115px 0 100px; color: #2E2E2E; }
+  .impact-agenda h2 { margin: 0 0 57px; }
+  .impact-agenda .single-row { display: flex; flex-wrap: wrap; }
+  .impact-agenda .single-row .date { width: 120px; text-align: right; padding-right: 35px; }
+  .impact-agenda .single-row .content { width: calc(100% - 120px); }
+  .impact-agenda .user img { height: 40px; width: 40px; object-fit: cover; border-radius: 100%; }
+  .impact-agenda .user { display: flex; align-items: center; padding: 0 0 8px; }
+  .impact-agenda .user span { display: block; width: calc(100% - 40px); font-size: 16px; font-weight: 600; padding-left: 12px; }
+  .impact-agenda .text { font-size: 16px; line-height: 22px; max-width: 570px; }
+  .impact-agenda h3 { font-size: 24px; font-weight: 700; line-height: 31px; margin: 0 0 8px; }
+  .impact-agenda .single-row + .single-row { padding: 32px 0 0; }
+  .impact-agenda .single-row .date strong { font-size: 24px; font-weight: 700; line-height: 31px; margin: 0 0 0; display:block; }
+  .impact-agenda .single-row .date span { font-size: 20px; color: #2E2E2E; display: block; padding: 4px 0 0; }
+  .impact-agenda .content-inner-row { display: flex; flex-wrap: wrap; margin: 0px -8px 0; }
+  .impact-agenda .content-inner-row > div { width: calc(33.33% - 16px); padding: 18px; border-radius: 8px; margin: 8px; }
+  .impact-agenda .content-inner-row .sub-title { font-size: 14px; line-height: 18px; display: block; font-weight: 500; color: inherit; }
+  .impact-agenda .content-inner-row h3 { font-size: 20px; line-height: 26px; padding: 17px 0 8px; margin: 0; }
+  .impact-agenda .content-inner-row .text { font-size: 14px; line-height: 19px; padding: 8px 0 0; padding-right: 10px; }
+  .user-wrapper { display: flex; flex-wrap: wrap; column-gap: 28px; }
+  
+
+  .impact-speaker .ft-speaker {justify-content: flex-start;}
+  @media(max-width:1439px){
+
+  }
+  @media(max-width:1200px){
+
+  }
+  @media(max-width:991px){
+    .impact-agenda .content-inner-row > div { width: calc(100% - 16px); }
+    .impact-agenda { padding: 70px 0; }
+  }
+  @media(max-width:767px){
+
+  }
+  @media(max-width:575px){
+    .impact-agenda h2 { margin: 0 0 27px; text-align: center; }
+    .impact-agenda .single-row .date strong, .impact-agenda h3 { font-size: 15px; line-height: 1.2; }
+    .impact-agenda .single-row .date span { font-size: 14px; }
+    .impact-agenda .single-row .date { width: 70px; padding-right: 15px; }
+    .impact-agenda .single-row .content { width: calc(100% - 70px); }
+    .impact-agenda .user span { line-height: 1.2; }
+    .impact-agenda .single-row + .single-row { padding: 15px 0 0; }
+    .impact-agenda .content-inner-row h3 { font-size: 18px; line-height: 1.1; padding: 12px 0 8px; }
+    .impact-agenda .content-inner-row .text { padding: 0; }
+    .impact-agenda .content-inner-row .sub-title { font-size: 13px; }
+    .impact-agenda { padding: 50px 0; }
+    .impact-agenda .content-inner-row > div { padding: 10px; }
+  }
+</style>
+{% end_require_css %}
+

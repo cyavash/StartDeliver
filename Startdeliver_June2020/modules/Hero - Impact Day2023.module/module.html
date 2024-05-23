@@ -1,0 +1,151 @@
+<div class="impact-hero bg_impact">
+<video loop autoplay muted playsinline class="video-container">
+  <source src="https://5565021.fs1.hubspotusercontent-na1.net/hubfs/5565021/impact-day/Impact%20Day2023%20background%20video%20colour.mp4">
+</video>
+  <div class="text-container">
+    <div class="shape">
+    {% if module.style.shape.src %}
+    {% set sizeAttrs = 'width="{{ module.style.shape.width }}" height="{{ module.style.shape.height }}"' %}
+    {% if module.style.shape.size_type == 'auto' %}
+    {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+    {% elif module.style.shape.size_type == 'auto_custom_max' %}
+    {% set sizeAttrs = 'width="{{ module.style.shape.max_width }}" height="{{ module.style.shape.max_height }}" style="max-width: 100%; height: auto;"' %}
+    {% endif %}
+    {% set loadingAttr = module.style.shape.loading != 'disabled' ? 'loading="{{ module.style.shape.loading }}"' : '' %}
+    <img src="{{ module.style.shape.src }}" alt="{{ module.style.shape.alt }}">
+    {% endif %}
+  </div>
+  <div class="page-center">
+    <div class="content">
+      <h1>{{ module.title }}</h1>
+    </div>
+    <div class="btn-wrapper-outer action-button">
+      <div class="btn-wrapper">
+
+      <a href="{{ module.btnlink.url.href }}"
+         {% if module.btnlink.open_in_new_tab %}target="_blank"{% endif %}
+         {% if module.btnlink.rel %}rel="{{ module.btnlink.rel }}"{% endif %}
+         >
+      {{ module.button }}
+      </a>  
+      </div>
+    </div>
+  </div>
+  <div class="page-bottom">
+       <div class="text">
+        {{ module.content }}
+      </div>
+      <div class="boxs">
+        {% for item in module.field_group %}
+        <div class="single-row">
+          <img src="{{ item.icon.src }}" alt="{{ item.icon.alt }}">
+          <span>{{ item.title }}</span>
+        </div>
+        {% endfor %}
+      </div>   
+    </div>  
+  </div>
+
+
+</div>
+
+{% require_css %}
+<style>
+  .video-container {
+    width:100%;
+    filter: grayscale(0.4);
+    position:relative;
+  }
+  
+  .text-container {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position:absolute;
+    height:100vh;
+    z-index:2;
+  }
+    .impact-hero { color: #fff; position: relative; overflow: hidden; height: 100vh; min-height: 750px; display: flex; align-items: center; justify-content: center; flex-direction:column;}
+  .impact-hero h1 { color: inherit; font-size: 64px; font-weight:400; }
+  .impact-hero .shape { position: absolute; left: 0; top: 0; width: 64%; height: 100%; }
+  .impact-hero .shape + div { position: relative; z-index: 1; }
+  .impact-hero .content { width: 100%; }
+  .impact-hero .content h1 { width: 75%; margin:0 auto; text-align:center; }
+  .impact-hero .page-bottom { position: absolute; bottom:0; display: flex; flex-direction: row; z-index: 1; width:75%; margin: 0 auto; margin-bottom:32px;}
+  .impact-hero .shape img { width: 100%; height: 100%; }
+  .impact-hero .text { width: 50%; display:flex; align-items:center; margin-bottom:40px; }
+  .impact-hero .boxs { width: 50%; display: flex; flex-direction: column; flex-wrap: wrap; gap: 20px; }
+  .impact-hero .boxs .single-row { display: flex; align-items: center; margin-left: 40px;}
+  .impact-hero .boxs .single-row span { margin-left: 10px; color: #60EDD5; font-weight: 600; font-size: 25px;}
+  .impact-hero .boxs .single-row img { width: 24px; }
+  .impact-hero .content .text { padding: 10px 0 10px; }
+  .action-button {display: none; }
+  
+    @media(max-width:2000px){
+     .video-container {
+        height:100vh;
+        width: unset;
+    }
+  }
+
+  @media(max-width:1350px){
+
+  }
+  @media(max-height:1080px) {
+       .video-container {
+        height:100vh;
+        width: unset;
+    }}
+ 
+    
+  @media(max-width:1200px){
+     .impact-hero { min-height: auto; height:800px; display:flex; align-items:center; padding: 0;}
+    .impact-hero .page-bottom { display:flex; flex-direction:column; align-items:center; justify-content:center; width:100%; margin-bottom:60px;}
+    .impact-hero .page-center { display:flex; justify-content:center; align-items:center; margin-bottom:240px; width:100%; flex-direction:column;}   
+  }
+  @media(max-width:991px){
+    .impact-hero { min-height: auto; height:800px; display:flex; align-items:center; padding: 0;}
+    .impact-hero .page-bottom { display:flex; flex-direction:column; align-items:center; justify-content:center; width: 100%; margin-bottom:60px;}
+    .impact-hero .page-center { display:flex; justify-content:center; align-items:center; margin-bottom:220px; width:100%;}
+    .impact-hero .text { width: 100%; justify-content:center; text-align:center; margin-bottom:30px;}
+    .impact-hero .boxs { width: 100%; flex-direction:row; margin: 0 auto; justify-content:center; margin-top: 0px; column-gap: 0; margin-bottom:40px; margin-top:14px; }
+    .impact-hero .boxs .single-row span {font-size: 18px;}
+    .impact-hero .shape { width: 78%; }
+    .impact-hero h1 { font-size: 50px; }
+  }
+    @media(max-width:767px){
+    .impact-hero { height: 900px; }
+    .impact-hero .content { width: 100%; top: 0; }
+    .impact-hero .shape { width: 80%; }
+    .impact-hero .text { width:90%; margin-bottom:40px; } 
+    .impact-hero .page-bottom {margin-bottom:-40px;}
+  }
+    @media(max-height:800px) {
+    .impact-hero .page-bottom {margin-bottom: 0px; }
+  }
+  @media(max-width:575px){
+    .impact-hero { height: 950px; }
+    .impact-hero .shape { width: 220%; }
+    .impact-hero .text { width: 80% }
+    .impact-hero .boxs { flex-direction:column; justify-content:center; }
+    .impact-hero .boxs .single-row { margin:0 auto; }
+    .impact-hero { padding: 0 0 60px; }
+    .impact-hero .content h1 { font-size: 40px; width:100%; }
+    .impact-hero .text-container {height:100%;}
+    .impact-hero .page-center {top: 0; margin-bottom:400px;}
+    .impact-hero .page-bottom {margin-bottom:0px;}
+    .action-button {display: block; margin-top:40px;}
+    .video-container {
+        height:150vh;
+        width: unset;
+    }
+  }
+    @media(max-height:700px) {
+     .impact-hero {width:100%;  }
+     .video-container {height:160vh;}
+    .impact-hero .page-bottom {margin-bottom: -60px; }
+  }
+
+
+</style>
+{% end_require_css %}

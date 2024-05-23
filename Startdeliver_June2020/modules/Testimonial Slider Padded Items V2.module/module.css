@@ -1,0 +1,169 @@
+.testimonial-section2 {
+  clear: both;
+  background: #f3f4fe;
+  background: linear-gradient(90deg, #f5f4fe 0%, #f5f5fe 35%, #f4f3fe 60%, #f7f6fe 100%);
+  padding: 61px 0;
+}
+html body .testimonial-section2 .page-center-fluid:not(.page-center){
+  padding-left: 0!important;
+  padding-right: 0!important;
+} 
+.testimonial-section2 h2 {
+  font-weight: normal;
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: -0.71px;
+  color: #434343; 
+  max-width: 500px;
+}
+.testimonial-section2 h2 strong {
+  display: block;
+  font-weight: bold;
+}
+.customer-carousel {
+  margin-top: 45px;
+}
+.testimonial-section2 .customer-carousel .slick-slide {
+  margin-left: 45px;
+  margin-right: 45px;
+  margin-bottom: 12px;
+}
+.cs-item-inner {
+  /*   border-radius: 12px; */
+  /*   box-shadow: 0 26px 65px -25px rgba(8, 80, 254, 0.25); */
+  border: 1px solid #EAEBFF;
+  background-color:#FFFFFF; 
+  padding: 48px;
+  position:relative;
+}
+.cs-item-inner .quote-img img {
+  width: 59px;
+}
+.cs-item-inner .quote p {
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 27px;
+  color: rgba(67, 67, 67, 60%);
+  margin-top: 60px;
+}
+.customer-content-bottom {
+  margin-top: 60px;
+}
+p.cs-quote-name {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 37px;
+  letter-spacing: -0.355px;
+  color: #2E2E2E;
+  margin: 0;
+}
+p.cs-quote-role {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 37px;
+  letter-spacing: -0.355px;
+  color: #2E2E2E;
+}
+.cs-logo img {
+  width: 220px!important;
+  max-width: 100%!important;
+  margin-top: 10px;
+}
+.testimonial-section2 .customer-carousel .slick-dots li {
+  width: 49px;
+  height: 5px;
+  margin-right: 6px;
+}
+.testimonial-section2 .customer-carousel .slick-dots li button {
+  height: 5px;
+  width: 49px;
+  padding: 0;
+  border-radius: 0;
+  background: rgba(0,0,0,0.19);
+}
+.testimonial-section2 .customer-carousel .slick-dots li button:before {
+  display: none!important;
+}
+.testimonial-section2 .customer-carousel .slick-dots li.slick-active button { 
+  background-color:#2E2E2E; 
+}
+.quote-user-img {
+  width: 129px;
+  height: 129px;
+  display: inline-block;
+  position: relative; 
+}
+
+.quote-user-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position:relative;
+  z-index:2;
+}
+.quote-user-img:after {
+  content: "";
+  background-image: url('https://f.hubspotusercontent20.net/hubfs/5565021/Startdeliver_June2020/Image/dots%20v5.png');
+  background-position: center center;
+  position: absolute;
+  bottom: -30px;
+  right: -30px;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+.quote-img {
+  position: absolute;
+  top: 48px;
+  right: 48px;
+}
+.cs-item-inner:before {
+  content: ""; 
+  width: 100%; 
+  height: 100%; 
+  background: linear-gradient(145.97deg, #808AF6 12.88%, #00E4BD 92.19%); 
+  position: absolute; 
+  left: inherit;
+  right: -10px; 
+  top: inherit;
+  bottom: -10px;                     
+  z-index: -1;                     
+  transform: rotate(-180deg);                     
+}
+
+@media screen and (max-width: 767px) {
+  .cs-item-inner {
+    padding: 30px 40px; 
+  }
+  .testimonial-section2 .customer-carousel .slick-slide {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .cs-item-inner .quote p {
+    font-size: 20px; 
+  }
+  p.cs-quote-name {
+    font-size: 17px; 
+  }
+  p.cs-quote-role { 
+    font-size: 17px; 
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .cs-item-inner {
+    min-height: 600px!important; 
+  }
+  /*   .cs-item-inner .quote p {
+  font-size: 22px;
+}  */
+  /*   p.cs-quote-name {
+  font-size: 20px; 
+}
+  p.cs-quote-name {
+  font-size: 18px; 
+} */
+} 

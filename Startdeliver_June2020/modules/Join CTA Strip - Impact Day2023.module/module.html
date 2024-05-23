@@ -1,0 +1,48 @@
+<div class="join-impact">
+  <div class="page-center">
+    <div>
+      <h2>{{ module.title }}</h2>
+      <div class="btn-wrapper">
+        {% set href = module.button.link.url.href %}
+        {% if module.button.link.url.type is equalto "EMAIL_ADDRESS" %}
+        {% set href = "mailto:" + href %}
+        {% endif %}
+        <a href="{{ href }}"
+           {% if module.button.link.open_in_new_tab %}target="_blank"{% endif %}
+           {% if module.button.link.rel %}rel="{{ module.button.link.rel }}"{% endif %}
+           >
+          {{ module.button.text }}
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% require_css %}
+<style>
+  .join-impact{
+    background:{{ module.style.background_color.color }};
+  }
+  .join-impact { padding: 70px 0 50px; text-align: center; }
+  .join-impact .btn-wrapper { padding: 24px 0 0; }
+  .join-impact .page-center > div { position: relative; padding: 0 0 60px; }
+  .join-impact .page-center > div:after { content: ''; position: absolute; bottom: 0; left: 0; height: 30px; width: 100%; background-image: url(https://5565021.fs1.hubspotusercontent-na1.net/hubfs/5565021/impact-day/Untitled_Artwork-1.png); background-repeat: no-repeat; background-position: center; }
+  @media(max-width:1339px){
+
+  }
+  @media(max-width:1200px){
+
+  }
+  @media(max-width:991px){
+
+  }
+  @media(max-width:767px){
+
+  }
+  @media(max-width:575px){
+    .join-impact { padding: 50px 0 50px; }
+    .join-impact .page-center > div:after { height: 30px; width: 100%; background-size: contain; }
+    .join-impact .page-center > div { padding: 0 0 50px; }
+  }
+</style>
+{% end_require_css %}

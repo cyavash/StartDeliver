@@ -1,0 +1,113 @@
+/* ******************************************************************************
+*********************************************************************************
+This file contains all the neccessary styles to control how your
+footer looks when it comes to spacing and other general styles.
+*********************************************************************************
+****************************************************************************** */
+
+.footer {
+  background-color: {{ dnd_accent_bg_color }};
+  text-align: center;
+}
+
+.footer {
+  background-color: {{ dnd_accent_bg_color }};
+}
+
+footer.footer {
+  text-align: center;
+  -webkit-box-shadow: 0 3px 16px rgba(8, 80, 254, 0.1);
+  box-shadow: 0 3px 16px rgba(8, 80, 254, 0.1);
+  padding: 7.5rem 0 1.8rem;
+  position: relative;
+}
+
+.custom-footer-inner .copy-right {
+  margin-top: 7.6rem;
+  line-height: 1.5;
+}
+
+.custom-footer-inner .copy-right span {
+  display: block;
+}
+
+.footer__contact {
+  margin-top: 3rem;
+}
+
+.custom-footer-inner img {
+  max-width: 100%;
+  height: auto;
+  width: 300px;
+}
+
+.custom-footer-inner {
+  padding-bottom: 1px;
+  justify-content: center;
+}
+
+.social-media {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fa, .fab, .fal, .far, .fas {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+}
+
+.fab {
+  font-family: "Font Awesome 5 Brands";
+}
+
+.social-media i {
+  margin: 0 10px;
+  font-size: 20px;
+  color: #0850FE;
+}
+
+.fa-facebook-f:before, .fa-facebook:before {
+  content: "\f09a";
+} 
+.fa-twitter:before {
+  content: "\f099";
+}
+.fa-instagram:before {
+  content: "\f16d";
+}
+
+
+
+@media(max-width:992px){
+  .custom-footer-inner .copy-right {
+    margin-top: 2rem;
+    font-size: .75rem;
+  }
+
+  footer.footer {
+    padding: 3rem 0;
+  }
+
+  .custom-footer-inner {
+    padding-bottom: 1px;
+  }
+
+  .custom-footer-inner img {
+    width: 200px !important;
+  }
+
+  .social-media{
+    margin-top: 1rem;
+  }
+
+  .social-media i {
+    font-size:1rem;
+  }
+}

@@ -1,0 +1,43 @@
+[ {
+  "id" : "8ccad982-0677-62eb-7f58-6642c2b453de",
+  "name" : "heading",
+  "display_width" : null,
+  "label" : "Heading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "The most substantial button press you’ve made this month"
+}, {
+  "id" : "344efb03-ddd7-ed92-1763-3b2f89315c40",
+  "name" : "content",
+  "display_width" : null,
+  "label" : "Content",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<p>Push the pink button to get a 30 minute demo with one of our experts and realise how easy it is to do customer success well as long as you have the right tool.</p>"
+}, {
+  "id" : "9f0d6a4c-ef3a-96b7-45f8-f34bdf661d72",
+  "name" : "bg_gradient",
+  "display_width" : null,
+  "label" : "BG Gradient",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "linear-gradient(95deg, rgba(128, 138, 246, 0.90) -0.82%, rgba(0, 228, 189, 0.90) 100%)"
+}, {
+  "id" : "f16d85da-d876-6371-9634-7832c9fca50c",
+  "name" : "cta_field",
+  "display_width" : null,
+  "label" : "CTA",
+  "required" : false,
+  "locked" : false,
+  "type" : "cta",
+  "default" : "bff39e28-f8a0-404b-b8df-62d444f952e7"
+} ]

@@ -1,0 +1,26 @@
+.heading-with-logos {
+  padding: 90px 0;
+  background: #FFF;
+}
+.heading-with-logos h2 {
+  margin-bottom: 30px;
+}
+.heading-with-logos ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+.heading-with-logos li {
+  width: 16.6%; 
+}
+.heading-with-logos li a {
+  display: block;
+  text-decoration: none;
+} 
+.heading-with-logos li img {
+   -webkit-filter: grayscale(100%);
+   filter: grayscale(100%);   
+  max-width: 100%;
+}

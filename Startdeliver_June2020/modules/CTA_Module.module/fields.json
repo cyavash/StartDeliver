@@ -1,0 +1,102 @@
+[ {
+  "id" : "8ccad982-0677-62eb-7f58-6642c2b453de",
+  "name" : "heading",
+  "display_width" : null,
+  "label" : "Heading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "The most substantial button press you’ve made this month"
+}, {
+  "id" : "344efb03-ddd7-ed92-1763-3b2f89315c40",
+  "name" : "content",
+  "display_width" : null,
+  "label" : "Content",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<p>Push the pink button to get a 30 minute demo with one of our experts and realise how easy it is to do customer success well as long as you have the right tool.</p>"
+}, {
+  "id" : "b749548d-82ed-2bce-cd6e-425a19735af3",
+  "name" : "button",
+  "display_width" : null,
+  "label" : "Button",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "e07c0bf5-2d5e-ee55-e2ee-ec5aa11868b7",
+    "name" : "text",
+    "display_width" : null,
+    "label" : "Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "BOOK DEMO"
+  }, {
+    "id" : "f877e5a6-29ed-29f0-b476-71dbdbcf5a71",
+    "name" : "class",
+    "display_width" : null,
+    "label" : "Class",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "btn-pink"
+  }, {
+    "id" : "cd9aa946-a595-26bc-8678-b7d7dcde5a22",
+    "name" : "link",
+    "display_width" : null,
+    "label" : "Link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "PAYMENT" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "text" : "BOOK DEMO",
+    "class" : "btn-pink",
+    "link" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }
+}, {
+  "id" : "9f0d6a4c-ef3a-96b7-45f8-f34bdf661d72",
+  "name" : "bg_gradient",
+  "display_width" : null,
+  "label" : "BG Gradient",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "linear-gradient(95deg, rgba(128, 138, 246, 0.90) -0.82%, rgba(0, 228, 189, 0.90) 100%)"
+} ]
