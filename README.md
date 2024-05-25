@@ -1,7 +1,7 @@
 # StartDeliver
 
 About the project:<br><br>
-StartDeliver is a top scandinavian Customer Success Tool company with many many european customers
+StartDeliver is a top scandinavian Customer Success Tool company with many leading european customers
 <br><br>
 Build with:<br>
 » Hubspot / HuBL / HubDB<br>
